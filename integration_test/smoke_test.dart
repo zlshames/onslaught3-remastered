@@ -106,8 +106,7 @@ void main() {
       await drag.moveTo(Offset.lerp(from, target, i / 20)!);
       await tester.pump(const Duration(milliseconds: 16));
     }
-    await drag.up();
-    await _pumpUntil(tester, find.text(r'$20'));
+    await _letGoOfBuildDrag(tester, drag, vm);
     final turret = vm.session.turrets.single;
     expect(turret.position.x, closeTo(spot.dx, 1));
     expect(turret.position.y, closeTo(spot.dy, 1));
@@ -476,11 +475,24 @@ void main() {
     await tester.tap(find.text('Play'));
     await _pumpUntil(tester, find.text('Map Tools'));
     await tester.tap(find.text('Map Tools'));
-    await _pumpUntil(tester, find.text('New map'));
-    await tester.tap(find.text('New map'));
+    await _tapAction(tester, 'New map');
     await _pumpUntil(tester, find.byType(EditorCanvas));
     await tester.tap(find.byTooltip('Close tips'));
     await tester.pump(const Duration(milliseconds: 200));
+
+    const settle = Duration(milliseconds: 600);
+    // A compact top bar keeps these two in its More menu.
+    Future<void> tapEditorAction(String label) async {
+      if (find.byTooltip(label).evaluate().isNotEmpty) return tester.tap(find.byTooltip(label));
+      await tester.tap(find.byTooltip('More'));
+      await _pumpUntil(tester, find.text(label));
+      await tester.pump(settle);
+      await tester.tap(find.text(label));
+    }
+
+    // A portrait phone opens the editor zoomed in; every spot below needs the whole map.
+    await tapEditorAction('Fit the whole map');
+    await tester.pump(settle);
 
     final canvas = find.byType(EditorCanvas);
     final rig = tester.state<EditorCanvasState>(canvas).rig;
@@ -521,11 +533,10 @@ void main() {
     await b.up();
     await tester.pump(const Duration(milliseconds: 200));
     expect(rig.relativeZoom, greaterThan(1.5));
-    await tester.tap(find.byTooltip('Fit the whole map'));
-    await tester.pump(const Duration(milliseconds: 200));
+    await tapEditorAction('Fit the whole map');
+    await tester.pump(settle);
     expect(rig.isAtFit, isTrue);
 
-    const settle = Duration(milliseconds: 600);
     await tester.tap(find.byTooltip('Save'));
     await _pumpUntil(tester, find.byType(TextField));
     await tester.pump(settle);
@@ -535,7 +546,7 @@ void main() {
     await tester.testTextInput.receiveAction(TextInputAction.done);
     await _pumpUntilGone(tester, find.byType(Dialog));
     expect(find.text('Phone Map'), findsOneWidget);
-    await tester.tap(find.byTooltip('Share'));
+    await tapEditorAction('Share');
     await _pumpUntil(tester, find.byKey(const Key('shareCode')));
     await tester.pump(settle);
     final code = tester.widget<SelectableText>(find.byKey(const Key('shareCode'))).data!;
@@ -556,7 +567,7 @@ void main() {
     await tester.tap(find.widgetWithText(FilledButton, 'Delete'));
     await _pumpUntilGone(tester, find.byType(Dialog));
     expect(find.textContaining('No maps yet'), findsOneWidget);
-    await tester.tap(find.text('Import'));
+    await _tapAction(tester, 'Import');
     await _pumpUntil(tester, find.byKey(const Key('importCode')));
     await tester.pump(settle);
     await tester.enterText(find.byKey(const Key('importCode')), code);
@@ -603,8 +614,14 @@ void main() {
     await tester.enterText(find.byKey(const Key('modNumber')), '99');
     await tester.testTextInput.receiveAction(TextInputAction.done);
     await _pumpUntil(tester, find.textContaining('1 change · signature'));
-    // Out of range: refused with the reason, the 99 stays.
-    await tester.tap(find.byKey(const Key('modField:TurretBlue.weapon_range')));
+    // Out of range: refused with the reason, the 99 stays. A portrait phone
+    // shows one pane at a time, so it first goes back to the fields.
+    final range = find.byKey(const Key('modField:TurretBlue.weapon_range'));
+    if (range.evaluate().isEmpty) {
+      await tester.tap(find.byTooltip('Back'));
+      await tester.pump(settle);
+    }
+    await tester.tap(range);
     await tester.pump(settle);
     await tester.enterText(find.byKey(const Key('modNumber')), '5');
     await tester.testTextInput.receiveAction(TextInputAction.done);
@@ -613,7 +630,7 @@ void main() {
 
     await tester.tap(find.byKey(const Key('modActive')));
     await tester.pump(settle);
-    await tester.tap(find.text('Export'));
+    await _tapAction(tester, 'Export');
     await _pumpUntil(tester, find.byKey(const Key('shareCode')));
     await tester.pump(settle);
     final code = tester.widget<SelectableText>(find.byKey(const Key('shareCode'))).data!;
@@ -629,8 +646,11 @@ void main() {
     await tester.tap(find.text('Close'));
     await _pumpUntilGone(tester, find.byType(Dialog));
 
-    await tester.tap(find.byTooltip('Back'));
-    await _pumpUntil(tester, find.text('Easy Mode'));
+    // Back through a portrait phone's panes, or straight out of the wide layout.
+    while (find.text('Easy Mode').evaluate().isEmpty) {
+      await tester.tap(find.byTooltip('Back'));
+      await tester.pump(settle);
+    }
     await tester.tap(find.text('Easy Mode'));
     await _pumpUntil(tester, find.text('Classic'));
     await tester.tap(find.text('Classic'));
@@ -650,8 +670,7 @@ void main() {
       await drag.moveTo(Offset.lerp(from, target, i / 20)!);
       await tester.pump(const Duration(milliseconds: 16));
     }
-    await drag.up();
-    await _pumpUntil(tester, find.text(r'$20'));
+    await _letGoOfBuildDrag(tester, drag, vm);
     await tester.tap(find.byTooltip('Send next wave'));
     final end = DateTime.now().add(const Duration(seconds: 30));
     while (vm.session.projectiles.isEmpty && DateTime.now().isBefore(end)) {
@@ -676,6 +695,35 @@ Future<void> _pumpUntil(
     if (finder.evaluate().isNotEmpty) return;
   }
   throw TestFailure('timed out waiting for $finder');
+}
+
+/// Ends a drag from the tray and waits for the turret. Phones default to drop
+/// and lock, where the dropped ghost waits for Place.
+Future<void> _letGoOfBuildDrag(
+  WidgetTester tester,
+  TestGesture drag,
+  SessionGameViewModel vm,
+) async {
+  await drag.up();
+  await tester.pump(const Duration(milliseconds: 200));
+  if (find.text('Place').evaluate().isNotEmpty) await tester.tap(find.text('Place'));
+  final end = DateTime.now().add(const Duration(seconds: 30));
+  while (vm.session.turrets.isEmpty && DateTime.now().isBefore(end)) {
+    await tester.pump(const Duration(milliseconds: 100));
+  }
+}
+
+/// Taps an action that a wide layout labels with text and a narrow one with
+/// an icon and tooltip.
+Future<void> _tapAction(WidgetTester tester, String label) async {
+  final end = DateTime.now().add(const Duration(seconds: 30));
+  while (DateTime.now().isBefore(end)) {
+    await tester.pump(const Duration(milliseconds: 100));
+    for (final action in [find.text(label), find.byTooltip(label)]) {
+      if (action.evaluate().isNotEmpty) return tester.tap(action);
+    }
+  }
+  throw TestFailure('timed out waiting for "$label"');
 }
 
 Future<void> _pumpUntilGone(WidgetTester tester, Finder finder) async {
