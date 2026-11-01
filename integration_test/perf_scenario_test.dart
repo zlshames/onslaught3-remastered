@@ -15,7 +15,7 @@ import 'package:onslaught3_remastered/services/persistence/profile.dart';
 import 'package:onslaught_core/onslaught_core.dart';
 import 'package:onslaught_core/testing.dart';
 
-import '../test/support/fakes.dart';
+import 'quiet_sinks.dart';
 
 /// Wave the game is fast-forwarded to before the window opens.
 const int _startWave = int.fromEnvironment('PERF_START_WAVE', defaultValue: 70);

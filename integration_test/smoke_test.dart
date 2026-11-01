@@ -21,7 +21,7 @@ import 'package:onslaught3_remastered/services/persistence/mod_library.dart';
 import 'package:onslaught3_remastered/services/persistence/profile.dart';
 import 'package:onslaught_core/onslaught_core.dart';
 
-import '../test/support/fakes.dart';
+import 'quiet_sinks.dart';
 
 /// Smoke flows on a device, each from the main menu on a fresh in-memory
 /// profile (Play → Easy Mode → Classic). Phase 0: Classic → the road renders →

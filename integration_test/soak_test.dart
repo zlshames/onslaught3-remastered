@@ -12,7 +12,7 @@ import 'package:onslaught3_remastered/services/persistence/document_store.dart';
 import 'package:onslaught3_remastered/services/persistence/profile.dart';
 import 'package:onslaught_core/testing.dart';
 
-import '../test/support/fakes.dart';
+import 'quiet_sinks.dart';
 
 /// Waves to play (`--dart-define=SOAK_WAVES=40` for a quick run).
 const int _waves = int.fromEnvironment('SOAK_WAVES', defaultValue: 300);
