@@ -299,24 +299,16 @@ class _EditorState extends ConsumerState<_Editor> {
                 top: 0,
                 left: 0,
                 right: 0,
-                child: SafeArea(
-                  bottom: false,
-                  child: _topBar(compact: size.width < _compactBarBelow),
-                ),
+                child: _topBar(compact: size.width < _compactBarBelow),
               ),
               if (portrait)
-                Positioned(
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  child: SafeArea(top: false, child: _palette(Axis.horizontal)),
-                )
+                Positioned(left: 0, right: 0, bottom: 0, child: _palette(Axis.horizontal))
               else
                 Positioned(
                   top: _barHeight + padding.top,
                   right: 0,
                   bottom: 0,
-                  child: SafeArea(left: false, top: false, child: _palette(Axis.vertical)),
+                  child: _palette(Axis.vertical),
                 ),
               Positioned(
                 left: padding.left + 8,
@@ -345,13 +337,18 @@ class _EditorState extends ConsumerState<_Editor> {
     );
   }
 
+  // The background runs to the screen's edges; only the controls keep clear
+  // of a notch.
   Widget _bar({required List<Widget> children}) => Material(
     color: AppColours.backdropOverlay,
-    child: SizedBox(
-      height: _barHeight,
-      child: IconTheme(
-        data: const IconThemeData(color: Colors.white),
-        child: Row(children: children),
+    child: SafeArea(
+      bottom: false,
+      child: SizedBox(
+        height: _barHeight,
+        child: IconTheme(
+          data: const IconThemeData(color: Colors.white),
+          child: Row(children: children),
+        ),
       ),
     ),
   );
@@ -465,53 +462,57 @@ class _EditorState extends ConsumerState<_Editor> {
     listenable: _c,
     builder: (context, _) => Material(
       color: AppColours.backdropOverlay,
-      child: SizedBox(
-        width: axis == Axis.vertical ? _railWidth : null,
-        height: axis == Axis.horizontal ? _stripHeight : null,
-        child: SingleChildScrollView(
-          scrollDirection: axis,
-          padding: axis == Axis.vertical
-              ? const EdgeInsets.symmetric(vertical: 6)
-              : const EdgeInsets.symmetric(horizontal: 6),
-          child: Flex(
-            direction: axis,
-            children: [
-              _paletteItem(
-                PaletteItem.start,
-                _data.tr(context, 'ui.editor.start'),
-                placed: _c.draft.start != null,
-              ),
-              _paletteItem(
-                PaletteItem.base,
-                _data.tr(context, 'ui.editor.base'),
-                placed: _c.draft.base != null,
-              ),
-              if (axis == Axis.vertical)
-                const Divider(color: Colors.white24, height: 12)
-              else
-                const VerticalDivider(color: Colors.white24, width: 12),
-              _railButton(
-                icon: _c.snap ? Icons.grid_on : Icons.grid_off,
-                label: _data.tr(context, 'ui.editor.grid'),
-                selected: _c.snap,
-                onPressed: _c.toggleSnap,
-              ),
-              _railButton(
-                icon: Icons.grid_goldenratio,
-                label: _data.tr(context, 'ui.editor.align'),
-                onPressed: _c.alignAll,
-              ),
-              _railButton(
-                icon: Icons.delete_outline,
-                label: _data.tr(context, 'ui.editor.delete'),
-                onPressed: _c.selected == null ? null : _c.deleteSelected,
-              ),
-              _railButton(
-                icon: Icons.layers_clear,
-                label: _data.tr(context, 'ui.editor.clear'),
-                onPressed: _clear,
-              ),
-            ],
+      child: SafeArea(
+        left: axis == Axis.horizontal,
+        top: false,
+        child: SizedBox(
+          width: axis == Axis.vertical ? _railWidth : null,
+          height: axis == Axis.horizontal ? _stripHeight : null,
+          child: SingleChildScrollView(
+            scrollDirection: axis,
+            padding: axis == Axis.vertical
+                ? const EdgeInsets.symmetric(vertical: 6)
+                : const EdgeInsets.symmetric(horizontal: 6),
+            child: Flex(
+              direction: axis,
+              children: [
+                _paletteItem(
+                  PaletteItem.start,
+                  _data.tr(context, 'ui.editor.start'),
+                  placed: _c.draft.start != null,
+                ),
+                _paletteItem(
+                  PaletteItem.base,
+                  _data.tr(context, 'ui.editor.base'),
+                  placed: _c.draft.base != null,
+                ),
+                if (axis == Axis.vertical)
+                  const Divider(color: Colors.white24, height: 12)
+                else
+                  const VerticalDivider(color: Colors.white24, width: 12),
+                _railButton(
+                  icon: _c.snap ? Icons.grid_on : Icons.grid_off,
+                  label: _data.tr(context, 'ui.editor.grid'),
+                  selected: _c.snap,
+                  onPressed: _c.toggleSnap,
+                ),
+                _railButton(
+                  icon: Icons.grid_goldenratio,
+                  label: _data.tr(context, 'ui.editor.align'),
+                  onPressed: _c.alignAll,
+                ),
+                _railButton(
+                  icon: Icons.delete_outline,
+                  label: _data.tr(context, 'ui.editor.delete'),
+                  onPressed: _c.selected == null ? null : _c.deleteSelected,
+                ),
+                _railButton(
+                  icon: Icons.layers_clear,
+                  label: _data.tr(context, 'ui.editor.clear'),
+                  onPressed: _clear,
+                ),
+              ],
+            ),
           ),
         ),
       ),

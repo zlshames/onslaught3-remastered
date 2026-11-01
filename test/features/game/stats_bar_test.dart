@@ -23,6 +23,36 @@ void main() {
     return vm;
   }
 
+  testWidgets('its background covers the inset; its controls stay clear of it', (tester) async {
+    const inset = EdgeInsets.only(left: 40, top: 30);
+    final vm = FakeGameViewModel(data: data);
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: Align(
+            alignment: Alignment.topLeft,
+            child: SizedBox(
+              width: 800,
+              height: StatsBar.height + inset.vertical,
+              child: StatsBar(viewModel: vm, onExit: () {}, inset: inset),
+            ),
+          ),
+        ),
+      ),
+    );
+    final background = find.descendant(
+      of: find.byType(StatsBar),
+      matching: find.byType(ColoredBox),
+    );
+    expect(
+      tester.getRect(background.first),
+      Rect.fromLTWH(0, 0, 800, StatsBar.height + inset.vertical),
+    );
+    final exit = tester.getRect(find.byTooltip('Back to menu'));
+    expect(exit.left, greaterThanOrEqualTo(inset.left));
+    expect(exit.top, greaterThanOrEqualTo(inset.top));
+  });
+
   testWidgets('shows lives, cash, wave and map name from the view model', (tester) async {
     final vm = await pump(tester);
     expect(find.text('10'), findsOneWidget);

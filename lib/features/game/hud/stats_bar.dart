@@ -26,6 +26,7 @@ class StatsBar extends StatelessWidget {
     this.onSettings,
     this.keys,
     this.axis = Axis.horizontal,
+    this.inset = EdgeInsets.zero,
   });
 
   final GameViewModel viewModel;
@@ -39,6 +40,9 @@ class StatsBar extends StatelessWidget {
 
   /// Along the top (a bar) or down a side (a rail).
   final Axis axis;
+
+  /// What the controls keep clear of (a notch); the background covers it.
+  final EdgeInsets inset;
 
   /// Height of the bar in logical px.
   static const double height = HudMetrics.statsBarHeight;
@@ -145,8 +149,8 @@ class StatsBar extends StatelessWidget {
   ];
 
   Widget _wide(BuildContext context, HudState hud, TextStyle? text, TextStyle? small) => Container(
-    height: height,
-    padding: const EdgeInsets.symmetric(horizontal: 4),
+    height: height + inset.vertical,
+    padding: inset + const EdgeInsets.symmetric(horizontal: 4),
     color: Colors.black.withValues(alpha: 0.45),
     child: Row(
       children: [
@@ -183,8 +187,8 @@ class StatsBar extends StatelessWidget {
   /// Portrait phones: the readouts share what the buttons leave, shrinking
   /// together rather than overflowing.
   Widget _compact(BuildContext context, HudState hud, TextStyle? text) => Container(
-    height: height,
-    padding: const EdgeInsets.symmetric(horizontal: 2),
+    height: height + inset.vertical,
+    padding: inset + const EdgeInsets.symmetric(horizontal: 2),
     color: Colors.black.withValues(alpha: 0.45),
     child: Row(
       children: [
@@ -213,7 +217,8 @@ class StatsBar extends StatelessWidget {
   /// A rail down the left side (Enhanced `rails`); scrolls if the screen is
   /// too short for every control.
   Widget _rail(BuildContext context, HudState hud, TextStyle? text, TextStyle? small) => Container(
-    width: railWidth,
+    width: railWidth + inset.horizontal,
+    padding: inset,
     color: Colors.black.withValues(alpha: 0.45),
     child: ListView(
       padding: const EdgeInsets.symmetric(vertical: 4),

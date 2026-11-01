@@ -34,6 +34,7 @@ class TurretSheet extends StatelessWidget {
     this.pack,
     this.effects,
     this.edge = SheetEdge.bottom,
+    this.inset = EdgeInsets.zero,
   });
 
   final GameViewModel viewModel;
@@ -41,6 +42,9 @@ class TurretSheet extends StatelessWidget {
 
   /// The screen edge the sheet opens against.
   final SheetEdge edge;
+
+  /// What the controls keep clear of (a notch); the background covers it.
+  final EdgeInsets inset;
 
   /// Display settings: the colour badge beside a colour turret's icon.
   final ValueListenable<EffectSettings>? effects;
@@ -67,6 +71,7 @@ class TurretSheet extends StatelessWidget {
                 pack: pack,
                 badges: display.colourBadges,
                 edge: edge,
+                inset: inset,
               ),
             ),
     ),
@@ -80,6 +85,7 @@ class _Sheet extends StatelessWidget {
     required this.pack,
     required this.badges,
     required this.edge,
+    required this.inset,
   });
 
   final TurretPanel panel;
@@ -87,6 +93,7 @@ class _Sheet extends StatelessWidget {
   final AssetPack? pack;
   final bool badges;
   final SheetEdge edge;
+  final EdgeInsets inset;
 
   void _send(GameCommand c) => viewModel.dispatch(c);
 
@@ -105,8 +112,10 @@ class _Sheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => LayoutBuilder(
-    builder: (context, box) =>
-        box.maxWidth < HudMetrics.compactBelow ? _compact(context, box.maxWidth) : _wide(context),
+    builder: (context, box) {
+      final width = box.maxWidth - inset.horizontal;
+      return width < HudMetrics.compactBelow ? _compact(context, width) : _wide(context);
+    },
   );
 
   Widget _upgrade(StatRow row) => _UpgradeButton(
@@ -203,7 +212,7 @@ class _Sheet extends StatelessWidget {
     final perRow = ((content + gap) / (_minCardWidth + gap)).floor().clamp(1, 3);
     return Container(
       decoration: _decoration,
-      padding: const EdgeInsets.fromLTRB(10, 4, 4, 8),
+      padding: inset + const EdgeInsets.fromLTRB(10, 4, 4, 8),
       child: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -262,9 +271,9 @@ class _Sheet extends StatelessWidget {
   Widget _wide(BuildContext context) {
     final enabled = _enabled;
     return Container(
-      height: TurretSheet.height,
+      height: TurretSheet.height + inset.vertical,
       decoration: _decoration,
-      padding: const EdgeInsets.fromLTRB(10, 6, 4, 6),
+      padding: inset + const EdgeInsets.fromLTRB(10, 6, 4, 6),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

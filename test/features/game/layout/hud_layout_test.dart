@@ -57,6 +57,18 @@ void main() {
           expect(l.isOverHud(l.stats.center), isTrue);
           expect(l.isOverHud(l.tray.center), isTrue);
           expect(l.isOverHud(l.map.center), isFalse);
+          // The bars reach the screen's edges; only their controls keep clear
+          // of the safe area, along every side they touch.
+          final whole = Offset.zero & s;
+          final clear = safe.deflateRect(whole);
+          for (final (bar, inset) in [(l.stats, l.statsInset), (l.tray, l.trayInset)]) {
+            final controls = inset.deflateRect(bar);
+            expect(clear.expandToInclude(controls), clear, reason: '$bar $inset');
+          }
+          final panel = l.panelFor(null);
+          final controls = l.panelInset(l.sheetEdgeFor(null)).deflateRect(panel);
+          expect(controls.left, greaterThanOrEqualTo(clear.left));
+          expect(controls.right, lessThanOrEqualTo(clear.right));
           // The zooms are the camera's, which starts at home.
           final rig = CameraRig(world: world)
             ..resize(s)

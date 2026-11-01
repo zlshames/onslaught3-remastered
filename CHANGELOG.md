@@ -3,6 +3,11 @@
 Player-visible changes per version (release-build skill). Deliberate departures from the
 original game are listed in `docs/DEVIATIONS.md`.
 
+## Unreleased
+
+- On a screen with a notch or punch hole, the game's bars, tray and turret panel and the map
+  editor's bars now reach the edge of the screen; only their buttons keep clear of the cut-out.
+
 ## 1.0.0-beta.1
 
 The first public beta of Onslaught 3 Remastered: the original Onslaught 2 rebuilt for phones,

@@ -40,6 +40,7 @@ class TowerTray extends StatefulWidget {
     this.pack,
     this.effects,
     this.axis = Axis.vertical,
+    this.inset = EdgeInsets.zero,
   });
 
   final GameViewModel viewModel;
@@ -47,6 +48,9 @@ class TowerTray extends StatefulWidget {
 
   /// The direction the cells run and scroll in.
   final Axis axis;
+
+  /// What the cells keep clear of (a notch); the background covers it.
+  final EdgeInsets inset;
   final AssetPack? pack;
 
   /// Display settings: colour badges on the colour turrets' cells.
@@ -85,10 +89,11 @@ class _TowerTrayState extends State<TowerTray> {
 
   @override
   Widget build(BuildContext context) {
-    final TowerTray(:viewModel, :input, :axis, :pack, :effects) = widget;
+    final TowerTray(:viewModel, :input, :axis, :inset, :pack, :effects) = widget;
     return Container(
-      width: axis == Axis.vertical ? TowerTray.width : null,
-      height: axis == Axis.horizontal ? TowerTray.stripHeight : null,
+      width: axis == Axis.vertical ? TowerTray.width + inset.horizontal : null,
+      height: axis == Axis.horizontal ? TowerTray.stripHeight + inset.vertical : null,
+      padding: inset,
       color: Colors.black.withValues(alpha: 0.45),
       child: ValueListenableBuilder<List<TrayItem>>(
         valueListenable: viewModel.tray,

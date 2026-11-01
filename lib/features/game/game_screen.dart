@@ -796,32 +796,26 @@ class _GameViewState extends ConsumerState<_GameView> implements PlacementInput 
       overlayBuilderMap: {
         GameOverlays.stats: (context, game) => Positioned.fromRect(
           rect: layout.stats,
-          child: SafeArea(
-            bottom: rails,
-            right: !rails,
-            child: StatsBar(
-              viewModel: _viewModel,
-              onExit: _leave,
-              onSettings: _openSettings,
-              keys: _keys,
-              axis: layout.statsAxis,
-            ),
+          child: StatsBar(
+            viewModel: _viewModel,
+            onExit: _leave,
+            onSettings: _openSettings,
+            keys: _keys,
+            axis: layout.statsAxis,
+            inset: layout.statsInset,
           ),
         ),
         GameOverlays.tray: (context, game) => Positioned.fromRect(
           rect: layout.tray,
-          child: SafeArea(
-            left: portrait,
-            top: rails,
-            child: KeyedSubtree(
-              key: _keys.tray,
-              child: TowerTray(
-                viewModel: _viewModel,
-                input: this,
-                pack: widget.pack,
-                effects: _effects,
-                axis: layout.trayAxis,
-              ),
+          child: KeyedSubtree(
+            key: _keys.tray,
+            child: TowerTray(
+              viewModel: _viewModel,
+              input: this,
+              pack: widget.pack,
+              effects: _effects,
+              axis: layout.trayAxis,
+              inset: layout.trayInset,
             ),
           ),
         ),
@@ -837,6 +831,7 @@ class _GameViewState extends ConsumerState<_GameView> implements PlacementInput 
                 pack: widget.pack,
                 effects: _effects,
                 edge: edge,
+                inset: layout.panelInset(edge),
               ),
             );
             return switch (edge) {
@@ -844,13 +839,13 @@ class _GameViewState extends ConsumerState<_GameView> implements PlacementInput 
                 left: area.left,
                 right: screen.width - area.right,
                 bottom: 0,
-                child: SafeArea(top: false, right: portrait, child: sheet),
+                child: sheet,
               ),
               SheetEdge.top => Positioned(
                 left: area.left,
                 right: screen.width - area.right,
                 top: area.top,
-                child: SafeArea(top: false, bottom: false, right: portrait, child: sheet),
+                child: sheet,
               ),
               SheetEdge.left || SheetEdge.right => Positioned.fromRect(
                 rect: area,

@@ -236,6 +236,31 @@ class HudLayout {
   /// The stats run along this axis.
   Axis get statsAxis => kind == HudLayoutKind.rails ? Axis.vertical : Axis.horizontal;
 
+  /// What [stats]' controls keep clear of (a notch, a punch hole); its
+  /// background still runs to the screen's edges.
+  EdgeInsets get statsInset =>
+      kind == HudLayoutKind.rails ? safe.copyWith(right: 0) : safe.copyWith(bottom: 0);
+
+  /// What [tray]'s cells keep clear of; its background still runs to the
+  /// screen's edges.
+  EdgeInsets get trayInset => switch (kind) {
+    HudLayoutKind.rails => safe.copyWith(left: 0),
+    HudLayoutKind.portrait => safe.copyWith(top: 0),
+    _ => safe.copyWith(left: 0, top: 0),
+  };
+
+  /// What the panel's controls keep clear of when it opens against [edge];
+  /// its background still runs to the screen's edges. In landscape it stops
+  /// at the tray, which covers the right side's inset.
+  EdgeInsets panelInset(SheetEdge edge) {
+    final right = kind == HudLayoutKind.portrait ? safe.right : 0.0;
+    return switch (edge) {
+      SheetEdge.bottom => EdgeInsets.fromLTRB(safe.left, 0, right, safe.bottom),
+      SheetEdge.top => EdgeInsets.fromLTRB(safe.left, 0, right, 0),
+      SheetEdge.left || SheetEdge.right => EdgeInsets.zero,
+    };
+  }
+
   /// Screen edges the camera keeps the fitted map clear of.
   EdgeInsets get mapInsets =>
       EdgeInsets.fromLTRB(map.left, map.top, screen.width - map.right, screen.height - map.bottom);
