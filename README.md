@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="web/icons/Icon-512.png" width="128" alt="">
+  <img src="docs/screenshots/icon-round.png" width="128" alt="">
 </p>
 
 <h1 align="center">Onslaught 3 Remastered</h1>
