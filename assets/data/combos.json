@@ -1,0 +1,760 @@
+{
+  "schemaVersion": 1,
+  "defaults": {
+    "bulletPoison": 1,
+    "blastDamage": 1000000,
+    "blastPoison": 1,
+    "clusterDamage": 1000000,
+    "clusterQty": 5,
+    "clusterHolding": true,
+    "clusterPoison": 20,
+    "laserRange": 200,
+    "laserRate": 120,
+    "rocketDamage": 1000000,
+    "rocketRate": 120,
+    "laserType": "laser-beam",
+    "rocketType": "rocket-9",
+    "napalmQuantity": 16,
+    "napalmTiming": 75,
+    "napalmJit": 30,
+    "helperPoisonFallback": 20
+  },
+  "combos": [
+    {
+      "id": "big-laser-cluster-landmine",
+      "name": "Big Laser Cluster Landmine",
+      "leader": "blue",
+      "priority": 0,
+      "requires": {
+        "red": 2,
+        "green": 1,
+        "blue": 1
+      },
+      "takes": {
+        "red": 2,
+        "blue": 1,
+        "green": 1
+      },
+      "place": "minePoint",
+      "rechargeMs": 10800,
+      "projectile": "landmine-big-cluster-laser",
+      "blast": "blast-large",
+      "cluster": "cluster-rockets",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 7000000,
+        "clusterLaserDamage": 1000000,
+        "clusterQty": 10,
+        "clusterHolding": true,
+        "clusterDamage": 2000000,
+        "blastDamage": 9000000,
+        "clusterLaser": true
+      }
+    },
+    {
+      "id": "big-cluster-landmine",
+      "name": "Bit Cluster Landmine",
+      "leader": "blue",
+      "priority": 1,
+      "requires": {
+        "red": 2,
+        "blue": 1
+      },
+      "takes": {
+        "red": 2,
+        "blue": 1
+      },
+      "place": "minePoint",
+      "rechargeMs": 8000,
+      "projectile": "landmine-big-cluster",
+      "blast": "blast-large",
+      "cluster": "cluster-rockets",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 9000000,
+        "clusterQty": 10,
+        "clusterHolding": true,
+        "clusterDamage": 4500000,
+        "blastDamage": 15000000
+      }
+    },
+    {
+      "id": "big-laser-clusterbomb",
+      "name": "Big Laser Clusterbomb",
+      "leader": "blue",
+      "priority": 2,
+      "requires": {
+        "red": 2,
+        "green": 1
+      },
+      "takes": {
+        "red": 2,
+        "green": 1
+      },
+      "helperValue": "link",
+      "helperColour": "green",
+      "linkAddsTo": [
+        "clusterLaserDamage"
+      ],
+      "rechargeMs": 11400,
+      "projectile": "cluster-bomb",
+      "blast": "blast-large",
+      "cluster": "cluster-rockets",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 4000000,
+        "clusterQty": 5,
+        "clusterLaserDamage": 900000,
+        "clusterHolding": true,
+        "clusterDamage": 2000000,
+        "blastDamage": 6000000,
+        "clusterLaser": true
+      }
+    },
+    {
+      "id": "big-clusterbomb",
+      "name": "Big Clusterbomb",
+      "leader": "blue",
+      "priority": 3,
+      "requires": {
+        "red": 2
+      },
+      "takes": {
+        "red": 2
+      },
+      "rechargeMs": 6200,
+      "projectile": "cluster-bomb",
+      "blast": "blast-large",
+      "cluster": "cluster-rockets",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 8000000,
+        "clusterDamage": 4500000,
+        "clusterQty": 10,
+        "clusterHolding": true,
+        "blastDamage": 8000000
+      }
+    },
+    {
+      "id": "sparky-landmine",
+      "name": "Sparky Landmine",
+      "leader": "blue",
+      "priority": 4,
+      "requires": {
+        "blue": 1,
+        "yellow": 1
+      },
+      "takes": {
+        "blue": 1,
+        "yellow": 1
+      },
+      "takesIfReady": {
+        "red": 1
+      },
+      "place": "minePoint",
+      "rechargeMs": 7000,
+      "projectile": "landmine-sparky",
+      "blast": "blast-small",
+      "cluster": "cluster-sparks",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 9000000,
+        "blastDamage": 15000000,
+        "clusterQty": 8
+      }
+    },
+    {
+      "id": "sparky-clusterbomb",
+      "name": "Sparky Clusterbomb",
+      "leader": "blue",
+      "priority": 5,
+      "requires": {
+        "red": 1,
+        "yellow": 1
+      },
+      "takes": {
+        "red": 1,
+        "yellow": 1
+      },
+      "rechargeMs": 5000,
+      "projectile": "cluster-bomb",
+      "blast": "blast-small",
+      "cluster": "cluster-sparks",
+      "sound": "blast-small",
+      "values": {
+        "bulletDamage": 5500000,
+        "clusterDamage": 800000,
+        "clusterQty": 8,
+        "clusterHolding": true,
+        "blastDamage": 4700000
+      }
+    },
+    {
+      "id": "laser-clusterbomb",
+      "name": "Laser Clusterbomb",
+      "leader": "blue",
+      "priority": 6,
+      "requires": {
+        "red": 1,
+        "green": 1
+      },
+      "takes": {
+        "red": 1,
+        "green": 1
+      },
+      "helperValue": "link",
+      "helperColour": "green",
+      "linkAddsTo": [
+        "clusterLaserDamage"
+      ],
+      "rechargeMs": 10000,
+      "projectile": "cluster-bomb",
+      "blast": "blast-medium",
+      "cluster": "cluster-rockets",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 2000000,
+        "clusterDamage": 2000000,
+        "clusterQty": 5,
+        "clusterHolding": true,
+        "clusterLaserDamage": 700000,
+        "blastDamage": 4000000,
+        "clusterLaser": true
+      }
+    },
+    {
+      "id": "big-landmine",
+      "name": "Big Landmine",
+      "leader": "blue",
+      "priority": 7,
+      "requires": {
+        "red": 1,
+        "blue": 1
+      },
+      "takes": {
+        "red": 1,
+        "blue": 1
+      },
+      "place": "minePoint",
+      "rechargeMs": 7000,
+      "projectile": "landmine-big",
+      "blast": "blast-large",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 9000000,
+        "blastDamage": 15000000
+      }
+    },
+    {
+      "id": "clusterbomb",
+      "name": "Clusterbomb",
+      "leader": "blue",
+      "priority": 8,
+      "requires": {
+        "red": 1
+      },
+      "takes": {
+        "red": 1
+      },
+      "rechargeMs": 5000,
+      "projectile": "cluster-bomb",
+      "blast": "blast-small",
+      "cluster": "cluster-rockets",
+      "sound": "blast-small",
+      "values": {
+        "bulletDamage": 5000000,
+        "clusterDamage": 3300000,
+        "clusterQty": 6,
+        "clusterHolding": true,
+        "blastDamage": 7000000
+      }
+    },
+    {
+      "id": "landmine",
+      "name": "Landmine",
+      "leader": "blue",
+      "priority": 9,
+      "requires": {
+        "blue": 1
+      },
+      "takes": {
+        "blue": 1
+      },
+      "place": "minePoint",
+      "rechargeMs": 7000,
+      "projectile": "landmine",
+      "blast": "blast-small",
+      "sound": "blast-small",
+      "values": {
+        "bulletDamage": 10000000,
+        "blastDamage": 9000000
+      }
+    },
+    {
+      "id": "nuke",
+      "name": "Nuke",
+      "leader": "red",
+      "priority": 0,
+      "requires": {
+        "blue": 2
+      },
+      "takes": {
+        "blue": 2
+      },
+      "rechargeMs": 7400,
+      "projectile": "rocket-nuke",
+      "blast": "blast-huge",
+      "sound": "blast-large",
+      "values": {
+        "bulletDamage": 9000000,
+        "blastDamage": 60000000,
+        "moveSpeed": 150,
+        "holdingCapable": true
+      }
+    },
+    {
+      "id": "napalm",
+      "name": "Napalm",
+      "leader": "red",
+      "priority": 1,
+      "requires": {
+        "red": 1,
+        "yellow": 1,
+        "blue": 1
+      },
+      "takes": {
+        "red": 1,
+        "yellow": 1,
+        "blue": 1
+      },
+      "bulletFromLeader": true,
+      "rechargeMs": 6500,
+      "projectile": "rocket-napalm",
+      "blast": "blast-napalm",
+      "values": {
+        "bulletDamage": 2000000,
+        "blastDamage": 2500000,
+        "napalmQuantity": 16,
+        "napalmTiming": 75,
+        "napalmJit": 30
+      }
+    },
+    {
+      "id": "poison-rocket",
+      "name": "Poison Rocket",
+      "leader": "red",
+      "priority": 2,
+      "requires": {
+        "blue": 1,
+        "green": 1
+      },
+      "takes": {
+        "blue": 1,
+        "green": 1
+      },
+      "rechargeMs": 5000,
+      "projectile": "rocket-poison",
+      "blast": "blast-poison",
+      "sound": "blast-medium",
+      "values": {
+        "bulletDamage": 1000,
+        "blastDamage": 100,
+        "moveSpeed": 150,
+        "holdingCapable": true,
+        "blastPoison": 2,
+        "blastDamageRaw": true
+      }
+    },
+    {
+      "id": "tazer-rocket",
+      "name": "Tazer Rocket",
+      "leader": "red",
+      "priority": 3,
+      "requires": {
+        "yellow": 1
+      },
+      "takes": {
+        "yellow": 1
+      },
+      "helperValue": "poison",
+      "helperColour": "yellow",
+      "rechargeMs": 3000,
+      "projectile": "rocket-tazer",
+      "values": {
+        "bulletDamage": 2000000,
+        "laserDamage": 2000000,
+        "laserRange": 200,
+        "moveSpeed": 100,
+        "holdingCapable": true,
+        "laserType": "spark"
+      }
+    },
+    {
+      "id": "laser-rocket",
+      "name": "Laser Rocket",
+      "leader": "red",
+      "priority": 4,
+      "requires": {
+        "green": 1
+      },
+      "takes": {
+        "green": 1
+      },
+      "helperValue": "link",
+      "helperColour": "green",
+      "linkAddsTo": [
+        "bulletDamage",
+        "laserDamage"
+      ],
+      "rawValues": [
+        "laserblastDamage"
+      ],
+      "rechargeMs": 3000,
+      "projectile": "rocket-laser",
+      "values": {
+        "bulletDamage": 2000000,
+        "laserDamage": 2000000,
+        "laserRange": 200,
+        "moveSpeed": 100,
+        "laserblastDamage": 1000000,
+        "laserblastQty": 6,
+        "laserblastRange": 300,
+        "holdingCapable": true,
+        "laserType": "laser-beam"
+      }
+    },
+    {
+      "id": "rocket-bfg",
+      "name": "Rocket BFG",
+      "leader": "green",
+      "priority": 0,
+      "requires": {
+        "red": 2,
+        "blue": 1
+      },
+      "takes": {
+        "red": 1,
+        "blue": 1
+      },
+      "helperValue": "ownLink",
+      "linkAddsTo": [
+        "bulletDamage",
+        "blastDamage",
+        "laserDamage",
+        "rocketDamage"
+      ],
+      "rechargeMs": 9000,
+      "projectile": "bfg",
+      "blast": "blast-bfg",
+      "sound": "blast-bfg",
+      "values": {
+        "bulletDamage": 6500000,
+        "blastDamage": 7500000,
+        "laserDamage": 4500000,
+        "laserRange": 250,
+        "laserRate": 180,
+        "rocketDamage": 2000000,
+        "moveSpeed": 60,
+        "holdingCapable": true,
+        "rocketCapable": true
+      }
+    },
+    {
+      "id": "bfg",
+      "name": "BFG",
+      "leader": "green",
+      "priority": 1,
+      "requires": {
+        "red": 1,
+        "blue": 1
+      },
+      "takes": {
+        "red": 1,
+        "blue": 1
+      },
+      "helperValue": "ownLink",
+      "linkAddsTo": [
+        "bulletDamage",
+        "blastDamage",
+        "laserDamage"
+      ],
+      "rechargeMs": 9000,
+      "projectile": "bfg",
+      "blast": "blast-bfg",
+      "sound": "blast-bfg",
+      "values": {
+        "bulletDamage": 5800000,
+        "blastDamage": 7500000,
+        "laserDamage": 4200000,
+        "laserRange": 250,
+        "laserRate": 180,
+        "moveSpeed": 60,
+        "holdingCapable": true
+      }
+    },
+    {
+      "id": "blackhole",
+      "name": "Black Hole",
+      "leader": "yellow",
+      "priority": 0,
+      "requires": {
+        "yellow": 2,
+        "green": 1
+      },
+      "exact": [
+        "green"
+      ],
+      "takes": {
+        "yellow": 2,
+        "green": 1
+      },
+      "place": "holePoint",
+      "rechargeMs": 20000,
+      "projectile": "black-hole",
+      "sound": "black-hole",
+      "values": {
+        "blackholeRadius": 120,
+        "blackholeDuration": 3000,
+        "blackholeEject": false
+      }
+    },
+    {
+      "id": "shockwave",
+      "name": "Shockwave",
+      "leader": "yellow",
+      "priority": 1,
+      "requires": {
+        "yellow": 1,
+        "blue": 1,
+        "green": 1
+      },
+      "exact": [
+        "blue",
+        "green"
+      ],
+      "takes": {
+        "yellow": 1,
+        "blue": 1,
+        "green": 1
+      },
+      "helperValue": "link",
+      "helperColour": "green",
+      "linkAddsTo": [
+        "bulletDamage",
+        "blastDamage"
+      ],
+      "rechargeMs": 9000,
+      "projectile": "spark",
+      "blast": "blast-shockwave",
+      "values": {
+        "bulletDamage": 1000000,
+        "bulletPoison": 100,
+        "blastDamage": 1000000,
+        "blastPoison": 75
+      }
+    },
+    {
+      "id": "tazer-bfg",
+      "name": "Tazer BFG",
+      "leader": "yellow",
+      "priority": 2,
+      "requires": {
+        "red": 1,
+        "blue": 1
+      },
+      "exact": [
+        "blue"
+      ],
+      "takes": {
+        "red": 1,
+        "blue": 1
+      },
+      "helperValue": "ownPoison",
+      "rechargeMs": 9000,
+      "projectile": "bfg-tazer",
+      "blast": "blast-bfg",
+      "sound": "blast-bfg",
+      "values": {
+        "bulletDamage": 5800000,
+        "blastDamage": 7500000,
+        "laserDamage": 4200000,
+        "laserRange": 250,
+        "laserRate": 180,
+        "moveSpeed": 60,
+        "holdingCapable": true,
+        "laserType": "spark"
+      }
+    }
+  ],
+  "combonly": [
+    {
+      "colour": "blue",
+      "recipe": "landmine",
+      "needs": {
+        "blue": 2
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "clusterbomb",
+      "needs": {
+        "blue": 1,
+        "red": 1
+      }
+    },
+    {
+      "colour": "red",
+      "recipe": "laser-rocket",
+      "needs": {
+        "green": 1,
+        "red": 1
+      }
+    },
+    {
+      "colour": "red",
+      "recipe": "tazer-rocket",
+      "needs": {
+        "yellow": 1,
+        "red": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "big-landmine",
+      "needs": {
+        "blue": 2,
+        "red": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "sparky-landmine",
+      "needs": {
+        "blue": 2,
+        "yellow": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "big-clusterbomb",
+      "needs": {
+        "red": 2,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "red",
+      "recipe": "nuke",
+      "needs": {
+        "blue": 2,
+        "red": 1
+      }
+    },
+    {
+      "colour": "yellow",
+      "recipe": "blackhole",
+      "needs": {
+        "yellow": 3,
+        "green": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "laser-clusterbomb",
+      "needs": {
+        "red": 1,
+        "green": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "yellow",
+      "recipe": "tazer-bfg",
+      "needs": {
+        "red": 1,
+        "yellow": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "green",
+      "recipe": "bfg",
+      "needs": {
+        "red": 1,
+        "green": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "red",
+      "recipe": "poison-rocket",
+      "needs": {
+        "red": 1,
+        "green": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "sparky-clusterbomb",
+      "needs": {
+        "red": 1,
+        "yellow": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "yellow",
+      "recipe": "shockwave",
+      "needs": {
+        "yellow": 2,
+        "green": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "big-laser-clusterbomb",
+      "needs": {
+        "red": 2,
+        "green": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "green",
+      "recipe": "rocket-bfg",
+      "needs": {
+        "red": 2,
+        "green": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "red",
+      "recipe": "napalm",
+      "needs": {
+        "red": 2,
+        "yellow": 1,
+        "blue": 1
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "big-cluster-landmine",
+      "needs": {
+        "red": 2,
+        "blue": 2
+      }
+    },
+    {
+      "colour": "blue",
+      "recipe": "big-laser-cluster-landmine",
+      "needs": {
+        "red": 2,
+        "blue": 2,
+        "green": 1
+      }
+    }
+  ]
+}

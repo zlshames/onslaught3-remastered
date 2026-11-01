@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "waveSize": 10,
+  "waveSpacingMs": 20000,
+  "creepSpacingMs": 700,
+  "managerTickMs": 200,
+  "sizeChange": true,
+  "spacingPref": {
+    "minS": 5,
+    "maxS": 40
+  }
+}

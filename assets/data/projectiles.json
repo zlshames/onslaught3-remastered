@@ -1,0 +1,1016 @@
+{
+  "schemaVersion": 1,
+  "projectiles": [
+    {
+      "id": "shell-1",
+      "legacyId": "Bullet",
+      "kind": "shell",
+      "sprite": "projectile.shell-1",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-2",
+      "legacyId": "Bullet2",
+      "kind": "shell",
+      "sprite": "projectile.shell-2",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-3",
+      "legacyId": "Bullet3",
+      "kind": "shell",
+      "sprite": "projectile.shell-3",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-4",
+      "legacyId": "Bullet4",
+      "kind": "shell",
+      "sprite": "projectile.shell-4",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-5",
+      "legacyId": "Bullet5",
+      "kind": "shell",
+      "sprite": "projectile.shell-5",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-6",
+      "legacyId": "Bullet6",
+      "kind": "shell",
+      "sprite": "projectile.shell-6",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-7",
+      "legacyId": "Bullet7",
+      "kind": "shell",
+      "sprite": "projectile.shell-7",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-8",
+      "legacyId": "Bullet8",
+      "kind": "shell",
+      "sprite": "projectile.shell-8",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "shell-9",
+      "legacyId": "Bullet9",
+      "kind": "shell",
+      "sprite": "projectile.shell-9",
+      "params": {
+        "speed": 900,
+        "impactRadius": 3,
+        "homing": "perfect",
+        "tickMs": 32
+      }
+    },
+    {
+      "id": "sniper-shot",
+      "legacyId": "BulletSniper",
+      "kind": "sniper-shot",
+      "params": {
+        "instant": true,
+        "tracerColor": "#777733",
+        "tracerAlpha": 75,
+        "tracerMs": 32
+      }
+    },
+    {
+      "id": "rocket-1",
+      "legacyId": "Rocket",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-1",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-2",
+      "legacyId": "Rocket2",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-2",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-3",
+      "legacyId": "Rocket3",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-3",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-4",
+      "legacyId": "Rocket4",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-4",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-5",
+      "legacyId": "Rocket5",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-5",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-6",
+      "legacyId": "Rocket6",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-6",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-7",
+      "legacyId": "Rocket7",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-7",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-8",
+      "legacyId": "Rocket8",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-8",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-9",
+      "legacyId": "Rocket9",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-9",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-nuke",
+      "legacyId": "RocketNuke",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-nuke",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-poison",
+      "legacyId": "RocketPoison",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-poison",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-napalm",
+      "legacyId": "RocketNapalm",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-napalm",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-laser",
+      "legacyId": "RocketLaser",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-laser",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "rocket-tazer",
+      "legacyId": "RocketTazer",
+      "kind": "rocket",
+      "sprite": "projectile.rocket-tazer",
+      "params": {
+        "speed": 250,
+        "turnRate": 270,
+        "impactRadius": 8,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "bfg",
+      "legacyId": "BFG",
+      "kind": "rocket",
+      "sprite": "projectile.bfg",
+      "params": {
+        "speed": 60,
+        "turnRate": 270,
+        "impactRadius": 10,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "noRotate": true,
+        "offscreenLock": true,
+        "laserRange": 250,
+        "laserRate": 180,
+        "subRocketIntervalMs": 500,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "bfg-tazer",
+      "legacyId": "BFGTazer",
+      "kind": "rocket",
+      "sprite": "projectile.bfg-tazer",
+      "params": {
+        "speed": 60,
+        "turnRate": 270,
+        "impactRadius": 10,
+        "acquireRange": 1000,
+        "tickMs": 32,
+        "tickJitterMs": 10,
+        "smokeMax": 200,
+        "noRotate": true,
+        "offscreenLock": true,
+        "laserRange": 250,
+        "laserRate": 180,
+        "subRocketIntervalMs": 500,
+        "screenWidth": 720,
+        "screenHeight": 535,
+        "offscreenMargin": 20,
+        "holdingLifetimeMs": 20000
+      }
+    },
+    {
+      "id": "laser-beam",
+      "legacyId": "LaserBeam",
+      "kind": "beam",
+      "params": {
+        "instant": true,
+        "fadeMs": 350,
+        "startAlpha": 80,
+        "blackHoleImmune": true
+      },
+      "art": {
+        "bands": [
+          {
+            "upTo": 49.999,
+            "core": "#00FF00",
+            "glow": "#00FF00",
+            "width": 1,
+            "glowSize": 5
+          },
+          {
+            "upTo": 120,
+            "core": "#00FF00",
+            "glow": "#FF0000",
+            "width": 1,
+            "glowSize": 5
+          },
+          {
+            "upTo": 400,
+            "core": "#00FF00",
+            "glow": "#0000FF",
+            "width": 1,
+            "glowSize": 5
+          },
+          {
+            "upTo": 1500,
+            "core": "#FFFF00",
+            "glow": "#00FF00",
+            "width": 3,
+            "glowSize": 5
+          },
+          {
+            "upTo": 3900,
+            "core": "#FFFF00",
+            "glow": "#FF0000",
+            "width": 3,
+            "glowSize": 5
+          },
+          {
+            "upTo": 9300,
+            "core": "#FFFF00",
+            "glow": "#0000FF",
+            "width": 3,
+            "glowSize": 5
+          },
+          {
+            "upTo": 19500,
+            "core": "#FF0000",
+            "glow": "#00FF00",
+            "width": 5,
+            "glowSize": 5
+          },
+          {
+            "upTo": 35000,
+            "core": "#FF0000",
+            "glow": "#FF0000",
+            "width": 5,
+            "glowSize": 5
+          },
+          {
+            "upTo": 60000,
+            "core": "#FF0000",
+            "glow": "#0000FF",
+            "width": 5,
+            "glowSize": 5
+          },
+          {
+            "upTo": 100000,
+            "core": "#660198",
+            "glow": "#00FF00",
+            "width": 6,
+            "glowSize": 5
+          },
+          {
+            "upTo": 200000,
+            "core": "#660198",
+            "glow": "#FF0000",
+            "width": 6,
+            "glowSize": 5
+          },
+          {
+            "upTo": 400000,
+            "core": "#660198",
+            "glow": "#0000FF",
+            "width": 6,
+            "glowSize": 5
+          },
+          {
+            "upTo": 750000,
+            "core": "#FF007F",
+            "glow": "#00FF00",
+            "width": 7,
+            "glowSize": 5
+          },
+          {
+            "upTo": 900000,
+            "core": "#FF007F",
+            "glow": "#FF0000",
+            "width": 7,
+            "glowSize": 5
+          },
+          {
+            "upTo": 1000000,
+            "core": "#FF007F",
+            "glow": "#0000FF",
+            "width": 7,
+            "glowSize": 5
+          },
+          {
+            "upTo": 2000000,
+            "core": "#42C0FB",
+            "glow": "#00FF00",
+            "width": 8,
+            "glowSize": 5
+          },
+          {
+            "upTo": 3000000,
+            "core": "#42C0FB",
+            "glow": "#FF0000",
+            "width": 8,
+            "glowSize": 5
+          },
+          {
+            "upTo": 4000000,
+            "core": "#42C0FB",
+            "glow": "#0000FF",
+            "width": 8,
+            "glowSize": 5
+          },
+          {
+            "upTo": 5000000,
+            "core": "#0000EE",
+            "glow": "#00FF00",
+            "width": 9,
+            "glowSize": 5
+          },
+          {
+            "upTo": 6000000,
+            "core": "#0000EE",
+            "glow": "#FF0000",
+            "width": 9,
+            "glowSize": 5
+          },
+          {
+            "upTo": 7000000,
+            "core": "#0000EE",
+            "glow": "#0000FF",
+            "width": 9,
+            "glowSize": 5
+          },
+          {
+            "upTo": 8000000,
+            "core": "#333333",
+            "glow": "#00FF00",
+            "width": 10,
+            "glowSize": 5
+          },
+          {
+            "core": "#FFFFFF",
+            "glow": "#AA0000",
+            "width": 10,
+            "glowSize": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "rail-laser",
+      "legacyId": "RailLaser",
+      "kind": "rail",
+      "params": {
+        "instant": true,
+        "length": 900,
+        "halfWidth": 20,
+        "hurtDelayMs": 32,
+        "visualMs": 125,
+        "blackHoleImmune": true
+      },
+      "art": {
+        "bands": [
+          {
+            "upTo": 4000000,
+            "strokes": [
+              "#FFFFFF",
+              "#FFFFFF",
+              "#FFFFFF",
+              "#FFFFFF",
+              "#33CC33"
+            ]
+          },
+          {
+            "upTo": 9000000,
+            "strokes": [
+              "#FFFFFF",
+              "#FFFFFF",
+              "#FFFFFF",
+              "#33CC33",
+              "#33CC33"
+            ]
+          },
+          {
+            "upTo": 15000000,
+            "strokes": [
+              "#FFFFFF",
+              "#FFFFFF",
+              "#33CC33",
+              "#33CC33",
+              "#33CC33"
+            ]
+          },
+          {
+            "upTo": 25000000,
+            "strokes": [
+              "#FFFFFF",
+              "#FFFFFF",
+              "#FF3333",
+              "#FF3333",
+              "#FF3333"
+            ]
+          },
+          {
+            "strokes": [
+              "#FFFFFF",
+              "#FFFFFF",
+              "#FFFFFF",
+              "#FF33FF",
+              "#FF33FF"
+            ]
+          }
+        ],
+        "fx": {
+          "strokeWidths": [
+            40,
+            30,
+            20,
+            10,
+            3
+          ],
+          "strokeAlphas": [
+            20,
+            30,
+            40,
+            50,
+            75
+          ]
+        }
+      }
+    },
+    {
+      "id": "spark",
+      "legacyId": "Spark",
+      "kind": "spark",
+      "params": {
+        "instant": true,
+        "defaultPoison": 1,
+        "segmentLength": 11,
+        "minSegments": 3,
+        "extraSegmentsMax": 5,
+        "jitter": 5.5,
+        "fadeMs": 400,
+        "alpha": 75,
+        "blackHoleImmune": true
+      },
+      "art": {
+        "bands": [
+          {
+            "below": 50,
+            "core": "#00FF00",
+            "glow": "#99FF99",
+            "width": 1,
+            "glowSize": 5
+          },
+          {
+            "below": 75,
+            "core": "#9999FF",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 3
+          },
+          {
+            "below": 125,
+            "core": "#FF3333",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 3
+          },
+          {
+            "below": 200,
+            "core": "#FF0000",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 3
+          },
+          {
+            "below": 800,
+            "core": "#33FF33",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 3
+          },
+          {
+            "below": 3500,
+            "core": "#33FF33",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 4
+          },
+          {
+            "below": 11000,
+            "core": "#FF33FF",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 4
+          },
+          {
+            "below": 30000,
+            "core": "#3333FF",
+            "glow": "#FFFFFF",
+            "width": 6,
+            "glowSize": 4
+          },
+          {
+            "below": 60000,
+            "core": "#000000",
+            "glow": "#FFFF33",
+            "width": 2,
+            "glowSize": 10
+          },
+          {
+            "below": 100000,
+            "core": "#FFFF00",
+            "glow": "#FFFFFF",
+            "width": 3,
+            "glowSize": 6
+          },
+          {
+            "below": 1000000,
+            "core": "#FF0000",
+            "glow": "#FF00FF",
+            "width": 3,
+            "glowSize": 7
+          },
+          {
+            "below": 2000000,
+            "core": "#FF00FF",
+            "glow": "#FFFF00",
+            "width": 4,
+            "glowSize": 7
+          },
+          {
+            "below": 3000000,
+            "core": "#666666",
+            "glow": "#9999FF",
+            "width": 4,
+            "glowSize": 7
+          },
+          {
+            "below": 4000000,
+            "core": "#666666",
+            "glow": "#FF99FF",
+            "width": 4,
+            "glowSize": 7
+          },
+          {
+            "below": 5000000,
+            "core": "#666666",
+            "glow": "#FFFFFF",
+            "width": 4,
+            "glowSize": 7
+          },
+          {
+            "below": 7500000,
+            "core": "#CC6666",
+            "glow": "#FFFF33",
+            "width": 4,
+            "glowSize": 8
+          },
+          {
+            "below": 10000000,
+            "core": "#FF3333",
+            "glow": "#33FF33",
+            "width": 4,
+            "glowSize": 8
+          },
+          {
+            "below": 25000000,
+            "core": "#FF3333",
+            "glow": "#FFFFFF",
+            "width": 5,
+            "glowSize": 8
+          },
+          {
+            "below": 30000000,
+            "core": "#333333",
+            "glow": "#FFFFFF",
+            "width": 7,
+            "glowSize": 8
+          },
+          {
+            "below": 40000000,
+            "core": "#3333CC",
+            "glow": "#FFFFFF",
+            "width": 8,
+            "glowSize": 8
+          },
+          {
+            "below": 50000000,
+            "core": "#333333",
+            "glow": "#33CC33",
+            "width": 9,
+            "glowSize": 8
+          },
+          {
+            "below": 60000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 10,
+            "glowSize": 8
+          },
+          {
+            "below": 70000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 12,
+            "glowSize": 10
+          },
+          {
+            "below": 80000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 14,
+            "glowSize": 12
+          },
+          {
+            "below": 90000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 16,
+            "glowSize": 14
+          },
+          {
+            "below": 100000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 20,
+            "glowSize": 16
+          },
+          {
+            "below": 110000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 20,
+            "glowSize": 20
+          },
+          {
+            "below": 120000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 24,
+            "glowSize": 24
+          },
+          {
+            "below": 130000000,
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 28,
+            "glowSize": 28
+          },
+          {
+            "core": "#AAAAAA",
+            "glow": "#33CC33",
+            "width": 32,
+            "glowSize": 32
+          }
+        ]
+      }
+    },
+    {
+      "id": "cluster-bomb",
+      "legacyId": "ClusterBomb",
+      "kind": "cluster-bomb",
+      "sprite": "projectile.cluster-bomb",
+      "params": {
+        "speed": 750,
+        "impactRadius": 3,
+        "homing": "perfect"
+      }
+    },
+    {
+      "id": "landmine",
+      "legacyId": "Landmine",
+      "kind": "landmine",
+      "sprite": "projectile.landmine",
+      "params": {
+        "throwMs": 1000,
+        "jitter": 5,
+        "checkIntervalMs": 150,
+        "triggerBox": 20
+      }
+    },
+    {
+      "id": "landmine-big",
+      "legacyId": "LandmineBig",
+      "kind": "landmine",
+      "sprite": "projectile.landmine-big",
+      "params": {
+        "throwMs": 1000,
+        "jitter": 5,
+        "checkIntervalMs": 150,
+        "triggerBox": 20
+      }
+    },
+    {
+      "id": "landmine-big-cluster",
+      "legacyId": "LandmineBigCluster",
+      "kind": "landmine",
+      "sprite": "projectile.landmine-big-cluster",
+      "params": {
+        "throwMs": 1000,
+        "jitter": 5,
+        "checkIntervalMs": 150,
+        "triggerBox": 20
+      }
+    },
+    {
+      "id": "landmine-big-cluster-laser",
+      "legacyId": "LandmineBigClusterLaser",
+      "kind": "landmine",
+      "sprite": "projectile.landmine-big-cluster-laser",
+      "params": {
+        "throwMs": 1000,
+        "jitter": 5,
+        "checkIntervalMs": 150,
+        "triggerBox": 20
+      }
+    },
+    {
+      "id": "landmine-sparky",
+      "legacyId": "LandmineSparky",
+      "kind": "landmine",
+      "sprite": "projectile.landmine-sparky",
+      "params": {
+        "throwMs": 1000,
+        "jitter": 5,
+        "checkIntervalMs": 150,
+        "triggerBox": 20
+      }
+    },
+    {
+      "id": "black-hole",
+      "legacyId": "BlackHole",
+      "kind": "black-hole",
+      "sprite": "projectile.black-hole",
+      "params": {
+        "scanIntervalMs": 200,
+        "gravity": 500,
+        "openMs": 200,
+        "closeMs": 200,
+        "debrisRange": 60,
+        "pointRange": 90
+      },
+      "art": {
+        "fx": {
+          "swirlDegPerFrame": 29,
+          "debrisFallMs": 100,
+          "captureShrink": 75
+        }
+      }
+    }
+  ]
+}

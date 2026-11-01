@@ -1,0 +1,424 @@
+{
+  "_comment": "Logical asset id -> SWF symbol. The only place symbol ids appear (ffdec-asset-export skill). Symbol ids from docs/legacy/ENGINE_NOTES.md \u00a78 / .legacy/dissassembled/symbolClass/symbols.csv. 'frames': 'all' keeps every frame in order, 'first' only frame 1. 'kind': 'shape' exports a single shape (e.g. a turret body without its weapon and legs). 'svg' draws the symbol from a vector redraw in tool/art/ instead of FFDec's render (used by tool/asset_map_enhanced.json for the creeps; FFDec still supplies the frame size and registration point). 'pack' names the output (assets/images/<pack>/), 'theme' gives the pack's colours, 'sounds': 'legacy' copies the original sound clips.",
+  "schemaVersion": 1,
+  "pack": "classic",
+  "sounds": "legacy",
+  "theme": {
+    "background": "#6E7D3C",
+    "offMap": "#2B3319"
+  },
+  "sprites": {
+    "turret.blue": {
+      "symbol": 828,
+      "frames": "first"
+    },
+    "turret.green": {
+      "symbol": 866,
+      "frames": "first"
+    },
+    "turret.red": {
+      "symbol": 910,
+      "frames": "first"
+    },
+    "turret.yellow": {
+      "symbol": 923,
+      "frames": "first"
+    },
+    "turret.range-up": {
+      "symbol": 890,
+      "frames": "first"
+    },
+    "turret.damage-up": {
+      "symbol": 837,
+      "frames": "first"
+    },
+    "turret.rate-up-exchange": {
+      "symbol": 899,
+      "frames": "first"
+    },
+    "turret.range-up-exchange": {
+      "symbol": 891,
+      "frames": "first"
+    },
+    "turret.rate-up": {
+      "symbol": 898,
+      "frames": "first"
+    },
+    "turret.damage-up-big": {
+      "symbol": 839,
+      "frames": "first"
+    },
+    "turret.damage-up-big-exchange": {
+      "symbol": 842,
+      "frames": "first"
+    },
+    "turret.targeter": {
+      "symbol": 945,
+      "frames": "first"
+    },
+    "turret.sniper": {
+      "symbol": 918,
+      "frames": "first"
+    },
+    "turret.fusion": {
+      "symbol": 852,
+      "frames": "first"
+    },
+    "turret.railgun": {
+      "symbol": 882,
+      "frames": "first"
+    },
+    "turret.combonly": {
+      "symbol": 932,
+      "frames": "first"
+    },
+    "turret.blue.weapon": {
+      "symbol": 827,
+      "frames": "all"
+    },
+    "turret.green.weapon": {
+      "symbol": 861,
+      "frames": "all"
+    },
+    "turret.red.weapon": {
+      "symbol": 909,
+      "frames": "all"
+    },
+    "turret.yellow.weapon": {
+      "symbol": 922,
+      "frames": "all"
+    },
+    "turret.sniper.weapon": {
+      "symbol": 917,
+      "frames": "all"
+    },
+    "turret.fusion.weapon": {
+      "symbol": 851,
+      "frames": "all"
+    },
+    "turret.railgun.weapon": {
+      "symbol": 881,
+      "frames": "all"
+    },
+    "turret.targeter.weapon": {
+      "symbol": 944,
+      "frames": "all"
+    },
+    "turret.legs.cannon": {
+      "symbol": 821,
+      "frames": "first"
+    },
+    "turret.legs.electric": {
+      "symbol": 845,
+      "frames": "first"
+    },
+    "creep.0": {
+      "symbol": 708,
+      "frames": "all"
+    },
+    "creep.1": {
+      "symbol": 703,
+      "frames": "all"
+    },
+    "creep.2": {
+      "symbol": 698,
+      "frames": "all"
+    },
+    "creep.3": {
+      "symbol": 693,
+      "frames": "all"
+    },
+    "creep.4": {
+      "symbol": 688,
+      "frames": "all"
+    },
+    "creep.5": {
+      "symbol": 683,
+      "frames": "all"
+    },
+    "creep.6": {
+      "symbol": 678,
+      "frames": "all"
+    },
+    "creep.7": {
+      "symbol": 673,
+      "frames": "all"
+    },
+    "creep.8": {
+      "symbol": 667,
+      "frames": "all"
+    },
+    "projectile.shell-1": {
+      "symbol": 770,
+      "frames": "all"
+    },
+    "projectile.shell-2": {
+      "symbol": 771,
+      "frames": "all"
+    },
+    "projectile.shell-3": {
+      "symbol": 773,
+      "frames": "all"
+    },
+    "projectile.shell-4": {
+      "symbol": 775,
+      "frames": "all"
+    },
+    "projectile.shell-5": {
+      "symbol": 777,
+      "frames": "all"
+    },
+    "projectile.shell-6": {
+      "symbol": 778,
+      "frames": "all"
+    },
+    "projectile.shell-7": {
+      "symbol": 780,
+      "frames": "all"
+    },
+    "projectile.shell-8": {
+      "symbol": 782,
+      "frames": "all"
+    },
+    "projectile.shell-9": {
+      "symbol": 784,
+      "frames": "all"
+    },
+    "projectile.rocket-1": {
+      "symbol": 728,
+      "frames": "all"
+    },
+    "projectile.rocket-2": {
+      "symbol": 730,
+      "frames": "all"
+    },
+    "projectile.rocket-3": {
+      "symbol": 732,
+      "frames": "all"
+    },
+    "projectile.rocket-4": {
+      "symbol": 734,
+      "frames": "all"
+    },
+    "projectile.rocket-5": {
+      "symbol": 736,
+      "frames": "all"
+    },
+    "projectile.rocket-6": {
+      "symbol": 738,
+      "frames": "all"
+    },
+    "projectile.rocket-7": {
+      "symbol": 740,
+      "frames": "all"
+    },
+    "projectile.rocket-8": {
+      "symbol": 726,
+      "frames": "all"
+    },
+    "projectile.rocket-9": {
+      "symbol": 724,
+      "frames": "all"
+    },
+    "projectile.rocket-nuke": {
+      "symbol": 718,
+      "frames": "all"
+    },
+    "projectile.rocket-poison": {
+      "symbol": 716,
+      "frames": "all"
+    },
+    "projectile.rocket-napalm": {
+      "symbol": 720,
+      "frames": "all"
+    },
+    "projectile.rocket-laser": {
+      "symbol": 722,
+      "frames": "all"
+    },
+    "projectile.rocket-tazer": {
+      "symbol": 714,
+      "frames": "all"
+    },
+    "projectile.bfg": {
+      "symbol": 815,
+      "frames": "all"
+    },
+    "projectile.bfg-tazer": {
+      "symbol": 817,
+      "frames": "all"
+    },
+    "projectile.cluster-bomb": {
+      "symbol": 768,
+      "frames": "all"
+    },
+    "projectile.landmine": {
+      "symbol": 748,
+      "frames": "all"
+    },
+    "projectile.landmine-big": {
+      "symbol": 752,
+      "frames": "all"
+    },
+    "projectile.landmine-big-cluster": {
+      "symbol": 754,
+      "frames": "all"
+    },
+    "projectile.landmine-big-cluster-laser": {
+      "symbol": 758,
+      "frames": "all"
+    },
+    "projectile.landmine-sparky": {
+      "symbol": 762,
+      "frames": "all"
+    },
+    "projectile.black-hole": {
+      "symbol": 802,
+      "frames": "all"
+    },
+    "blast.blast-small": {
+      "symbol": 799,
+      "frames": "all"
+    },
+    "blast.blast-medium": {
+      "symbol": 793,
+      "frames": "all"
+    },
+    "blast.blast-napalm": {
+      "symbol": 794,
+      "frames": "all"
+    },
+    "blast.blast-large": {
+      "symbol": 791,
+      "frames": "all"
+    },
+    "blast.blast-huge": {
+      "symbol": 789,
+      "frames": "all"
+    },
+    "blast.blast-poison": {
+      "symbol": 796,
+      "frames": "all"
+    },
+    "blast.blast-shockwave": {
+      "symbol": 798,
+      "frames": "all"
+    },
+    "blast.blast-bfg": {
+      "symbol": 787,
+      "frames": "all"
+    },
+    "base.player": {
+      "symbol": 255,
+      "frames": "first"
+    },
+    "fx.rocket-trail": {
+      "symbol": 267,
+      "frames": "all"
+    },
+    "fx.special-fire": {
+      "symbol": 215,
+      "frames": "all"
+    },
+    "fx.special-take": {
+      "symbol": 218,
+      "frames": "all"
+    },
+    "fx.freak-warning": {
+      "symbol": 226,
+      "frames": "all"
+    },
+    "fx.cash-earned": {
+      "symbol": 72,
+      "frames": "all"
+    },
+    "fx.brass": {
+      "symbol": 240,
+      "frames": "all"
+    },
+    "fx.black-hole-debris": {
+      "symbol": 804,
+      "frames": "all"
+    },
+    "fx.fusion-glow": {
+      "symbol": 232,
+      "frames": "all"
+    },
+    "fx.fusion-glow-blue": {
+      "symbol": 234,
+      "frames": "all"
+    },
+    "fx.fusion-glow-red": {
+      "symbol": 236,
+      "frames": "all"
+    },
+    "fx.fusion-glow-white": {
+      "symbol": 238,
+      "frames": "all"
+    },
+    "ui.range": {
+      "symbol": 198,
+      "frames": "all"
+    },
+    "ui.range-effective": {
+      "symbol": 230,
+      "frames": "all"
+    },
+    "ui.build-area": {
+      "symbol": 200,
+      "frames": "all"
+    },
+    "turret.base": {
+      "symbol": 818,
+      "kind": "shape"
+    },
+    "turret.blue.body": {
+      "symbol": 819,
+      "kind": "shape"
+    },
+    "turret.green.body": {
+      "symbol": 853,
+      "kind": "shape"
+    },
+    "turret.red.body": {
+      "symbol": 900,
+      "kind": "shape"
+    },
+    "turret.yellow.body": {
+      "symbol": 919,
+      "kind": "shape"
+    },
+    "turret.sniper.body": {
+      "symbol": 911,
+      "kind": "shape"
+    },
+    "turret.fusion.body": {
+      "symbol": 843,
+      "kind": "shape"
+    },
+    "turret.railgun.body": {
+      "symbol": 867,
+      "kind": "shape"
+    },
+    "turret.targeter.body": {
+      "symbol": 942,
+      "kind": "shape"
+    },
+    "ground.decor-lines": {
+      "symbol": 1024,
+      "frames": "first"
+    },
+    "ground.decor-rings": {
+      "symbol": 1026,
+      "frames": "first"
+    }
+  },
+  "images": {
+    "ground.classic": {
+      "file": ".legacy/dissassembled/images/1021.jpg",
+      "width": 720,
+      "height": 480,
+      "note": "main timeline frame 37: bitmap 1021 stretched to the play area"
+    }
+  }
+}

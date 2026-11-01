@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "volume": 80,
+  "panSpread": 1.7,
+  "events": {
+    "cannon": [
+      "sfx.ons2-cannon-2shrt",
+      "sfx.ons2-cannon-3"
+    ],
+    "laser": [
+      "sfx.ons2-laser-09-var"
+    ],
+    "rocket": [
+      "sfx.ons2-rocket-09",
+      "sfx.ons2-rocket-05",
+      "sfx.ons2-rocket-03"
+    ],
+    "tazer": [
+      "sfx.ons2-taser-30"
+    ],
+    "sniper": [
+      "sfx.sniper-03"
+    ],
+    "fusion-low": [
+      "sfx.fusion-low-01"
+    ],
+    "fusion-med": [
+      "sfx.fusion-med-01"
+    ],
+    "fusion-high": [
+      "sfx.fusion-hi-01"
+    ],
+    "fusion-max": [
+      "sfx.fusion-max-01"
+    ],
+    "blast-small": [
+      "sfx.blastsmall-01"
+    ],
+    "blast-medium": [
+      "sfx.blastmed-01"
+    ],
+    "blast-large": [
+      "sfx.blowup-02"
+    ],
+    "blast-bfg": [
+      "sfx.bfg-01"
+    ],
+    "black-hole": [
+      "sfx.black-hole-01"
+    ],
+    "combo": [
+      "sfx.combo-16"
+    ],
+    "freakout-warn": [
+      "sfx.freakwarning-01"
+    ],
+    "freakout-start": [
+      "sfx.freakout-up-20"
+    ],
+    "freakout-end": [
+      "sfx.freakout-dn-20-shrt"
+    ],
+    "next-wave": [
+      "sfx.ons2-nextwave-02"
+    ],
+    "build": [
+      "sfx.ons2-turretmade-inv-4"
+    ],
+    "sell": [
+      "sfx.weapon-sale-01"
+    ],
+    "weapon": [
+      "sfx.ons2-newweapon-1"
+    ],
+    "upgrade-damage": [
+      "sfx.ons2-chime-04"
+    ],
+    "upgrade-range": [
+      "sfx.ons2-chime-04"
+    ],
+    "upgrade-rate": [
+      "sfx.ons2-chime-04"
+    ],
+    "upgrade-no": [
+      "sfx.ons2-raspberry-chirp-short"
+    ],
+    "click-build": [
+      "sfx.cartfall-14"
+    ],
+    "turret-select": [
+      "sfx.cartfall-14"
+    ],
+    "click-button": [
+      "sfx.ons2-click-01"
+    ],
+    "click-tab": [
+      "sfx.ons2-click-01"
+    ],
+    "click-min": [
+      "sfx.ons2-close-01"
+    ],
+    "click-max": [
+      "sfx.ons2-open-01"
+    ],
+    "click-left": [
+      "sfx.ons2-ratchet-04"
+    ],
+    "click-right": [
+      "sfx.ons2-ratchet-04"
+    ],
+    "rack-prev": [
+      "sfx.ons2-ratchet-05"
+    ],
+    "rack-next": [
+      "sfx.ons2-ratchet-05"
+    ],
+    "pause": [
+      "sfx.pause-03"
+    ],
+    "un-pause": [
+      "sfx.un-pause-03"
+    ],
+    "attacker-dead": [
+      "sfx.ons2-explode-05shrt-02"
+    ],
+    "attacker-hit": [],
+    "base-hit": [
+      "sfx.ons2-scream-03"
+    ],
+    "base-dead": [
+      "sfx.ons2-basehit-02"
+    ],
+    "base-warn-3": [
+      "sfx.vox-3-lives-remaining"
+    ],
+    "base-warn-2": [
+      "sfx.vox-2-lives-remaining"
+    ],
+    "base-warn-1": [
+      "sfx.vox-1-lives-remaining"
+    ],
+    "message": []
+  }
+}

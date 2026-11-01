@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- creep.6: the smiling star (SWF bitmap 676, 24×24) redrawn as vector.
+       Round tips come from round-joined strokes under the fill. -->
+  <defs>
+    <radialGradient id="body" cx="10.5" cy="8.799999999999999" r="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF7A8"/>
+      <stop offset="0.45" stop-color="#FFDD33"/>
+      <stop offset="1" stop-color="#E9A20C"/>
+    </radialGradient>
+    <linearGradient id="mouth" x1="0" y1="12.799999999999999" x2="0" y2="16.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D9731A"/>
+      <stop offset="1" stop-color="#8A3B06"/>
+    </linearGradient>
+  </defs>
+  <path d="M12.00 2.20 L14.76 8.40 L21.51 9.11 L16.47 13.65 L17.88 20.29 L12.00 16.90 L6.12 20.29 L7.53 13.65 L2.49 9.11 L9.24 8.40 Z" fill="none" stroke="#805906" stroke-width="3.7" stroke-linejoin="round"/>
+  <path d="M12.00 2.20 L14.76 8.40 L21.51 9.11 L16.47 13.65 L17.88 20.29 L12.00 16.90 L6.12 20.29 L7.53 13.65 L2.49 9.11 L9.24 8.40 Z" fill="url(#body)" stroke="url(#body)" stroke-width="2.0" stroke-linejoin="round"/>
+  <g transform="translate(0 0.6)">
+    <!-- eyes -->
+    <rect x="8.7" y="8.1" width="2.1" height="2.7" rx="1" fill="#FFFFFF" stroke="#D59A0E" stroke-width="0.45"/>
+    <rect x="13.2" y="8.1" width="2.1" height="2.7" rx="1" fill="#FFFFFF" stroke="#D59A0E" stroke-width="0.45"/>
+    <!-- grin: a soft rounded smile, no outline -->
+    <path d="M9.0 12.6 C8.9 12.1 9.4 11.9 9.9 12.0 Q12 12.5 14.1 12.0 C14.6 11.9 15.1 12.1 15.0 12.6 C14.7 14.6 13.5 15.6 12 15.6 C10.5 15.6 9.3 14.6 9.0 12.6 Z"
+          fill="url(#mouth)" stroke="#B85A10" stroke-width="0.5" stroke-linejoin="round"/>
+    <path d="M10.2 14.3 Q12 13.7 13.8 14.3 C13.3 15.0 12.7 15.2 12 15.2 C11.3 15.2 10.7 15.0 10.2 14.3 Z" fill="#5A2203" opacity="0.75"/>
+  </g>
+</svg>

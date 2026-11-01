@@ -1,0 +1,221 @@
+{
+  "id": "combos/landmine.classic",
+  "description": "Phase 3: Blue + Blue: landmine thrown in 1000 ms to a mine point within max range, armed, set off by a creep in its 20 px box: small blast 9M, no direct damage. Lyne, sandbox. Leader 150 px from the road with its range maxed; helpers 69 px from it, out of their own range of the road so they are ready when the leader engages; every turret damage-maxed.",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 3,
+  "ticks": 1200,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 214.38,
+        "y": 331.64
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 271.04,
+        "y": 371.02
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "sendWave"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+# Playable web build on GitHub Pages (release-build skill, web): every push
+# to main rebuilds the web release and publishes it, so anyone can try the
+# current game in a browser. Enable it once under Settings → Pages → Source:
+# GitHub Actions.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; a newer push supersedes a queued one, but a deploy
+# already running is allowed to finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  FLUTTER_VERSION: 3.47.6
+
+jobs:
+  build:
+    name: Build web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # The JS build, not --wasm: Pages cannot send the COOP/COEP headers.
+      - run: flutter build web --release
+      # The router uses hash URLs, so a relative base href serves the build
+      # from any path (/<repo>/, a user site, or a custom domain).
+      - name: Relative base href
+        run: sed -i 's|<base href="/">|<base href="./">|' build/web/index.html && grep -q '<base href="./">' build/web/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

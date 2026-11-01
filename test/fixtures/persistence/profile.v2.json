@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "available": ["extreme"],
+  "complete": ["easy"],
+  "challengeBest": {},
+  "unlockAll": false,
+  "custom": {
+    "records": [
+      {
+        "map": "custom-loop",
+        "mapVersion": "1a2b3c4d",
+        "mod": null,
+        "mode": "normal",
+        "difficulty": "hard",
+        "challenge": null,
+        "mapName": "Loop",
+        "modName": null,
+        "wave": 87,
+        "kills": 860,
+        "score": 412000.0,
+        "spent": 9100.0,
+        "dateMs": 1792368000000
+      },
+      {
+        "map": "custom-loop",
+        "mapVersion": "5e6f7a8b",
+        "mod": "0420522f",
+        "mode": "sandbox",
+        "difficulty": "easy",
+        "challenge": null,
+        "mapName": "Loop",
+        "modName": "Cheap blues",
+        "wave": 140,
+        "kills": 1400,
+        "score": 990000.0,
+        "spent": 52000.0,
+        "dateMs": 1792371600000
+      },
+      {
+        "map": "map1",
+        "mapVersion": null,
+        "mod": "0420522f",
+        "mode": "normal",
+        "difficulty": "medium",
+        "challenge": null,
+        "mapName": "Classic",
+        "modName": "Cheap blues",
+        "wave": 60,
+        "kills": 600,
+        "score": 210000.0,
+        "spent": 4000.0,
+        "dateMs": 1792375200000
+      }
+    ],
+    "mapVersions": {"custom-loop": ["1a2b3c4d", "5e6f7a8b"]}
+  }
+}

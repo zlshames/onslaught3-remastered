@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 1,
+  "presets": [
+    {
+      "id": "test",
+      "name": "Test",
+      "difficulty": "easy",
+      "objective": {
+        "type": "kills",
+        "target": 10
+      },
+      "cash": 3000,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60
+      ],
+      "debugOnly": true
+    },
+    {
+      "id": "warmup",
+      "name": "Warmup",
+      "difficulty": "easy",
+      "cash": 30,
+      "timeLimitS": 60,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "threetown",
+      "name": "Threetown",
+      "difficulty": "easy",
+      "objective": {
+        "type": "waves",
+        "target": 300
+      },
+      "cash": 30,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "spiffles",
+      "name": "Spiffles",
+      "difficulty": "hard",
+      "objective": {
+        "type": "waves",
+        "target": 100
+      },
+      "cash": 30,
+      "timeLimitS": 1200,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "limitations",
+      "name": "Limitations",
+      "difficulty": "medium",
+      "objective": {
+        "type": "waves",
+        "target": 300
+      },
+      "cash": 30,
+      "turretLimit": 15,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "problem-3",
+      "name": "Problem3",
+      "difficulty": "easy",
+      "objective": {
+        "type": "kills",
+        "target": 3000
+      },
+      "cash": 3000,
+      "timeLimitS": 1200,
+      "waveSizes": [
+        3
+      ],
+      "waveSpeeds": [
+        90
+      ]
+    },
+    {
+      "id": "bounce",
+      "name": "Bounce",
+      "difficulty": "medium",
+      "objective": {
+        "type": "kills",
+        "target": 4000
+      },
+      "cash": 3000,
+      "timeLimitS": 1200,
+      "waveSizes": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "bludgeon",
+      "name": "Bludgeon",
+      "difficulty": "hard",
+      "cash": 30,
+      "timeLimitS": 900,
+      "turretLimit": 15,
+      "waveSizes": [
+        1
+      ],
+      "waveSpeeds": [
+        90
+      ]
+    },
+    {
+      "id": "longshine",
+      "name": "Longshine",
+      "difficulty": "medium",
+      "objective": {
+        "type": "kills",
+        "target": 1000
+      },
+      "cash": 500,
+      "turretLimit": 10,
+      "waveSizes": [
+        1,
+        2,
+        3
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "speedshine",
+      "name": "Speedshine",
+      "difficulty": "medium",
+      "objective": {
+        "type": "kills",
+        "target": 1000
+      },
+      "cash": 500,
+      "turretLimit": 10,
+      "waveSizes": [
+        1,
+        2,
+        3
+      ],
+      "waveSpeeds": [
+        120
+      ]
+    },
+    {
+      "id": "hardshine",
+      "name": "Hardshine",
+      "difficulty": "hard",
+      "objective": {
+        "type": "kills",
+        "target": 1000
+      },
+      "cash": 500,
+      "turretLimit": 10,
+      "waveSizes": [
+        1,
+        2,
+        3
+      ],
+      "waveSpeeds": [
+        120
+      ]
+    },
+    {
+      "id": "duration",
+      "name": "Duration",
+      "difficulty": "hard",
+      "objective": {
+        "type": "waves",
+        "target": 500
+      },
+      "cash": 30,
+      "timeLimitS": 1800,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60
+      ]
+    },
+    {
+      "id": "clockers",
+      "name": "Clockers",
+      "difficulty": "hard",
+      "cash": 30,
+      "timeLimitS": 1200,
+      "turretLimit": 8,
+      "waveSizes": [
+        10,
+        10,
+        10,
+        1
+      ],
+      "waveSpeeds": [
+        90
+      ]
+    },
+    {
+      "id": "ripples",
+      "name": "Ripples",
+      "difficulty": "medium",
+      "objective": {
+        "type": "waves",
+        "target": 500
+      },
+      "cash": 30,
+      "timeLimitS": 1800,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60,
+        40
+      ]
+    },
+    {
+      "id": "smollocks",
+      "name": "Smollocks",
+      "difficulty": "hard",
+      "objective": {
+        "type": "waves",
+        "target": 500
+      },
+      "cash": 30,
+      "timeLimitS": 1800,
+      "turretLimit": 15,
+      "waveSizes": [
+        10
+      ],
+      "waveSpeeds": [
+        60,
+        40
+      ]
+    }
+  ],
+  "pickers": {
+    "difficulty": [
+      {
+        "label": "Easy Peasy",
+        "value": "easy"
+      },
+      {
+        "label": "Medium",
+        "value": "medium"
+      },
+      {
+        "label": "Hard as Nails",
+        "value": "hard"
+      },
+      {
+        "label": "Extreme!",
+        "value": "extreme",
+        "requiresMode": "extreme"
+      }
+    ],
+    "objective": [
+      {
+        "label": "Last as long as you can",
+        "value": null
+      },
+      {
+        "label": "Make 1000 Kills",
+        "value": "k,1000"
+      },
+      {
+        "label": "Beat 100 Waves",
+        "value": "w,100"
+      },
+      {
+        "label": "Make 2000 Kills",
+        "value": "k,2000"
+      },
+      {
+        "label": "Beat 200 Waves",
+        "value": "w,200"
+      },
+      {
+        "label": "Make 3000 Kills",
+        "value": "k,3000"
+      },
+      {
+        "label": "Beat 300 Waves",
+        "value": "w,300"
+      },
+      {
+        "label": "Make 4000 Kills",
+        "value": "k,4000"
+      },
+      {
+        "label": "Beat 400 Waves",
+        "value": "w,400"
+      },
+      {
+        "label": "Make 5000 Kills",
+        "value": "k,5000"
+      },
+      {
+        "label": "Beat 500 Waves",
+        "value": "w,500"
+      },
+      {
+        "label": "Make 6000 Kills",
+        "value": "k,6000"
+      },
+      {
+        "label": "Beat 600 Waves",
+        "value": "w,600"
+      },
+      {
+        "label": "Make 7000 Kills",
+        "value": "k,7000"
+      },
+      {
+        "label": "Beat 700 Waves",
+        "value": "w,700"
+      },
+      {
+        "label": "Make 8000 Kills",
+        "value": "k,8000"
+      },
+      {
+        "label": "Beat 800 Waves",
+        "value": "w,800"
+      },
+      {
+        "label": "Make 9000 Kills",
+        "value": "k,9000"
+      },
+      {
+        "label": "Beat 900 Waves",
+        "value": "w,900"
+      },
+      {
+        "label": "Make 10000 Kills",
+        "value": "k,10000"
+      },
+      {
+        "label": "Beat 1000 Waves",
+        "value": "w,1000"
+      }
+    ],
+    "cash": [
+      {
+        "label": "$30",
+        "value": 30
+      },
+      {
+        "label": "$500",
+        "value": 500
+      },
+      {
+        "label": "$3000",
+        "value": 3000
+      },
+      {
+        "label": "$50000",
+        "value": 50000,
+        "requiresMode": "sandbox"
+      },
+      {
+        "label": "One Meelion Dollars!",
+        "value": 1000000,
+        "requiresMode": "sandbox2"
+      }
+    ],
+    "timeLimit": [
+      {
+        "label": "Unlimited",
+        "value": null
+      },
+      {
+        "label": "30 mins",
+        "value": 1800
+      },
+      {
+        "label": "25 mins",
+        "value": 1500
+      },
+      {
+        "label": "20 mins",
+        "value": 1200
+      },
+      {
+        "label": "15 mins",
+        "value": 900
+      },
+      {
+        "label": "10 mins",
+        "value": 600
+      },
+      {
+        "label": "9 mins",
+        "value": 540
+      },
+      {
+        "label": "8 mins",
+        "value": 480
+      },
+      {
+        "label": "7 mins",
+        "value": 420
+      },
+      {
+        "label": "6 mins",
+        "value": 360
+      },
+      {
+        "label": "5 mins",
+        "value": 300
+      },
+      {
+        "label": "4 mins",
+        "value": 240
+      },
+      {
+        "label": "3 mins",
+        "value": 180
+      },
+      {
+        "label": "2 mins",
+        "value": 120
+      },
+      {
+        "label": "60 seconds",
+        "value": 60
+      }
+    ],
+    "turretLimit": [
+      {
+        "label": "Unlimited",
+        "value": null
+      },
+      {
+        "label": "50 Turrets",
+        "value": 50
+      },
+      {
+        "label": "40 Turrets",
+        "value": 40
+      },
+      {
+        "label": "30 Turrets",
+        "value": 30
+      },
+      {
+        "label": "20 Turrets",
+        "value": 20
+      },
+      {
+        "label": "15 Turrets",
+        "value": 15
+      },
+      {
+        "label": "10 Turrets",
+        "value": 10
+      },
+      {
+        "label": "9 Turrets",
+        "value": 9
+      },
+      {
+        "label": "8 Turrets",
+        "value": 8
+      },
+      {
+        "label": "7 Turrets",
+        "value": 7
+      },
+      {
+        "label": "6 Turrets",
+        "value": 6
+      },
+      {
+        "label": "5 Turrets",
+        "value": 5
+      }
+    ],
+    "waveSize": [
+      {
+        "label": "Standard 10",
+        "value": "10"
+      },
+      {
+        "label": "5 medium",
+        "value": "5"
+      },
+      {
+        "label": "3 large",
+        "value": "3"
+      },
+      {
+        "label": "2 big",
+        "value": "2"
+      },
+      {
+        "label": "1 huge",
+        "value": "1"
+      },
+      {
+        "label": "1, 2, 3",
+        "value": "1,2,3"
+      },
+      {
+        "label": "10 to 1 cycle",
+        "value": "10,9,8,7,6,5,4,3,2,1"
+      },
+      {
+        "label": "5 to 1 cycle",
+        "value": "5,4,3,2,1"
+      },
+      {
+        "label": "10 then 1",
+        "value": "10,1"
+      },
+      {
+        "label": "10, 10, 10 then 1",
+        "value": "10,10,10,1"
+      },
+      {
+        "label": "10, 5, 10, 5, 10, 5, 10 then 1",
+        "value": "10,5,10,5,10,5,10,1"
+      }
+    ],
+    "waveSpeed": [
+      {
+        "label": "Normal",
+        "value": "60"
+      },
+      {
+        "label": "Fast",
+        "value": "90"
+      },
+      {
+        "label": "Drunk",
+        "value": "40"
+      },
+      {
+        "label": "Tweaked",
+        "value": "120"
+      },
+      {
+        "label": "Normal-slow Alternate",
+        "value": "60,40"
+      },
+      {
+        "label": "Slow-Fast Alternate",
+        "value": "90,40"
+      },
+      {
+        "label": "Slow-Med-Fast\nCycle",
+        "value": "40,60,90"
+      }
+    ]
+  },
+  "classicPickers": {
+    "difficulty": [
+      {
+        "label": "Easy Peasy",
+        "value": "easy"
+      },
+      {
+        "label": "Medium",
+        "value": "medium"
+      },
+      {
+        "label": "Hard as Nails",
+        "value": "hard"
+      }
+    ],
+    "timeLimit": [
+      {
+        "label": "Unlimited",
+        "value": null
+      },
+      {
+        "label": "30 mins",
+        "value": 1800
+      },
+      {
+        "label": "25 mins",
+        "value": 1500
+      },
+      {
+        "label": "20 mins",
+        "value": 1200
+      },
+      {
+        "label": "15 mins",
+        "value": 900
+      },
+      {
+        "label": "10 mins",
+        "value": 600
+      },
+      {
+        "label": "9 mins",
+        "value": 540
+      },
+      {
+        "label": "8 mins",
+        "value": 480
+      },
+      {
+        "label": "7 mins",
+        "value": 420
+      },
+      {
+        "label": "6 mins",
+        "value": 360
+      },
+      {
+        "label": "5 mins",
+        "value": 300
+      },
+      {
+        "label": "4 mins",
+        "value": 240
+      },
+      {
+        "label": "3 mins",
+        "value": 280
+      },
+      {
+        "label": "2 mins",
+        "value": 120
+      },
+      {
+        "label": "60 seconds",
+        "value": 60
+      }
+    ],
+    "turretLimit": [
+      {
+        "label": "Unlimited",
+        "value": null
+      },
+      {
+        "label": "50 Turrets",
+        "value": 50
+      },
+      {
+        "label": "40 Turrets",
+        "value": 40
+      },
+      {
+        "label": "30 Turrets",
+        "value": 30
+      },
+      {
+        "label": "20 Turrets",
+        "value": 20
+      },
+      {
+        "label": "15 Turrets",
+        "value": 15
+      },
+      {
+        "label": "10 Turrets",
+        "value": 10
+      },
+      {
+        "label": "8 Turrets",
+        "value": 9
+      },
+      {
+        "label": "8 Turrets",
+        "value": 8
+      },
+      {
+        "label": "8 Turrets",
+        "value": 7
+      },
+      {
+        "label": "8 Turrets",
+        "value": 5
+      },
+      {
+        "label": "5 Turrets",
+        "value": 5
+      }
+    ]
+  }
+}

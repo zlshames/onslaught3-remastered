@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "scenario": {
+    "id": "colours/red-holding.classic",
+    "description": "Phase 2: two Reds with the holding pattern (range 3, rate 3) on Lyne, sandbox cash. Freezes rocket steering (270 deg/s, unwrapped bearing), impact at 8 px or one step, held rockets filling to 4 with no target and circling (~53 px), dispatch to the first target, pattern rockets circling after losing their target, and the far Red's sale sending its held rockets at the weakest creep.",
+    "map": "map9",
+    "mode": "sandbox",
+    "difficulty": "easy",
+    "profile": "classic",
+    "seed": 22,
+    "ticks": 2700,
+    "hashEvery": 300,
+    "commands": [
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "red",
+          "x": 300.0,
+          "y": 150.0
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "red",
+          "x": 550.0,
+          "y": 330.0
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "rate"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "rate"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "rate"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "rate"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "rate"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "rate"
+        }
+      },
+      {
+        "tick": 1400,
+        "command": {
+          "type": "sell",
+          "uid": 2
+        }
+      }
+    ]
+  },
+  "eventCount": 67,
+  "events": [
+    {
+      "tick": 0,
+      "type": "sessionStarted",
+      "map": "map9",
+      "mode": "sandbox",
+      "difficulty": "easy",
+      "profile": "classic",
+      "seed": 22,
+      "cash": 100000.0,
+      "lives": 10
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 1,
+      "turret": "red",
+      "x": 300.0,
+      "y": 150.0,
+      "cost": 20.0,
+      "cash": 99980.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 2,
+      "turret": "red",
+      "x": 550.0,
+      "y": 330.0,
+      "cost": 20.0,
+      "cash": 99960.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 1,
+      "cost": 35.0,
+      "cash": 99925.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 2,
+      "cost": 80.0,
+      "cash": 99845.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 3,
+      "cost": 160.0,
+      "cash": 99685.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "rate",
+      "level": 1,
+      "cost": 30.0,
+      "cash": 99655.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "rate",
+      "level": 2,
+      "cost": 60.0,
+      "cash": 99595.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "rate",
+      "level": 3,
+      "cost": 115.0,
+      "cash": 99480.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "range",
+      "level": 1,
+      "cost": 35.0,
+      "cash": 99445.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "range",
+      "level": 2,
+      "cost": 80.0,
+      "cash": 99365.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "range",
+      "level": 3,
+      "cost": 160.0,
+      "cash": 99205.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "rate",
+      "level": 1,
+      "cost": 30.0,
+      "cash": 99175.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "rate",
+      "level": 2,
+      "cost": 60.0,
+      "cash": 99115.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "rate",
+      "level": 3,
+      "cost": 115.0,
+      "cash": 99000.0
+    },
+    {
+      "tick": 46,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 46,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 92,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 92,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 138,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 138,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 184,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 184,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 1211,
+      "type": "waveStarted",
+      "wave": 1,
+      "size": 10,
+      "creepType": 0,
+      "hp": 13.0,
+      "bounty": 1,
+      "speed": 60.0,
+      "early": false
+    },
+    {
+      "tick": 1223,
+      "type": "creepSpawned",
+      "uid": 11,
+      "wave": 1,
+      "x": 4.0,
+      "y": 4.0
+    },
+    {
+      "tick": 1271,
+      "type": "creepSpawned",
+      "uid": 12,
+      "wave": 1,
+      "x": -2.0,
+      "y": 8.0
+    },
+    {
+      "tick": 1319,
+      "type": "creepSpawned",
+      "uid": 13,
+      "wave": 1,
+      "x": 3.0,
+      "y": 6.0
+    },
+    {
+      "tick": 1327,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": 11
+    },
+    {
+      "tick": 1358,
+      "type": "creepKilled",
+      "uid": 11,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 99001.0,
+      "kills": 1,
+      "x": 114.02183847511395,
+      "y": 80.31463150683463
+    },
+    {
+      "tick": 1367,
+      "type": "creepSpawned",
+      "uid": 15,
+      "wave": 1,
+      "x": 9.0,
+      "y": 5.0
+    },
+    {
+      "tick": 1373,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 1379,
+      "type": "creepKilled",
+      "uid": 12,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 99002.0,
+      "kills": 2,
+      "x": 86.74364508994233,
+      "y": 69.87907225659245
+    },
+    {
+      "tick": 1391,
+      "type": "creepKilled",
+      "uid": 13,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 99003.0,
+      "kills": 3,
+      "x": 62.00725470984336,
+      "y": 46.21384824403708
+    },
+    {
+      "tick": 1400,
+      "type": "turretSold",
+      "uid": 2,
+      "refund": 350,
+      "cash": 99353.0
+    },
+    {
+      "tick": 1404,
+      "type": "creepKilled",
+      "uid": 15,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 99354.0,
+      "kills": 4,
+      "x": 39.09203126648824,
+      "y": 26.367431923600158
+    },
+    {
+      "tick": 1415,
+      "type": "creepSpawned",
+      "uid": 17,
+      "wave": 1,
+      "x": 9.0,
+      "y": -8.0
+    },
+    {
+      "tick": 1419,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 1443,
+      "type": "creepKilled",
+      "uid": 17,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 99355.0,
+      "kills": 5,
+      "x": 31.455054005804275,
+      "y": 8.508767927612201
+    },
+    {
+      "tick": 1463,
+      "type": "creepSpawned",
+      "uid": 19,
+      "wave": 1,
+      "x": -5.0,
+      "y": 1.0
+    },
+    {
+      "tick": 1465,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 1511,
+      "type": "creepSpawned",
+      "uid": 21,
+      "wave": 1,
+      "x": 5.0,
+      "y": -7.0
+    },
+    {
+      "tick": 1511,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 1544,
+      "type": "creepKilled",
+      "uid": 19,
+      "turret": null,
+      "bounty": 1,
+      "cash": 99356.0,
+      "kills": 6,
+      "x": 61.30192502842884,
+      "y": 46.54751533255856
+    },
+    {
+      "tick": 1555,
+      "type": "creepKilled",
+      "uid": 21,
+      "turret": null,
+      "bounty": 1,
+      "cash": 99357.0,
+      "kills": 7,
+      "x": 41.196563239048174,
+      "y": 18.23347555750905
+    },
+    {
+      "tick": 1558,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 1559,
+      "type": "creepSpawned",
+      "uid": 24,
+      "wave": 1,
+      "x": -1.0,
+      "y": -2.0
+    },
+    {
+      "tick": 1572,
+      "type": "creepKilled",
+      "uid": 24,
+      "turret": null,
+      "bounty": 1,
+      "cash": 99358.0,
+      "kills": 8,
+      "x": 9.790719359503122,
+      "y": 5.434408655711181
+    },
+    {
+      "tick": 1607,
+      "type": "creepSpawned",
+      "uid": 25,
+      "wave": 1,
+      "x": 3.0,
+      "y": -7.0
+    },
+    {
+      "tick": 1655,
+      "type": "creepSpawned",
+      "uid": 26,
+      "wave": 1,
+      "x": 5.0,
+      "y": 7.0
+    },
+    {
+      "tick": 1659,
+      "type": "creepKilled",
+      "uid": 25,
+      "turret": null,
+      "bounty": 1,
+      "cash": 99359.0,
+      "kills": 9,
+      "x": 45.10320031122897,
+      "y": 22.537236581977094
+    },
+    {
+      "tick": 1667,
+      "type": "creepKilled",
+      "uid": 26,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 99360.0,
+      "kills": 10,
+      "x": 14.966553530175167,
+      "y": 13.706308053355155
+    },
+    {
+      "tick": 2423,
+      "type": "waveStarted",
+      "wave": 2,
+      "size": 10,
+      "creepType": 1,
+      "hp": 16.900000000000002,
+      "bounty": 2,
+      "speed": 60.0,
+      "early": false
+    },
+    {
+      "tick": 2435,
+      "type": "creepSpawned",
+      "uid": 27,
+      "wave": 2,
+      "x": -7.0,
+      "y": 2.0
+    },
+    {
+      "tick": 2483,
+      "type": "creepSpawned",
+      "uid": 28,
+      "wave": 2,
+      "x": 2.0,
+      "y": 0.0
+    },
+    {
+      "tick": 2531,
+      "type": "creepSpawned",
+      "uid": 29,
+      "wave": 2,
+      "x": -2.0,
+      "y": 1.0
+    },
+    {
+      "tick": 2549,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": 27
+    },
+    {
+      "tick": 2579,
+      "type": "creepSpawned",
+      "uid": 31,
+      "wave": 2,
+      "x": 3.0,
+      "y": -3.0
+    },
+    {
+      "tick": 2584,
+      "type": "creepKilled",
+      "uid": 27,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 99362.0,
+      "kills": 11,
+      "x": 115.19202259715847,
+      "y": 87.5138100806421
+    },
+    {
+      "tick": 2595,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": 28
+    },
+    {
+      "tick": 2598,
+      "type": "creepKilled",
+      "uid": 28,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 99364.0,
+      "kills": 12,
+      "x": 96.33210409064488,
+      "y": 66.73835935664671
+    },
+    {
+      "tick": 2610,
+      "type": "creepKilled",
+      "uid": 29,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 99366.0,
+      "kills": 13,
+      "x": 62.88683865046484,
+      "y": 46.34393293171232
+    },
+    {
+      "tick": 2627,
+      "type": "creepSpawned",
+      "uid": 33,
+      "wave": 2,
+      "x": -9.0,
+      "y": -8.0
+    },
+    {
+      "tick": 2641,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    },
+    {
+      "tick": 2645,
+      "type": "creepKilled",
+      "uid": 31,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 99368.0,
+      "kills": 14,
+      "x": 57.71408080905945,
+      "y": 35.06996547050523
+    },
+    {
+      "tick": 2658,
+      "type": "creepKilled",
+      "uid": 33,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 99370.0,
+      "kills": 15,
+      "x": 16.25231931442517,
+      "y": 9.782725702091
+    },
+    {
+      "tick": 2675,
+      "type": "creepSpawned",
+      "uid": 35,
+      "wave": 2,
+      "x": -4.0,
+      "y": -2.0
+    },
+    {
+      "tick": 2687,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "rocket-1",
+      "target": null
+    }
+  ],
+  "hashes": [
+    {
+      "tick": 300,
+      "hash": 3539614688
+    },
+    {
+      "tick": 600,
+      "hash": 3297483915
+    },
+    {
+      "tick": 900,
+      "hash": 3799705708
+    },
+    {
+      "tick": 1200,
+      "hash": 2884618633
+    },
+    {
+      "tick": 1500,
+      "hash": 1543535704
+    },
+    {
+      "tick": 1800,
+      "hash": 1019408751
+    },
+    {
+      "tick": 2100,
+      "hash": 4221484624
+    },
+    {
+      "tick": 2400,
+      "hash": 4069914711
+    },
+    {
+      "tick": 2700,
+      "hash": 2376105794
+    }
+  ]
+}

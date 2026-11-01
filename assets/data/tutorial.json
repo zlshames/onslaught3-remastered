@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "map": "tutorial",
+  "waveLimit": 50,
+  "pages": [
+    {
+      "title": "Welcome to Onslaught",
+      "body": "This tutorial will guide you through the basics of playing the game.\n\nSometimes the tutorial will need to show you something.  You can see what the tutorial is referring to by clicking on the 'Show me' button that is indicated.",
+      "pointer": "ButtonShow",
+      "showNow": true
+    },
+    {
+      "title": "Ending the Tutorial",
+      "body": "You can leave the tutorial at any time by clicking the close button at the top of the window.  You will be taken back to the main menu.\n\nYou can move the info panel (to the left) out of the way by clicking it's close button.",
+      "pointer": "CloseButton",
+      "showNow": true
+    },
+    {
+      "title": "The Attackers",
+      "body": "Attackers will come down the path heading for your base.  They will start here and head down the road.  If they reach your base you lose a life.  You have 10 lives to begin with.\n\nThe tutorial is limited to 50 waves of attackers, to start you off easy.",
+      "pointer": "RoadManager.Waypoint1",
+      "showNow": true
+    },
+    {
+      "title": "Pause and Unpause",
+      "body": "Currently the game is paused while you get to grips with the tutorial.  Click the flashing pause button to start the clock running.",
+      "pointer": "GamePause"
+    },
+    {
+      "title": "The Wave Clock",
+      "body": "Attackers are now on their way!  The clock in the bottom corner shows you how long until the next wave of attackers is here.\n\nYou'd better either pause the game again or start building some defences!",
+      "pointer": "WaveClock"
+    },
+    {
+      "title": "The Weapon Store",
+      "body": "Choose a weapon in the store by using the arrow buttons (or arrow keys on the keyboard) to scroll left and right through the available weapons.",
+      "pointer": "BuildPanel.WeaponRack"
+    },
+    {
+      "title": "Cash Flow",
+      "body": "You can only buy a turret if you have enough cash. Your funds are shown in the game stats in the bottom corner, by the game clock.\n\nKilling attackers earns you money.",
+      "pointer": "Cash"
+    },
+    {
+      "title": "Buying a Turret",
+      "body": "If you have enough cash, click on the turret to buy it (or press B to buy the weapon on display), then click where you want to build it on the map.  You can't build on the road, on the base or on other turrets.\n\nYou can't build while the game is paused."
+    },
+    {
+      "title": "Destruction Begins",
+      "body": "Now sit back and watch as your turret takes care of the oncoming attackers (provided you built the turret in range of the road).\n\nThe range of the turret is shown by the green circle around it."
+    },
+    {
+      "title": "It's Too Easy!",
+      "body": "If you get bored of waiting for the next group of attackers, you can press the spacebar to send the next wave right away.  You can also click on the wave clock in the bottom corner.",
+      "pointer": "WaveClock",
+      "showNow": true
+    },
+    {
+      "title": "Harder attackers",
+      "body": "With each wave the attackers get a little bit stronger, but they're worth a little bit more cash. Now is the time to upgrade your defences!\n\nHighlight a turret, (the first one you built for example), by clicking on it.  It will go green when selected.",
+      "pointer": "TurretManager.turrets[0]"
+    },
+    {
+      "title": "Upgrades",
+      "body": "The upgrade panel shows what upgrades are available for that turret.  If the buttons are red, you can't afford it.  If you can afford it click on the button to upgrade your turret.\n\nIt's much better to spend your money on upgrades to existing turrets than building lots of new turrets.",
+      "pointer": "UpgradePanel.DamageCost"
+    },
+    {
+      "title": "Need some Cash?",
+      "body": "Short on funds or perhaps you've just put a turret in the wrong place and need to get rid of it.  Select the turret then press S to sell it.\n\nYou can sell any turret for 70% of the value of the turret plus the cost of all its upgrades."
+    },
+    {
+      "title": "Bigger Weapons",
+      "body": "Turrets on their own don't cut the mustard, they need to work together.  Upgrading a turret's damage to the max activates its combo mode.\n\nCombos are special weapons that are fired by a group of turrets that are all close together, and have all had their damage upgraded to the maximum."
+    },
+    {
+      "title": "Your First Combo",
+      "body": "Clearly it costs quite a bit of cash to get enough turrets upgraded to combo level, so we'll give you some money to get you started.\n\nClick on the 'Show Me' button and I'll spot you some money to get started (I'll only do this once).",
+      "pointer": "Cash",
+      "setCash": 14500
+    },
+    {
+      "title": "Correct Placement",
+      "body": "The turrets need to be close enough for the combo to take effect.  To see which turrets are close enough for combos press C to toggle combo display on and off.\n\nBuild one blue turret near the corner in the road and then build a red turret in combo range of it.  Max out both their damages."
+    },
+    {
+      "title": "Which Turret Fires?",
+      "body": "There's plenty of different combos but the one that is used depends on which turret fires.  Turrets fire when enemies come into their range.  The first turret to see an enemy will fire and trigger that combo.\n\nMax out the range on the blue turret so it is always the first to get an enemy in range.",
+      "pointer": "UpgradePanel.RangeCost",
+      "showNow": true
+    },
+    {
+      "title": "Combolicious",
+      "body": "You should have seen your first combo, the Cluster Bomb.  There's plenty of different combinations to try involving all the different turret types. Experiment to find one you like."
+    },
+    {
+      "title": "Modifier Turrets",
+      "body": "These are special turrets that don't fire at attackers but instead affect any other weapons in their range.  Some of them boost range, some boost damage and some boost the rate of fire.\n"
+    },
+    {
+      "title": "Your First Modifier",
+      "body": "Once you've made 300 kills a modifier turret will become available in the weapon store, RangeUp.  Look out for the flashing message icon when the message comes through that it is available.\n\nHint: save your cash, it costs $2000!",
+      "pointer": "TurretInfoPoint",
+      "showNow": true
+    },
+    {
+      "title": "Make My Range",
+      "body": "Build one of these new modifier turrets so that some other turrets are in its range.  Click on one of the turrets in range and you will see a larger border around the range.  This is the effective range of this turret; it has been increased by the modifier turret."
+    },
+    {
+      "title": "In Summary",
+      "body": "So now you know about turrets, upgrades, combos and modifiers.  You have all the tools you need to play the game!  Congratulations!"
+    },
+    {
+      "title": "Back Home",
+      "body": "To go back to the main menu, bring up the info panel by clicking on its icon, if it is minimised.",
+      "pointer": "TurretInfoPoint"
+    },
+    {
+      "title": "Back Home",
+      "body": "Click on the 'Game' tab and then click 'Main Menu' to go back to the home page.\n\nAlternatively you can close this tutorial window to be taken back to the home page straight away.",
+      "pointer": "TurretInfo.ButtonGame"
+    },
+    {
+      "title": "All Done",
+      "body": "That's it.  You can go home now."
+    },
+    {
+      "title": "All Done",
+      "body": "Really, go home."
+    },
+    {
+      "title": "Still here?",
+      "body": "Honestly, nothing to see!"
+    },
+    {
+      "title": "Oh dear",
+      "body": "I'm telling you, go home."
+    },
+    {
+      "title": "Fine",
+      "body": "Well I'm not saying anything more.."
+    },
+    {
+      "title": "Silence",
+      "body": ""
+    },
+    {
+      "title": "More Silence",
+      "body": ""
+    },
+    {
+      "title": "Yet More Silence",
+      "body": ""
+    },
+    {
+      "title": "Tumbleweed",
+      "body": ""
+    },
+    {
+      "title": "*cough*",
+      "body": "Look.  I've had enough.  That's your lot."
+    },
+    {
+      "title": "Oh OK",
+      "body": "Just one more then.  You can move turrets by pressing M.  This will move the selected turret, but it costs $500 per move.  Use it wisely!"
+    },
+    {
+      "title": "Thanks!",
+      "body": "And don't forget to check out the forum!\n"
+    }
+  ]
+}

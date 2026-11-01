@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The menus' backdrop (MenuScaffold), so the launch screen runs into the app. -->
+    <color name="splash_background">#1B1F22</color>
+</resources>

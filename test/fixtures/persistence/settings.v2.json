@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "soundOn": true,
+  "volume": null,
+  "waveSpacingS": 15,
+  "waveFollow": false,
+  "waveRemember": true,
+  "timeScale": 1.5,
+  "showRanges": false,
+  "showComboRanges": false,
+  "haptics": false,
+  "leftHanded": false
+}

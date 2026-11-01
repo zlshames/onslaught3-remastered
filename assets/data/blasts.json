@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "blasts": [
+    {
+      "id": "blast-tiny",
+      "legacyId": "tiny",
+      "kind": "blast",
+      "sprite": "blast.blast-small",
+      "params": {
+        "growMs": 60,
+        "startSize": 10,
+        "diameter": 70,
+        "fadeMs": 1500
+      }
+    },
+    {
+      "id": "blast-small",
+      "legacyId": "BlastSmall",
+      "kind": "blast",
+      "sprite": "blast.blast-small",
+      "params": {
+        "growMs": 70,
+        "startSize": 10,
+        "diameter": 100,
+        "fadeMs": 1500
+      }
+    },
+    {
+      "id": "blast-medium",
+      "legacyId": "BlastMedium",
+      "kind": "blast",
+      "sprite": "blast.blast-medium",
+      "params": {
+        "growMs": 80,
+        "startSize": 10,
+        "diameter": 160,
+        "fadeMs": 1750
+      }
+    },
+    {
+      "id": "blast-large",
+      "legacyId": "BlastLarge",
+      "kind": "blast",
+      "sprite": "blast.blast-large",
+      "params": {
+        "growMs": 80,
+        "startSize": 10,
+        "diameter": 190,
+        "fadeMs": 2000
+      }
+    },
+    {
+      "id": "blast-huge",
+      "legacyId": "BlastHuge",
+      "kind": "blast",
+      "sprite": "blast.blast-huge",
+      "params": {
+        "growMs": 90,
+        "startSize": 10,
+        "diameter": 250,
+        "fadeMs": 2500
+      }
+    },
+    {
+      "id": "blast-poison",
+      "legacyId": "BlastPoison",
+      "kind": "blast",
+      "sprite": "blast.blast-poison",
+      "params": {
+        "growMs": 80,
+        "startSize": 10,
+        "diameter": 190,
+        "fadeMs": 2500
+      }
+    },
+    {
+      "id": "blast-bfg",
+      "legacyId": "BlastBFG",
+      "kind": "blast",
+      "sprite": "blast.blast-bfg",
+      "params": {
+        "growMs": 80,
+        "startSize": 10,
+        "diameter": 190,
+        "fadeMs": 2500
+      }
+    },
+    {
+      "id": "blast-shockwave",
+      "legacyId": "BlastShockwave",
+      "kind": "shockwave",
+      "sprite": "blast.blast-shockwave",
+      "params": {
+        "growMs": 105,
+        "startSize": 10,
+        "diameter": 200,
+        "fadeMs": 2500,
+        "defaultPoison": 100,
+        "walkerSpeed": 150,
+        "walkerDurationMs": 3000,
+        "walkerTickMs": 32,
+        "walkerHitBox": 10,
+        "decorativeSparks": 15
+      },
+      "art": {
+        "fx": {
+          "sparkDelayMinMs": 100,
+          "sparkDelayRangeMs": 700,
+          "sparkFadeMs": 400
+        }
+      }
+    },
+    {
+      "id": "blast-napalm",
+      "legacyId": "BlastNapalm",
+      "kind": "napalm",
+      "sprite": "blast.blast-napalm",
+      "params": {
+        "stepPx": 15,
+        "dropBlast": "blast-tiny",
+        "dropDamage": 1000000
+      }
+    },
+    {
+      "id": "cluster-rockets",
+      "legacyId": "ClusterBlast",
+      "kind": "cluster-rockets",
+      "params": {
+        "spawnOffset": 30,
+        "childProjectile": "rocket-9",
+        "acquireRange": 1000
+      }
+    },
+    {
+      "id": "cluster-sparks",
+      "legacyId": "ClusterSpark",
+      "kind": "cluster-sparks",
+      "params": {
+        "childProjectile": "spark",
+        "spawnOffset": 40,
+        "range": 220,
+        "poison": 20,
+        "sound": "tazer"
+      }
+    }
+  ]
+}

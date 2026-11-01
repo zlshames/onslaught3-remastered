@@ -1,0 +1,287 @@
+{
+  "id": "combos/blackhole.fixed",
+  "description": "Phase 3: Yellow + 2 Yellow + Green (exactly one): black hole on a mine point within 90 px; creeps in 120 px pulled in on the real-time clock and removed as dirty kills. Lyne, sandbox. Leader 60 px from the road; helpers 69 px from it, out of their own range of the road so they are ready when the leader engages; every turret damage-maxed. Fixed rules: blackHoleGameClock: the hole and the pull run on game time.",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classicFixed",
+  "seed": 3,
+  "ticks": 1200,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 265.75,
+        "y": 257.74
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 305.52,
+        "y": 314.13
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 199.04,
+        "y": 240.11
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 226.37,
+        "y": 314.4
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "sendWave"
+      }
+    }
+  ]
+}

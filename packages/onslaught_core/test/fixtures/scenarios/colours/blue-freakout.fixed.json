@@ -1,0 +1,86 @@
+{
+  "id": "colours/blue-freakout.fixed",
+  "description": "Phase 2, classicFixed (freakoutAutoStart): a Blue at damage 4 and rate 4 on Lyne, sandbox cash. Freezes the first automatic freakout 60 s after it became available, the 3 s warning, 5 s at x4 damage and x5 rate, its end, and the next schedule (40 s + U(0, 40 s) - 16 s).",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classicFixed",
+  "seed": 24,
+  "ticks": 4500,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 300,
+        "y": 150
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    }
+  ]
+}

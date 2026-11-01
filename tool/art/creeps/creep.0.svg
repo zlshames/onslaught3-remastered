@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18">
+  <!-- creep.0: the printer (SWF bitmap 706, 17×18) redrawn as vector. -->
+  <defs>
+    <linearGradient id="top" x1="2" y1="4" x2="13" y2="11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAFAFC"/>
+      <stop offset="1" stop-color="#C9C9D1"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="8" x2="0" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D6D6DD"/>
+      <stop offset="1" stop-color="#A7A7B1"/>
+    </linearGradient>
+    <linearGradient id="side" x1="9" y1="8" x2="16" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8E8E98"/>
+      <stop offset="1" stop-color="#5F5F69"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="8" y1="1" x2="13" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D4D6DC"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="11.5" x2="0" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5C5C66"/>
+      <stop offset="1" stop-color="#36363E"/>
+    </linearGradient>
+  </defs>
+  <!-- black base -->
+  <path d="M1.2 11.4 L8.9 15.4 L16.2 11.6 L16.2 12.9 L8.9 17.2 L1.2 12.9 Z" fill="url(#base)" stroke="#1D1D22" stroke-width="0.7" stroke-linejoin="round"/>
+  <!-- body -->
+  <path d="M0.8 6.9 L8.9 10.9 L8.9 15.1 L0.8 11.1 Z" fill="url(#front)" stroke="#5B5B61" stroke-width="0.7" stroke-linejoin="round"/>
+  <path d="M8.9 10.9 L16.2 7.2 L16.2 11.4 L8.9 15.1 Z" fill="url(#side)" stroke="#343439" stroke-width="0.7" stroke-linejoin="round"/>
+  <path d="M0.8 6.9 L8.2 3.3 L16.2 7.2 L8.9 10.9 Z" fill="url(#top)" stroke="#828287" stroke-width="0.7" stroke-linejoin="round"/>
+  <!-- paper slot and the sheet coming out of it -->
+  <path d="M6.4 5.5 L12.6 8.4" stroke="#7A7A84" stroke-width="0.4" stroke-linecap="round"/>
+  <path d="M7.1 5.4 C7.3 3.4 8.2 1.4 10.0 0.9 C11.8 0.5 13.6 1.4 14.9 3.0 C15.3 3.5 15.4 4.0 15.2 4.4 C14.4 3.9 13.8 3.9 13.4 4.6 C12.9 5.5 12.4 6.6 12.0 7.7 Z" fill="url(#paper)" stroke="#898B8F" stroke-width="0.55" stroke-linejoin="round"/>
+  <!-- underside of the drooping tip -->
+  <path d="M15.2 4.4 C14.4 3.9 13.8 3.9 13.4 4.6 C13.9 4.2 14.5 4.3 15.2 4.4 Z" fill="#B6B9C2" stroke="#64656A" stroke-width="0.4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#9DA1AA" stroke-width="0.3" stroke-linecap="round">
+    <path d="M9.6 2.2 C10.8 1.8 12.2 2.2 13.2 3.0"/>
+    <path d="M8.9 3.4 C10.2 3.0 11.6 3.4 12.6 4.2"/>
+    <path d="M8.4 4.6 C9.4 4.4 10.6 4.8 11.4 5.5"/>
+  </g>
+  <!-- status lights -->
+  <path d="M6.42 8.43 L7.53 8.98 L8.18 8.08 L7.08 7.53 Z" fill="#19D43A" stroke="#0A5A16" stroke-width="0.25"/>
+  <path d="M8.38 9.23 L9.47 9.78 L10.12 8.88 L9.03 8.33 Z" fill="#F0201C" stroke="#6A0806" stroke-width="0.25"/>
+  <!-- one continuous black edge down the right side, body to base, at the
+       same weight as the other outlines -->
+  <path d="M16.2 7.2 L16.2 12.9" stroke="#2E2E2E" stroke-width="0.7" stroke-linecap="butt"/>
+</svg>

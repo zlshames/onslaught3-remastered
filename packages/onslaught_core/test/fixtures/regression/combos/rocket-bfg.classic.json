@@ -1,0 +1,1115 @@
+{
+  "schemaVersion": 1,
+  "scenario": {
+    "id": "combos/rocket-bfg.classic",
+    "description": "Phase 3: Green + 2 Red + Blue: needs two reds, takes one; BFG with sub-rockets every 500 ms. Lyne, sandbox. Leader 150 px from the road with its range maxed; helpers 69 px from it, out of their own range of the road so they are ready when the leader engages; every turret damage-maxed.",
+    "map": "map9",
+    "mode": "sandbox",
+    "difficulty": "easy",
+    "profile": "classic",
+    "seed": 3,
+    "ticks": 1200,
+    "hashEvery": 300,
+    "commands": [
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "green",
+          "x": 214.38,
+          "y": 331.64
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "red",
+          "x": 208.6,
+          "y": 400.4
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "red",
+          "x": 151.94,
+          "y": 361.01
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "blue",
+          "x": 271.04,
+          "y": 371.02
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 4,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 1,
+          "stat": "range"
+        }
+      },
+      {
+        "tick": 2,
+        "command": {
+          "type": "sendWave"
+        }
+      }
+    ]
+  },
+  "eventCount": 73,
+  "events": [
+    {
+      "tick": 0,
+      "type": "sessionStarted",
+      "map": "map9",
+      "mode": "sandbox",
+      "difficulty": "easy",
+      "profile": "classic",
+      "seed": 3,
+      "cash": 100000.0,
+      "lives": 10
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 1,
+      "turret": "green",
+      "x": 214.38,
+      "y": 331.64,
+      "cost": 15.0,
+      "cash": 99985.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 2,
+      "turret": "red",
+      "x": 208.6,
+      "y": 400.4,
+      "cost": 20.0,
+      "cash": 99965.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 3,
+      "turret": "red",
+      "x": 151.94,
+      "y": 361.01,
+      "cost": 20.0,
+      "cash": 99945.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 4,
+      "turret": "blue",
+      "x": 271.04,
+      "y": 371.02,
+      "cost": 10.0,
+      "cash": 99935.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 1,
+      "cost": 20.0,
+      "cash": 99915.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 2,
+      "cost": 50.0,
+      "cash": 99865.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 3,
+      "cost": 125.0,
+      "cash": 99740.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 4,
+      "cost": 300.0,
+      "cash": 99440.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 5,
+      "cost": 700.0,
+      "cash": 98740.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 6,
+      "cost": 850.0,
+      "cash": 97890.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 7,
+      "cost": 950.0,
+      "cash": 96940.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "damage",
+      "level": 8,
+      "cost": 1000.0,
+      "cash": 95940.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 1,
+      "cost": 50.0,
+      "cash": 95890.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 2,
+      "cost": 100.0,
+      "cash": 95790.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 3,
+      "cost": 200.0,
+      "cash": 95590.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 4,
+      "cost": 350.0,
+      "cash": 95240.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 5,
+      "cost": 650.0,
+      "cash": 94590.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 6,
+      "cost": 1200.0,
+      "cash": 93390.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 7,
+      "cost": 1300.0,
+      "cash": 92090.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 8,
+      "cost": 1500.0,
+      "cash": 90590.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 9,
+      "cost": 1500.0,
+      "cash": 89090.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 1,
+      "cost": 50.0,
+      "cash": 89040.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 2,
+      "cost": 100.0,
+      "cash": 88940.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 3,
+      "cost": 200.0,
+      "cash": 88740.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 4,
+      "cost": 350.0,
+      "cash": 88390.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 5,
+      "cost": 650.0,
+      "cash": 87740.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 6,
+      "cost": 1200.0,
+      "cash": 86540.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 7,
+      "cost": 1300.0,
+      "cash": 85240.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 8,
+      "cost": 1500.0,
+      "cash": 83740.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 9,
+      "cost": 1500.0,
+      "cash": 82240.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 1,
+      "cost": 20.0,
+      "cash": 82220.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 2,
+      "cost": 50.0,
+      "cash": 82170.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 3,
+      "cost": 100.0,
+      "cash": 82070.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 4,
+      "cost": 250.0,
+      "cash": 81820.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 5,
+      "cost": 600.0,
+      "cash": 81220.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 6,
+      "cost": 1000.0,
+      "cash": 80220.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 7,
+      "cost": 1100.0,
+      "cash": 79120.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 8,
+      "cost": 1200.0,
+      "cash": 77920.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 4,
+      "stat": "damage",
+      "level": 9,
+      "cost": 1500.0,
+      "cash": 76420.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 1,
+      "cost": 15.0,
+      "cash": 76405.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 2,
+      "cost": 25.0,
+      "cash": 76380.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 3,
+      "cost": 40.0,
+      "cash": 76340.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 4,
+      "cost": 65.0,
+      "cash": 76275.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 5,
+      "cost": 105.0,
+      "cash": 76170.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 6,
+      "cost": 170.0,
+      "cash": 76000.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 7,
+      "cost": 275.0,
+      "cash": 75725.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 8,
+      "cost": 445.0,
+      "cash": 75280.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 9,
+      "cost": 720.0,
+      "cash": 74560.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 1,
+      "stat": "range",
+      "level": 10,
+      "cost": 1100.0,
+      "cash": 73460.0
+    },
+    {
+      "tick": 2,
+      "type": "waveStarted",
+      "wave": 1,
+      "size": 10,
+      "creepType": 0,
+      "hp": 13.0,
+      "bounty": 1,
+      "speed": 60.0,
+      "early": true
+    },
+    {
+      "tick": 49,
+      "type": "creepSpawned",
+      "uid": 5,
+      "wave": 1,
+      "x": -1.0,
+      "y": -1.0
+    },
+    {
+      "tick": 97,
+      "type": "creepSpawned",
+      "uid": 6,
+      "wave": 1,
+      "x": 2.0,
+      "y": 7.0
+    },
+    {
+      "tick": 138,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "laser-beam",
+      "target": null,
+      "assist": true
+    },
+    {
+      "tick": 138,
+      "type": "comboFired",
+      "uid": 1,
+      "combo": "rocket-bfg",
+      "helpers": [
+        3,
+        4
+      ],
+      "projectile": "bfg"
+    },
+    {
+      "tick": 145,
+      "type": "creepSpawned",
+      "uid": 9,
+      "wave": 1,
+      "x": -5.0,
+      "y": -8.0
+    },
+    {
+      "tick": 160,
+      "type": "creepKilled",
+      "uid": 5,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73461.0,
+      "kills": 1,
+      "x": 91.20927775912517,
+      "y": 61.91201559485463
+    },
+    {
+      "tick": 181,
+      "type": "creepKilled",
+      "uid": 6,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73462.0,
+      "kills": 2,
+      "x": 71.17037662478519,
+      "y": 54.13483926731529
+    },
+    {
+      "tick": 193,
+      "type": "creepSpawned",
+      "uid": 13,
+      "wave": 1,
+      "x": -4.0,
+      "y": 5.0
+    },
+    {
+      "tick": 209,
+      "type": "creepKilled",
+      "uid": 9,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73463.0,
+      "kills": 3,
+      "x": 46.928670783458635,
+      "y": 28.614113637150496
+    },
+    {
+      "tick": 229,
+      "type": "creepKilled",
+      "uid": 13,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73464.0,
+      "kills": 4,
+      "x": 25.29351488135851,
+      "y": 25.07982814944404
+    },
+    {
+      "tick": 241,
+      "type": "creepSpawned",
+      "uid": 18,
+      "wave": 1,
+      "x": -9.0,
+      "y": -1.0
+    },
+    {
+      "tick": 254,
+      "type": "creepKilled",
+      "uid": 18,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73465.0,
+      "kills": 5,
+      "x": 1.5761653815761534,
+      "y": 6.4265797518681955
+    },
+    {
+      "tick": 289,
+      "type": "creepSpawned",
+      "uid": 20,
+      "wave": 1,
+      "x": -7.0,
+      "y": -4.0
+    },
+    {
+      "tick": 289,
+      "type": "creepKilled",
+      "uid": 20,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73466.0,
+      "kills": 6,
+      "x": -7.0,
+      "y": -4.0
+    },
+    {
+      "tick": 337,
+      "type": "creepSpawned",
+      "uid": 23,
+      "wave": 1,
+      "x": 3.0,
+      "y": 6.0
+    },
+    {
+      "tick": 337,
+      "type": "creepKilled",
+      "uid": 23,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73467.0,
+      "kills": 7,
+      "x": 3.0,
+      "y": 6.0
+    },
+    {
+      "tick": 385,
+      "type": "creepSpawned",
+      "uid": 26,
+      "wave": 1,
+      "x": 9.0,
+      "y": -8.0
+    },
+    {
+      "tick": 385,
+      "type": "creepKilled",
+      "uid": 26,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73468.0,
+      "kills": 8,
+      "x": 9.0,
+      "y": -8.0
+    },
+    {
+      "tick": 433,
+      "type": "creepSpawned",
+      "uid": 29,
+      "wave": 1,
+      "x": 2.0,
+      "y": 6.0
+    },
+    {
+      "tick": 433,
+      "type": "creepKilled",
+      "uid": 29,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73469.0,
+      "kills": 9,
+      "x": 2.0,
+      "y": 6.0
+    },
+    {
+      "tick": 481,
+      "type": "creepSpawned",
+      "uid": 32,
+      "wave": 1,
+      "x": 2.0,
+      "y": 3.0
+    },
+    {
+      "tick": 481,
+      "type": "creepKilled",
+      "uid": 32,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 73470.0,
+      "kills": 10,
+      "x": 2.0,
+      "y": 3.0
+    }
+  ],
+  "hashes": [
+    {
+      "tick": 300,
+      "hash": 386029294
+    },
+    {
+      "tick": 600,
+      "hash": 3615907151
+    },
+    {
+      "tick": 900,
+      "hash": 568459345
+    },
+    {
+      "tick": 1200,
+      "hash": 2408382838
+    }
+  ]
+}

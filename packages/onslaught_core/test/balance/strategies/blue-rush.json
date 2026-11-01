@@ -1,0 +1,13 @@
+{
+  "id": "blue-rush",
+  "description": "Classic, easy: ten Blues on the spots that cover the most road, then damage first, rate, range. Proves the early game; later phases add combo triggers.",
+  "map": "map1",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 42,
+  "turret": "blue",
+  "maxTurrets": 10,
+  "upgradeOrder": ["damage", "rate", "range"],
+  "sendEarly": false,
+  "decideEvery": 30
+}

@@ -1,0 +1,307 @@
+# Release gate, builds and GitHub release (docs/REMASTER_PLAN.md §8.2,
+# docs/RELEASING.md, release-build skill): the whole PR gate, the 3× soak to
+# wave 300, then a build for every platform and CPU. A version tag also drafts
+# a GitHub release with the player downloads attached; it stays a draft until
+# someone has tried it and pressed Publish. By hand (workflow_dispatch) it only
+# builds. Signing material comes from secrets only (never the repo).
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  FLUTTER_VERSION: 3.47.6
+
+jobs:
+  ci:
+    name: PR gate
+    uses: ./.github/workflows/ci.yml
+
+  gates:
+    name: Release gates
+    needs: ci
+    runs-on: macos-latest
+    env:
+      CI: 'true'
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Version from pubspec.yaml; a tag must match it
+        id: version
+        run: |
+          version=$(sed -n 's/^version: \([^+]*\).*/\1/p' pubspec.yaml)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_REF_TYPE" = tag ] && [ "$GITHUB_REF_NAME" != "v$version" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match pubspec.yaml version $version"
+            exit 1
+          fi
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Soak at 3× to wave 300
+        working-directory: packages/onslaught_core
+        run: dart test --run-skipped --tags soak
+
+  android:
+    name: Android (.apk per CPU + universal, .aab)
+    needs: gates
+    runs-on: ubuntu-latest
+    env:
+      BASE: onslaught3-remastered-${{ needs.gates.outputs.version }}-android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # A debug key is new on every runner, so each build would refuse to
+      # install over the last one and players would lose their saves. Only an
+      # untagged test build may use it.
+      - name: Keystore from secrets (required for a tag; absent → debug-signed test build)
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/upload.jks"
+            printf 'storeFile=%s\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n' \
+              "$RUNNER_TEMP/upload.jks" "$KEYSTORE_PASSWORD" "$KEY_ALIAS" "$KEY_PASSWORD" > android/key.properties
+          elif [ "$GITHUB_REF_TYPE" = tag ]; then
+            echo "::error::ANDROID_KEYSTORE_BASE64 is not set; see docs/RELEASING.md"
+            exit 1
+          else
+            echo "::warning::No keystore: this build is debug-signed and is for testing only"
+          fi
+      - run: flutter build appbundle --release --obfuscate --split-debug-info=build/symbols/android
+      - name: APKs
+        run: |
+          mkdir dist
+          flutter build apk --release
+          mv build/app/outputs/flutter-apk/app-release.apk "dist/$BASE-universal.apk"
+          flutter build apk --release --split-per-abi
+          for abi in arm64-v8a armeabi-v7a x86_64; do
+            mv "build/app/outputs/flutter-apk/app-$abi-release.apk" "dist/$BASE-$abi.apk"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-android
+          path: dist/
+      # For the Play Store and crash symbolication; not a player download.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android-store
+          path: |
+            build/app/outputs/bundle/release/*.aab
+            build/symbols/android/
+
+  ios:
+    name: iOS (unsigned)
+    needs: gates
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # Store builds need Apple signing on the developer's machine; CI proves
+      # it builds and nothing here is published.
+      - run: flutter build ios --release --no-codesign --obfuscate --split-debug-info=build/symbols/ios
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ios-symbols
+          path: build/symbols/ios/
+
+  macos:
+    name: macOS (universal)
+    needs: gates
+    runs-on: macos-latest
+    env:
+      APP: build/macos/Build/Products/Release/Onslaught 3 Remastered.app
+      ZIP: onslaught3-remastered-${{ needs.gates.outputs.version }}-macos-universal.zip
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter build macos --release
+      - name: Both CPUs are in the app
+        run: |
+          for binary in "$APP/Contents/MacOS/Onslaught 3 Remastered" "$APP/Contents/Frameworks/App.framework/App"; do
+            archs=$(lipo -archs "$binary")
+            echo "$binary: $archs"
+            case "$archs" in *x86_64*arm64*|*arm64*x86_64*) ;; *) exit 1 ;; esac
+          done
+      - run: ditto -c -k --keepParent "$APP" "$ZIP"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-macos
+          path: ${{ env.ZIP }}
+
+  windows:
+    name: Windows (${{ matrix.arch }})
+    needs: gates
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { arch: x64, runner: windows-latest }
+          - { arch: arm64, runner: windows-11-arm }
+    runs-on: ${{ matrix.runner }}
+    # See docs/RELEASING.md: until an ARM build has been tried, a failure leaves
+    # that download out of the draft rather than holding back the release.
+    continue-on-error: ${{ matrix.arch == 'arm64' }}
+    env:
+      BASE: onslaught3-remastered-${{ needs.gates.outputs.version }}-windows-${{ matrix.arch }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        if: matrix.arch == 'x64'
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      # The stable SDK archives are x64 only; a checkout fetches the native
+      # arm64 Dart SDK, and Flutter builds for the CPU its Dart SDK runs on.
+      - name: Flutter from its tag (ARM)
+        if: matrix.arch == 'arm64'
+        shell: bash
+        run: |
+          git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - run: flutter pub get
+      - run: flutter build windows --release
+      - name: Package
+        shell: pwsh
+        run: |
+          Copy-Item -Recurse "build/windows/${{ matrix.arch }}/runner/Release" "$env:BASE"
+          Compress-Archive -Path "$env:BASE" -DestinationPath "$env:BASE.zip"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-windows-${{ matrix.arch }}
+          path: ${{ env.BASE }}.zip
+
+  linux:
+    name: Linux (${{ matrix.arch }})
+    needs: gates
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { arch: x64, runner: ubuntu-22.04 }
+          - { arch: arm64, runner: ubuntu-22.04-arm }
+    # The oldest supported image: a binary runs on this glibc and anything newer.
+    runs-on: ${{ matrix.runner }}
+    continue-on-error: ${{ matrix.arch == 'arm64' }}
+    env:
+      BASE: onslaught3-remastered-${{ needs.gates.outputs.version }}-linux-${{ matrix.arch }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Desktop build dependencies
+        run: sudo apt-get update && sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+      - uses: subosito/flutter-action@v2
+        if: matrix.arch == 'x64'
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - name: Flutter from its tag (ARM)
+        if: matrix.arch == 'arm64'
+        run: |
+          git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - run: flutter pub get
+      - run: flutter build linux --release
+      - name: Package
+        run: |
+          cp -R "build/linux/${{ matrix.arch }}/release/bundle" "$BASE"
+          tar -czf "$BASE.tar.gz" "$BASE"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-linux-${{ matrix.arch }}
+          path: ${{ env.BASE }}.tar.gz
+
+  web:
+    name: Web
+    needs: gates
+    runs-on: ubuntu-latest
+    env:
+      BASE: onslaught3-remastered-${{ needs.gates.outputs.version }}-web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter build web --release
+      # As in pages.yml: the download can be served from any path.
+      - name: Relative base href
+        run: sed -i 's|<base href="/">|<base href="./">|' build/web/index.html && grep -q '<base href="./">' build/web/index.html
+      - name: Package
+        run: |
+          cp -R build/web "$BASE"
+          zip -qr "$BASE.zip" "$BASE"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-web
+          path: ${{ env.BASE }}.zip
+
+  publish:
+    name: Draft the GitHub release
+    if: github.ref_type == 'tag'
+    needs: [gates, android, ios, macos, windows, linux, web]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.gates.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          path: dist
+          merge-multiple: true
+      - name: Checksums
+        working-directory: dist
+        run: sha256sum * > SHA256SUMS.txt
+      - name: Notes from CHANGELOG.md
+        run: |
+          awk -v heading="## $VERSION" '$0 == heading { on = 1; next } /^## / { on = 0 } on' CHANGELOG.md > notes.md
+          if [ ! -s notes.md ]; then
+            echo "::error::CHANGELOG.md has no '## $VERSION' section"
+            exit 1
+          fi
+          printf '\nHow to install each download: %s/%s#where-to-play\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" >> notes.md
+      - name: Draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          flags=(--draft --verify-tag)
+          case "$VERSION" in *-*) flags+=(--prerelease) ;; esac
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --title "Onslaught 3 Remastered $VERSION" --notes-file notes.md "${flags[@]}"

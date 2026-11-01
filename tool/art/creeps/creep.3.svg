@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="body" x1="0" y1="2" x2="0" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9A9AA2"/><stop offset="0.4" stop-color="#D8D8DC"/><stop offset="0.6" stop-color="#C2C2C8"/><stop offset="1" stop-color="#7A7A82"/></linearGradient>
+    <linearGradient id="nozzle" x1="0" y1="10" x2="0" y2="13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7A7A84"/><stop offset="0.5" stop-color="#4A4A54"/><stop offset="1" stop-color="#2A2A32"/></linearGradient>
+  </defs>
+
+  <!-- creep.3: the grey jet (SWF bitmap 691) redrawn as vector, facing right. -->
+  <!-- exhaust nozzle, under the body -->
+  <path d="M0.4 10.0 L3.4 10.0 L3.4 13.0 L0.4 13.0 Z" fill="url(#nozzle)" stroke="#17171B" stroke-width="0.8" stroke-linejoin="round"/>
+  <ellipse cx="0.9" cy="11.5" rx="0.45" ry="1.05" fill="#E87A1E"/>
+  <path d="M23.50 11.50 C23.50 10.30 22.20 9.20 19.50 8.80 C17.80 8.50 16.60 8.40 15.60 8.20 C13.60 6.80 11.80 4.00 10.70 2.50 C10.20 1.80 8.40 1.60 7.50 2.10 C6.90 3.80 6.80 6.40 6.20 8.50 C4.80 9.00 3.60 9.50 2.60 9.90 C2.20 10.20 2.10 10.90 2.10 11.50 C2.10 12.10 2.20 12.80 2.60 13.10 C3.60 13.50 4.80 14.00 6.20 14.50 C6.80 16.60 6.90 19.20 7.50 20.90 C8.40 21.40 10.20 21.20 10.70 20.50 C11.80 19.00 13.60 16.20 15.60 14.80 C16.60 14.60 17.80 14.50 19.50 14.20 C22.20 13.80 23.50 12.70 23.50 11.50 Z" fill="url(#body)" stroke="#434347" stroke-width="0.8" stroke-linejoin="round"/>
+  <g fill="none" stroke="#6E6E78" stroke-width="0.35" stroke-linecap="round"><path d="M14.4 8.0 C12.6 6.4 11.0 4.2 9.9 2.7"/><path d="M 14.40 15.00 C 12.60 16.60 11.00 18.80 9.90 20.30"/><path d="M7.7 3.4 C7.5 5.2 7.4 6.8 7.0 8.4"/><path d="M 7.70 19.60 C 7.50 17.80 7.40 16.20 7.00 14.60"/><path d="M7.6 4.6 L10.6 4.6"/><path d="M 7.60 18.40 L 10.60 18.40"/><path d="M3.6 11.5 L9.6 11.5"/></g>
+  <ellipse cx="9.6" cy="9.5" rx="1.0" ry="0.45" fill="#3A3A44"/>
+  <ellipse cx="9.6" cy="13.5" rx="1.0" ry="0.45" fill="#3A3A44"/>
+  <ellipse cx="12.6" cy="11.5" rx="1.9" ry="1.25" fill="#4A4A55"/>
+  <path d="M10.8 9.7 C13.8 9.4 15.6 10.4 15.6 11.5 C15.6 12.6 13.8 13.6 10.8 13.3" fill="none" stroke="#111" stroke-width="0.9" stroke-linecap="round"/>
+</svg>

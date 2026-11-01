@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "maps": [
+    {
+      "schemaVersion": 1,
+      "id": "custom-zig-zag",
+      "name": "Zig Zag",
+      "order": 0,
+      "builtIn": false,
+      "base": {"x": 560, "y": 200},
+      "road": [
+        {"x": 0, "y": 100},
+        {"x": 200, "y": 380},
+        {"x": 400, "y": 100},
+        {"x": 565, "y": 227}
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "custom-broken",
+      "name": "Broken",
+      "base": {"x": 1, "y": 1}
+    },
+    {
+      "schemaVersion": 1,
+      "id": "map1",
+      "name": "Not a player map",
+      "base": {"x": 560, "y": 200},
+      "road": [{"x": 0, "y": 100}, {"x": 565, "y": 227}]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "scenario": {
+    "id": "session/clock-pause-speed.classic",
+    "description": "Harness proof: session start, speed changes (clamped to the data bounds), pause freezing the game clock, and a Blue being built (rejected as not implemented in Phase 0; applied since Phase 1). Exercises the fixture format end to end.",
+    "map": "map9",
+    "mode": "normal",
+    "difficulty": "easy",
+    "profile": "classic",
+    "seed": 42,
+    "ticks": 240,
+    "hashEvery": 60,
+    "commands": [
+      {
+        "tick": 30,
+        "command": {
+          "type": "speed",
+          "speed": 2.0
+        }
+      },
+      {
+        "tick": 60,
+        "command": {
+          "type": "pause",
+          "paused": true
+        }
+      },
+      {
+        "tick": 90,
+        "command": {
+          "type": "pause",
+          "paused": false
+        }
+      },
+      {
+        "tick": 120,
+        "command": {
+          "type": "speed",
+          "speed": 0.25
+        }
+      },
+      {
+        "tick": 150,
+        "command": {
+          "type": "build",
+          "turret": "blue",
+          "x": 120.0,
+          "y": 200.0
+        }
+      },
+      {
+        "tick": 200,
+        "command": {
+          "type": "speed",
+          "speed": 1.0
+        }
+      }
+    ]
+  },
+  "eventCount": 7,
+  "events": [
+    {
+      "tick": 0,
+      "type": "sessionStarted",
+      "map": "map9",
+      "mode": "normal",
+      "difficulty": "easy",
+      "profile": "classic",
+      "seed": 42,
+      "cash": 30.0,
+      "lives": 10
+    },
+    {
+      "tick": 30,
+      "type": "speedChanged",
+      "speed": 2.0
+    },
+    {
+      "tick": 60,
+      "type": "pausedChanged",
+      "paused": true
+    },
+    {
+      "tick": 90,
+      "type": "pausedChanged",
+      "paused": false
+    },
+    {
+      "tick": 120,
+      "type": "speedChanged",
+      "speed": 0.5
+    },
+    {
+      "tick": 150,
+      "type": "turretBuilt",
+      "uid": 1,
+      "turret": "blue",
+      "x": 120.0,
+      "y": 200.0,
+      "cost": 10.0,
+      "cash": 20.0
+    },
+    {
+      "tick": 200,
+      "type": "speedChanged",
+      "speed": 1.0
+    }
+  ],
+  "hashes": [
+    {
+      "tick": 60,
+      "hash": 3039676433
+    },
+    {
+      "tick": 120,
+      "hash": 751566777
+    },
+    {
+      "tick": 180,
+      "hash": 2934650234
+    },
+    {
+      "tick": 240,
+      "hash": 920659119
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "supers/targeter-join.classic",
+  "description": "Phase 4: a Targeter 48 px from Lyne's road joins two Blues, a Red and a Green ~236 px off the road (the fourth join drops the first Blue), paints the fastest creep and sends them at it beyond their range; at tick 900 it lets the second Blue go.",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 7,
+  "ticks": 1800,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "targeter",
+        "x": 300,
+        "y": 150
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 500,
+        "y": 60
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 500,
+        "y": 110
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "red",
+        "x": 450,
+        "y": 30
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 540,
+        "y": 160
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 2
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 3
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 4
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 5
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 900,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 3
+      }
+    },
+    {
+      "tick": 1200,
+      "command": {
+        "type": "sendWave"
+      }
+    }
+  ]
+}

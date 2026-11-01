@@ -1,0 +1,11 @@
+{
+  "wavesTolerancePct": 5,
+  "livesTolerance": 1,
+  "bots": {
+    "blue-rush": {
+      "wavesCleared": 51,
+      "kills": 508,
+      "livesLeft": 0
+    }
+  }
+}

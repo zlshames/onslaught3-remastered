@@ -1,0 +1,4277 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "GameSettings",
+      "title": "Game Settings",
+      "group": "settings",
+      "fields": [
+        {
+          "asset": "attacker_energy",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "baseHp"
+          ]
+        },
+        {
+          "asset": "attacker_upgrade_rate",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "defaultHpRate"
+          ]
+        },
+        {
+          "asset": "attacker_hp_rate_easy",
+          "type": "arrayIndexed",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "easy",
+            "hpSchedule"
+          ],
+          "keyField": "wave",
+          "valueField": "rate"
+        },
+        {
+          "asset": "attacker_hp_rate_medium",
+          "type": "arrayIndexed",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "medium",
+            "hpSchedule"
+          ],
+          "keyField": "wave",
+          "valueField": "rate"
+        },
+        {
+          "asset": "attacker_hp_rate_hard",
+          "type": "arrayIndexed",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "hard",
+            "hpSchedule"
+          ],
+          "keyField": "wave",
+          "valueField": "rate"
+        },
+        {
+          "asset": "attacker_hp_rate_extreme",
+          "type": "arrayIndexed",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "extreme",
+            "hpSchedule"
+          ],
+          "keyField": "wave",
+          "valueField": "rate"
+        },
+        {
+          "asset": "attacker_speed_easy",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "easy",
+            "creepSpeed"
+          ]
+        },
+        {
+          "asset": "attacker_speed_medium",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "medium",
+            "creepSpeed"
+          ]
+        },
+        {
+          "asset": "attacker_speed_hard",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "hard",
+            "creepSpeed"
+          ]
+        },
+        {
+          "asset": "attacker_speed_extreme",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "extreme",
+            "creepSpeed"
+          ]
+        },
+        {
+          "asset": "attacker_spacing",
+          "type": "number",
+          "file": "waves.json",
+          "path": [
+            "creepSpacingMs"
+          ]
+        },
+        {
+          "asset": "wave_spacing",
+          "type": "number",
+          "file": "waves.json",
+          "path": [
+            "waveSpacingMs"
+          ]
+        },
+        {
+          "asset": "wave_size",
+          "type": "number",
+          "file": "waves.json",
+          "path": [
+            "waveSize"
+          ]
+        },
+        {
+          "asset": "starting_cash_easy",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "easy",
+            "startingCash"
+          ]
+        },
+        {
+          "asset": "starting_cash_medium",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "medium",
+            "startingCash"
+          ]
+        },
+        {
+          "asset": "starting_cash_hard",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "hard",
+            "startingCash"
+          ]
+        },
+        {
+          "asset": "starting_cash_extreme",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "levels",
+            "extreme",
+            "startingCash"
+          ]
+        },
+        {
+          "asset": "starting_cash_sandbox",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "modeCash",
+            "sandbox"
+          ]
+        },
+        {
+          "asset": "starting_cash_sandbox2",
+          "type": "number",
+          "file": "difficulty.json",
+          "path": [
+            "modeCash",
+            "sandbox2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretBlue",
+      "title": "Turret: Blue Cannon",
+      "group": "turret",
+      "fields": [
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "cost"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "combo_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "flags",
+            "comboCapable"
+          ]
+        },
+        {
+          "asset": "combo_never",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "flags",
+            "comboNever"
+          ]
+        },
+        {
+          "asset": "freak_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "capable"
+          ]
+        },
+        {
+          "asset": "freak_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "blue",
+            "freakout",
+            "levelRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretGreen",
+      "title": "Turret: Green Laser",
+      "group": "turret",
+      "fields": [
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "cost"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "combo_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "flags",
+            "comboCapable"
+          ]
+        },
+        {
+          "asset": "combo_never",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "flags",
+            "comboNever"
+          ]
+        },
+        {
+          "asset": "freak_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "capable"
+          ]
+        },
+        {
+          "asset": "freak_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "green",
+            "freakout",
+            "levelRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretRed",
+      "title": "Turret: Red Rocket",
+      "group": "turret",
+      "fields": [
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "cost"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "combo_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "flags",
+            "comboCapable"
+          ]
+        },
+        {
+          "asset": "combo_never",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "flags",
+            "comboNever"
+          ]
+        },
+        {
+          "asset": "freak_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "capable"
+          ]
+        },
+        {
+          "asset": "freak_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "red",
+            "freakout",
+            "levelRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretYellow",
+      "title": "Turret: Yellow Tazer",
+      "group": "turret",
+      "fields": [
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "cost"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "combo_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "flags",
+            "comboCapable"
+          ]
+        },
+        {
+          "asset": "combo_never",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "flags",
+            "comboNever"
+          ]
+        },
+        {
+          "asset": "freak_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "capable"
+          ]
+        },
+        {
+          "asset": "freak_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "yellow",
+            "freakout",
+            "levelRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretRangeUp",
+      "title": "Modifier: Range Enhancer",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretDamageUp",
+      "title": "Modifier: Damage Enhancer",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretRateUpExchange",
+      "title": "Modifier: Rate Exchanger",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up-exchange",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretRangeUpExchange",
+      "title": "Modifier: Range Exchanger",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "range-up-exchange",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretRateUp",
+      "title": "Modifier: Rate Enhancer",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "rate-up",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretDamageUpBig",
+      "title": "Modifier: Big Damage Enhancer",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretDamageUpBigExchange",
+      "title": "Modifier: Big Damage Exchanger",
+      "group": "modifier",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_up_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "modifierAura",
+            "addDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "modifierAura",
+            "addRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "modifierAura",
+            "addRate"
+          ]
+        },
+        {
+          "asset": "modify_up_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "modifierAura",
+            "multDamage"
+          ]
+        },
+        {
+          "asset": "modify_up_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "modifierAura",
+            "multRange"
+          ]
+        },
+        {
+          "asset": "modify_up_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "damage-up-big-exchange",
+            "modifierAura",
+            "multRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretSniper",
+      "title": "Super Turret: Sniper",
+      "group": "super",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "freak_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "capable"
+          ]
+        },
+        {
+          "asset": "freak_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "sniper",
+            "freakout",
+            "levelRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretRailgun",
+      "title": "Super Turret: Railgun",
+      "group": "super",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "freak_capable",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "capable"
+          ]
+        },
+        {
+          "asset": "freak_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "railgun",
+            "freakout",
+            "levelRate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TurretFusion",
+      "title": "Super Turret: Fusion Cannon",
+      "group": "super",
+      "fields": [
+        {
+          "asset": "turret_unlock",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "unlockKills"
+          ]
+        },
+        {
+          "asset": "turret_cost",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "cost"
+          ]
+        },
+        {
+          "asset": "turret_available",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "availableInitially"
+          ]
+        },
+        {
+          "asset": "freak_length",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "lengthMs"
+          ]
+        },
+        {
+          "asset": "freak_space",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "spacingMs"
+          ]
+        },
+        {
+          "asset": "freak_damage_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "damageMult"
+          ]
+        },
+        {
+          "asset": "freak_range_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "rangeMult"
+          ]
+        },
+        {
+          "asset": "freak_rate_mult",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "rateMult"
+          ]
+        },
+        {
+          "asset": "freak_level_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "levelDamage"
+          ]
+        },
+        {
+          "asset": "freak_level_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "levelRange"
+          ]
+        },
+        {
+          "asset": "freak_level_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "freakout",
+            "levelRate"
+          ]
+        },
+        {
+          "asset": "weapon_damage",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "stats",
+            "damage"
+          ]
+        },
+        {
+          "asset": "weapon_range",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "stats",
+            "range"
+          ]
+        },
+        {
+          "asset": "weapon_rate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "stats",
+            "rate"
+          ]
+        },
+        {
+          "asset": "weapon_poison",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "stats",
+            "poison"
+          ]
+        },
+        {
+          "asset": "weapon_rotate",
+          "type": "number",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "stats",
+            "rotate"
+          ]
+        },
+        {
+          "asset": "modify_possible",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "flags",
+            "modifiable"
+          ]
+        },
+        {
+          "asset": "weapon_must_face",
+          "type": "boolean",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "stats",
+            "mustFace"
+          ]
+        },
+        {
+          "asset": "upgrade_damage",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "upgrades",
+            "damage"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_range",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "upgrades",
+            "range"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        },
+        {
+          "asset": "upgrade_rate",
+          "type": "arrayIndexed",
+          "file": "turrets.json",
+          "path": [
+            "turrets",
+            "fusion",
+            "upgrades",
+            "rate"
+          ],
+          "keyField": "cost",
+          "valueField": "value"
+        }
+      ]
+    },
+    {
+      "id": "Combo_clusterbomb",
+      "title": "Combo: Clusterbomb",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "clusterbomb",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "clusterbomb",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "clusterbomb",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "clusterbomb",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "clusterbomb",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "clusterbomb",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_big_clusterbomb",
+      "title": "Combo: Big Clusterbomb",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-clusterbomb",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-clusterbomb",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-clusterbomb",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-clusterbomb",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-clusterbomb",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-clusterbomb",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_sparky_clusterbomb",
+      "title": "Combo: Sparky Clusterbomb",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-clusterbomb",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-clusterbomb",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-clusterbomb",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-clusterbomb",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-clusterbomb",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-clusterbomb",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_laser_clusterbomb",
+      "title": "Combo: Laser Clusterbomb",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "cluster_laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "values",
+            "clusterLaserDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-clusterbomb",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_big_laser_clusterbomb",
+      "title": "Combo: Big Laser Clusterbomb",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "values",
+            "clusterLaserDamage"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-clusterbomb",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_landmine",
+      "title": "Combo: Landmine",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "landmine",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "landmine",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "landmine",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_big_landmine",
+      "title": "Combo: Big Landmine",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-landmine",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-landmine",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-landmine",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_sparky_landmine",
+      "title": "Combo: Sparky Landmine",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-landmine",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-landmine",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-landmine",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "sparky-landmine",
+            "values",
+            "clusterQty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_big_cluster_landmine",
+      "title": "Combo: Bit Cluster Landmine",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-cluster-landmine",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-cluster-landmine",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-cluster-landmine",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-cluster-landmine",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-cluster-landmine",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-cluster-landmine",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_big_laser_cluster_landmine",
+      "title": "Combo: Big Laser Cluster Landmine",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "cluster_laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "values",
+            "clusterLaserDamage"
+          ]
+        },
+        {
+          "asset": "cluster_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "values",
+            "clusterQty"
+          ]
+        },
+        {
+          "asset": "cluster_holding",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "values",
+            "clusterHolding"
+          ]
+        },
+        {
+          "asset": "cluster_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "values",
+            "clusterDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "big-laser-cluster-landmine",
+            "values",
+            "blastDamage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_bfg",
+      "title": "Combo: BFG",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "values",
+            "laserDamage"
+          ]
+        },
+        {
+          "asset": "laser_range",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "values",
+            "laserRange"
+          ]
+        },
+        {
+          "asset": "laser_rate",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "values",
+            "laserRate"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "bfg",
+            "values",
+            "moveSpeed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_tazer_bfg",
+      "title": "Combo: Tazer BFG",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "values",
+            "laserDamage"
+          ]
+        },
+        {
+          "asset": "laser_range",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "values",
+            "laserRange"
+          ]
+        },
+        {
+          "asset": "laser_rate",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "values",
+            "laserRate"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-bfg",
+            "values",
+            "moveSpeed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_rocket_bfg",
+      "title": "Combo: Rocket BFG",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "laserDamage"
+          ]
+        },
+        {
+          "asset": "laser_range",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "laserRange"
+          ]
+        },
+        {
+          "asset": "laser_rate",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "laserRate"
+          ]
+        },
+        {
+          "asset": "rocket_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "rocketDamage"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "rocket-bfg",
+            "values",
+            "moveSpeed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_laser_rocket",
+      "title": "Combo: Laser Rocket",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "laserDamage"
+          ]
+        },
+        {
+          "asset": "laser_range",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "laserRange"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "moveSpeed"
+          ]
+        },
+        {
+          "asset": "laserblast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "laserblastDamage"
+          ]
+        },
+        {
+          "asset": "laserblast_qty",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "laserblastQty"
+          ]
+        },
+        {
+          "asset": "laserblast_range",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "laser-rocket",
+            "values",
+            "laserblastRange"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_tazer_rocket",
+      "title": "Combo: Tazer Rocket",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-rocket",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-rocket",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "laser_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-rocket",
+            "values",
+            "laserDamage"
+          ]
+        },
+        {
+          "asset": "laser_range",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-rocket",
+            "values",
+            "laserRange"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "tazer-rocket",
+            "values",
+            "moveSpeed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_poison_rocket",
+      "title": "Combo: Poison Rocket",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "poison-rocket",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "poison-rocket",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "poison-rocket",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "poison-rocket",
+            "values",
+            "moveSpeed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_nuke",
+      "title": "Combo: Nuke",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "nuke",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "nuke",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "nuke",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "move_speed",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "nuke",
+            "values",
+            "moveSpeed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_blackhole",
+      "title": "Combo: Black Hole",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "blackhole",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "blackhole_radius",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "blackhole",
+            "values",
+            "blackholeRadius"
+          ]
+        },
+        {
+          "asset": "blackhole_duration",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "blackhole",
+            "values",
+            "blackholeDuration"
+          ]
+        },
+        {
+          "asset": "blackhole_eject",
+          "type": "boolean",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "blackhole",
+            "values",
+            "blackholeEject"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_shockwave",
+      "title": "Combo: Shockwave",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "shockwave",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "shockwave",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "bullet_poison",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "shockwave",
+            "values",
+            "bulletPoison"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "shockwave",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "blast_poison",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "shockwave",
+            "values",
+            "blastPoison"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Combo_napalm",
+      "title": "Combo: Napalm",
+      "group": "combo",
+      "fields": [
+        {
+          "asset": "recharge",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "napalm",
+            "rechargeMs"
+          ]
+        },
+        {
+          "asset": "bullet_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "napalm",
+            "values",
+            "bulletDamage"
+          ]
+        },
+        {
+          "asset": "blast_damage",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "napalm",
+            "values",
+            "blastDamage"
+          ]
+        },
+        {
+          "asset": "napalm_quantity",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "napalm",
+            "values",
+            "napalmQuantity"
+          ]
+        },
+        {
+          "asset": "napalm_timing",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "napalm",
+            "values",
+            "napalmTiming"
+          ]
+        },
+        {
+          "asset": "napalm_jit",
+          "type": "number",
+          "file": "combos.json",
+          "path": [
+            "combos",
+            "napalm",
+            "values",
+            "napalmJit"
+          ]
+        }
+      ]
+    }
+  ]
+}

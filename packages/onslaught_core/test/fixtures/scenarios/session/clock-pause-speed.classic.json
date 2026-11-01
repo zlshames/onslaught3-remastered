@@ -1,0 +1,19 @@
+{
+  "id": "session/clock-pause-speed.classic",
+  "description": "Harness proof: session start, speed changes (clamped to the data bounds), pause freezing the game clock, and a Blue being built (rejected as not implemented in Phase 0; applied since Phase 1). Exercises the fixture format end to end.",
+  "map": "map9",
+  "mode": "normal",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 42,
+  "ticks": 240,
+  "hashEvery": 60,
+  "commands": [
+    {"tick": 30, "command": {"type": "speed", "speed": 2}},
+    {"tick": 60, "command": {"type": "pause", "paused": true}},
+    {"tick": 90, "command": {"type": "pause", "paused": false}},
+    {"tick": 120, "command": {"type": "speed", "speed": 0.25}},
+    {"tick": 150, "command": {"type": "build", "turret": "blue", "x": 120, "y": 200}},
+    {"tick": 200, "command": {"type": "speed", "speed": 1}}
+  ]
+}

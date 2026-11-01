@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "playArea": {
+    "width": 720,
+    "height": 480
+  },
+  "road": {
+    "outerWidth": 31,
+    "outerColor": "#666666",
+    "innerWidth": 28,
+    "innerColor": "#B2885B",
+    "minePointSpacing": 4
+  },
+  "placement": {
+    "turretSpacing": 36,
+    "clearanceRadius": 19,
+    "clearanceSamples": 8,
+    "moveCost": 500,
+    "baseWidth": 126,
+    "baseHeight": 82.15
+  },
+  "art": {
+    "base": "base.player",
+    "ground": "ground.classic",
+    "rocketSmoke": "fx.rocket-trail"
+  },
+  "groundArt": [
+    {
+      "art": "ground.decor-rings",
+      "x": 491.5,
+      "y": 174.35,
+      "scale": 1.2120361
+    },
+    {
+      "art": "ground.decor-lines",
+      "x": 149.65,
+      "y": 304.85,
+      "scale": 1.4718323
+    }
+  ],
+  "effects": {
+    "rocketSmoke": {
+      "enabled": true,
+      "max": 200,
+      "maxPrefMin": 1,
+      "maxPrefMax": 500
+    }
+  },
+  "editor": {
+    "gridSize": 20,
+    "startArea": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 465
+    },
+    "baseArea": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 445
+    },
+    "waypointArea": {
+      "x": 18,
+      "y": 18,
+      "width": 684,
+      "height": 444
+    },
+    "baseAnchor": {
+      "x": 50,
+      "y": 47
+    },
+    "baseEntries": [
+      {
+        "x": 8.5,
+        "y": 20.5
+      },
+      {
+        "x": 14.95,
+        "y": 17
+      },
+      {
+        "x": 24.9,
+        "y": 17
+      },
+      {
+        "x": 34.85,
+        "y": 17
+      },
+      {
+        "x": 44.8,
+        "y": 17
+      },
+      {
+        "x": 54.75,
+        "y": 17
+      },
+      {
+        "x": 64.7,
+        "y": 17
+      },
+      {
+        "x": 74.65,
+        "y": 17
+      },
+      {
+        "x": 84.6,
+        "y": 17
+      },
+      {
+        "x": 91.05,
+        "y": 20.5
+      },
+      {
+        "x": 95,
+        "y": 25.55
+      },
+      {
+        "x": 95,
+        "y": 34.1
+      },
+      {
+        "x": 95,
+        "y": 42.65
+      },
+      {
+        "x": 95,
+        "y": 51.2
+      },
+      {
+        "x": 95,
+        "y": 59.75
+      },
+      {
+        "x": 95,
+        "y": 68.3
+      },
+      {
+        "x": 91.5,
+        "y": 73.35
+      },
+      {
+        "x": 85,
+        "y": 77
+      },
+      {
+        "x": 75,
+        "y": 77
+      },
+      {
+        "x": 65,
+        "y": 77
+      },
+      {
+        "x": 55,
+        "y": 77
+      },
+      {
+        "x": 45,
+        "y": 77
+      },
+      {
+        "x": 35,
+        "y": 77
+      },
+      {
+        "x": 25,
+        "y": 77
+      },
+      {
+        "x": 15,
+        "y": 77
+      },
+      {
+        "x": 8.5,
+        "y": 73.5
+      },
+      {
+        "x": 5,
+        "y": 67
+      },
+      {
+        "x": 5,
+        "y": 57
+      },
+      {
+        "x": 5,
+        "y": 47
+      },
+      {
+        "x": 5,
+        "y": 37
+      },
+      {
+        "x": 5,
+        "y": 27
+      }
+    ],
+    "nudge": 1,
+    "nudgeFast": 10,
+    "minRoadLength": 100,
+    "maxNameLength": 32
+  }
+}

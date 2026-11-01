@@ -1,0 +1,134 @@
+{
+  "id": "colours/red-holding.classic",
+  "description": "Phase 2: two Reds with the holding pattern (range 3, rate 3) on Lyne, sandbox cash. Freezes rocket steering (270 deg/s, unwrapped bearing), impact at 8 px or one step, held rockets filling to 4 with no target and circling (~53 px), dispatch to the first target, pattern rockets circling after losing their target, and the far Red's sale sending its held rockets at the weakest creep.",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 22,
+  "ticks": 2700,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "red",
+        "x": 300,
+        "y": 150
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "red",
+        "x": 550,
+        "y": 330
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 1400,
+      "command": {
+        "type": "sell",
+        "uid": 2
+      }
+    }
+  ]
+}

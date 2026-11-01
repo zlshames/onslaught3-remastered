@@ -1,0 +1,9 @@
+# Lints for the pure-Dart core. Settings shared with the app live in
+# ../../analysis_options.shared.yaml. R1: no package:flutter, package:flame, dart:ui or
+# dart:io under lib/ (enforced by test/architecture_test.dart).
+include:
+  - package:lints/recommended.yaml
+  - ../../analysis_options.shared.yaml
+
+formatter:
+  page_width: 100

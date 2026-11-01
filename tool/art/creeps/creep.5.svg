@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<!-- creep.5: the white fighter (SWF bitmap 681) redrawn as vector, facing right. -->
+  <defs><linearGradient id="body" x1="0" y1="8.5" x2="0" y2="14.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.6" stop-color="#E4E4E8"/><stop offset="1" stop-color="#A8A8B0"/></linearGradient>
+    <linearGradient id="wing" x1="0" y1="2" x2="0" y2="9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D6D6DC"/><stop offset="1" stop-color="#F6F6F8"/></linearGradient>
+    <linearGradient id="wing2" x1="0" y1="14" x2="0" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E6E6EA"/><stop offset="1" stop-color="#ACACB4"/></linearGradient>
+    <radialGradient id="canopy" cx="10.4" cy="10.7" r="2.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A4A5A"/><stop offset="1" stop-color="#0E0E14"/></radialGradient></defs>
+  <!-- thrusters sit under the hull and wings; only their nozzles show -->
+  <path d="M1.4 6.4 L7 6.4 L7 8.4 L1.4 8.4 Z" fill="#F08A12" stroke="#844B09" stroke-width="0.5" stroke-linejoin="round"/>
+  <path d="M1.4 14.6 L7 14.6 L7 16.6 L1.4 16.6 Z" fill="#F08A12" stroke="#844B09" stroke-width="0.5" stroke-linejoin="round"/>
+  <path d="M3.8 8.8 L4.6 1.8 L7.8 1.4 L13.6 8.6 Z" fill="url(#wing)" stroke="#8B8B8F" stroke-width="0.8" stroke-linejoin="round"/>
+  <path d="M 3.80 14.20 L 4.60 21.20 L 7.80 21.60 L 13.60 14.40 Z" fill="url(#wing2)" stroke="#5E5E63" stroke-width="0.8" stroke-linejoin="round"/>
+  <path d="M4.6 1.8 L7.8 1.4 L9.4 3.4 L4.4 3.8 Z" fill="#D9361E" stroke="#771D10" stroke-width="0.5" stroke-linejoin="round"/>
+  <path d="M 4.60 21.20 L 7.80 21.60 L 9.40 19.60 L 4.40 19.20 Z" fill="#D9361E" stroke="#771D10" stroke-width="0.5" stroke-linejoin="round"/>
+  <g fill="none" stroke="#8A8A94" stroke-width="0.35" stroke-linecap="round"><path d="M12.4 8.4 L7.2 2.4"/><path d="M 12.40 14.60 L 7.20 20.60"/><path d="M5.0 6.0 L9.6 6.0"/><path d="M 5.00 17.00 L 9.60 17.00"/><path d="M4.6 4.4 L6.0 4.4"/><path d="M 4.60 18.60 L 6.00 18.60"/></g>
+  <path d="M10.0 8.5 L12.0 8.5 L10.6 6.4 Z" fill="#D9361E" stroke="#771D10" stroke-width="0.35" stroke-linejoin="round"/>
+  <path d="M 10.00 14.50 L 12.00 14.50 L 10.60 16.60 Z" fill="#D9361E" stroke="#771D10" stroke-width="0.35" stroke-linejoin="round"/>
+  <clipPath id="hull"><path id="hullp" d="M0.6 10.5 L3 9.2 C8 8.3 14 8.3 18 8.8 C21.6 9.3 23.6 10.2 23.6 11.5 C23.6 12.8 21.6 13.7 18 14.2 C14 14.7 8 14.7 3 13.8 L0.6 12.5 Z"/></clipPath>
+  <path d="M0.6 10.5 L3 9.2 C8 8.3 14 8.3 18 8.8 C21.6 9.3 23.6 10.2 23.6 11.5 C23.6 12.8 21.6 13.7 18 14.2 C14 14.7 8 14.7 3 13.8 L0.6 12.5 Z" fill="url(#body)"/>
+  <g clip-path="url(#hull)">
+    <path d="M14.6 10.75 L24 10.75 L24 12.25 L14.6 12.25 Z" fill="#D9361E"/>
+    <path d="M0 10.6 L1.6 10.6 L1.6 12.4 L0 12.4 Z" fill="#2A2A30"/>
+  </g>
+  <path d="M0.6 10.5 L3 9.2 C8 8.3 14 8.3 18 8.8 C21.6 9.3 23.6 10.2 23.6 11.5 C23.6 12.8 21.6 13.7 18 14.2 C14 14.7 8 14.7 3 13.8 L0.6 12.5 Z" fill="none" stroke="#5C5C60" stroke-width="0.8" stroke-linejoin="round"/>
+  <ellipse cx="11.2" cy="11.5" rx="2.9" ry="1.85" fill="url(#canopy)" stroke="#07070B" stroke-width="0.5"/>
+</svg>

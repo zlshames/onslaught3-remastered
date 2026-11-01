@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "available": ["challenge", "extreme", "sandbox"],
+  "complete": ["challenge;easy;undefined;30;60;undefined;10;60", "medium", "tutorial"],
+  "challengeBest": {
+    "challenge;easy;undefined;30;60;undefined;10;60": {
+      "kills": 20,
+      "spent": 30.0,
+      "score": 600.0,
+      "dateMs": 1792368000000
+    },
+    "challenge;easy;w,300;30;undefined;undefined;10;60": {
+      "kills": 1210,
+      "spent": 4520.0,
+      "score": 5469200.0,
+      "dateMs": 1792371600000
+    }
+  },
+  "unlockAll": false
+}

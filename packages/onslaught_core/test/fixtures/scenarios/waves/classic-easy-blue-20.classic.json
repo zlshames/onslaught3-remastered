@@ -1,0 +1,351 @@
+{
+  "id": "waves/classic-easy-blue-20.classic",
+  "description": "Phase 1 acceptance run frozen: Classic, easy, Blue only, 20 waves. The blue-rush bot's build and upgrade commands (10 Blues on the best-covering spots, then damage, rate, range) replayed until wave 20 is cleared. Freezes wave timing (20.2 s, 800 ms creep spacing), HP curve, jittered movement, Blue targeting/turning/fire rate, shell hits, bounty and upgrade costs.",
+  "map": "map1",
+  "mode": "normal",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 42,
+  "ticks": 25134,
+  "hashEvery": 600,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 534.0,
+        "y": 300.0
+      }
+    },
+    {
+      "tick": 30,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 366.0,
+        "y": 228.0
+      }
+    },
+    {
+      "tick": 60,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 402.0,
+        "y": 216.0
+      }
+    },
+    {
+      "tick": 2040,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 336.0,
+        "y": 204.0
+      }
+    },
+    {
+      "tick": 3030,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 372.0,
+        "y": 192.0
+      }
+    },
+    {
+      "tick": 3270,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 516.0,
+        "y": 336.0
+      }
+    },
+    {
+      "tick": 4200,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 258.0,
+        "y": 168.0
+      }
+    },
+    {
+      "tick": 4350,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 156.0,
+        "y": 90.0
+      }
+    },
+    {
+      "tick": 4500,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 294.0,
+        "y": 168.0
+      }
+    },
+    {
+      "tick": 5370,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 438.0,
+        "y": 198.0
+      }
+    },
+    {
+      "tick": 5640,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 6540,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 6720,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 6930,
+      "command": {
+        "type": "upgrade",
+        "uid": 24,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 7830,
+      "command": {
+        "type": "upgrade",
+        "uid": 47,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 7980,
+      "command": {
+        "type": "upgrade",
+        "uid": 62,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 8130,
+      "command": {
+        "type": "upgrade",
+        "uid": 84,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 9030,
+      "command": {
+        "type": "upgrade",
+        "uid": 95,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 9150,
+      "command": {
+        "type": "upgrade",
+        "uid": 104,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 9330,
+      "command": {
+        "type": "upgrade",
+        "uid": 124,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 10320,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 11400,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 11610,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 12600,
+      "command": {
+        "type": "upgrade",
+        "uid": 24,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 12840,
+      "command": {
+        "type": "upgrade",
+        "uid": 47,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 13800,
+      "command": {
+        "type": "upgrade",
+        "uid": 62,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 14070,
+      "command": {
+        "type": "upgrade",
+        "uid": 84,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 15000,
+      "command": {
+        "type": "upgrade",
+        "uid": 95,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 15180,
+      "command": {
+        "type": "upgrade",
+        "uid": 104,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 15420,
+      "command": {
+        "type": "upgrade",
+        "uid": 124,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 16500,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 17610,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 18660,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 18930,
+      "command": {
+        "type": "upgrade",
+        "uid": 24,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 20010,
+      "command": {
+        "type": "upgrade",
+        "uid": 47,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 21060,
+      "command": {
+        "type": "upgrade",
+        "uid": 62,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 21330,
+      "command": {
+        "type": "upgrade",
+        "uid": 84,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 22350,
+      "command": {
+        "type": "upgrade",
+        "uid": 95,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 22590,
+      "command": {
+        "type": "upgrade",
+        "uid": 104,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 23640,
+      "command": {
+        "type": "upgrade",
+        "uid": 124,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 24960,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial",
+  "name": "Quick Tutorial",
+  "order": 9,
+  "builtIn": true,
+  "base": {
+    "x": 570,
+    "y": 350
+  },
+  "road": [
+    {
+      "x": 720,
+      "y": 100
+    },
+    {
+      "x": 100,
+      "y": 100
+    },
+    {
+      "x": 100,
+      "y": 410
+    },
+    {
+      "x": 580,
+      "y": 410
+    }
+  ]
+}

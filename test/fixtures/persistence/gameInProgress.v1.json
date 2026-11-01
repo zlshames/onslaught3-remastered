@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "map": "map1",
+  "mode": "normal",
+  "difficulty": "medium",
+  "profile": "classicFixed",
+  "seed": 1,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "speed",
+        "speed": 1.5
+      }
+    },
+    {
+      "tick": 12,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 200,
+        "y": 150
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 900,
+      "command": {
+        "type": "pause",
+        "paused": true
+      }
+    }
+  ],
+  "tick": 901,
+  "stateHash": 123456789,
+  "wave": 2,
+  "lives": 9,
+  "cash": 42.5
+}

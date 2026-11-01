@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 5,
+  "soundOn": true,
+  "volume": 55,
+  "waveSpacingS": 14,
+  "waveFollow": false,
+  "waveRemember": true,
+  "timeScale": 1.25,
+  "showRanges": false,
+  "showComboRanges": false,
+  "haptics": false,
+  "leftHanded": false,
+  "rocketSmoke": true,
+  "smokeMax": 30,
+  "colourBadges": false,
+  "locale": "en",
+  "sharpGround": true,
+  "placement": "drag"
+}

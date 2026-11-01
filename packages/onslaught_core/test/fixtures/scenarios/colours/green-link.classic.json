@@ -1,0 +1,46 @@
+{
+  "id": "colours/green-link.classic",
+  "description": "Phase 2: three Greens 60 px apart along Lyne's road (A\u2013B and B\u2013C in link range, A\u2013C not), sandbox cash. Freezes the laser's instant hit and 350 ms fade, link offers, pooled shots (leader + 1.25 \u00d7 each helper's pool, compounding through B), helpers turning to and firing silently into the leader and spending their reload.",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 21,
+  "ticks": 2700,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 205,
+        "y": 82
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 254.3,
+        "y": 116.2
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 303.6,
+        "y": 150.4
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "sendWave"
+      }
+    }
+  ]
+}

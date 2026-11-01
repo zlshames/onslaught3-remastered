@@ -1,0 +1,592 @@
+{
+  "id": "supers/sandbox2-everything.classic",
+  "description": "Phase 4: all 16 turrets in sandbox2 (hard) on Lyne. A Targeter near the spawn (uid 1) joins a far Blue, a Red and the Sniper; a Fusion fed by a Green and a Yellow; a Combonly plate with a maxed Red and Yellow locks in the tazer rocket at tick 200; a Railgun near the base; the Sniper; all seven modifiers; upgrades, a move that unjoins the Blue, a sale. A wave every 3 s.",
+  "map": "map9",
+  "mode": "sandbox2",
+  "difficulty": "hard",
+  "profile": "classic",
+  "seed": 7,
+  "ticks": 6000,
+  "hashEvery": 600,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "targeter",
+        "x": 120,
+        "y": 30
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "sniper",
+        "x": 420,
+        "y": 200
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "railgun",
+        "x": 560,
+        "y": 330
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "fusion",
+        "x": 330,
+        "y": 100
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 380,
+        "y": 60
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 290,
+        "y": 40
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "combonly",
+        "x": 150,
+        "y": 300
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "red",
+        "x": 205,
+        "y": 300
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 95,
+        "y": 300
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 480,
+        "y": 240
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "red",
+        "x": 250,
+        "y": 250
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "range-up",
+        "x": 190,
+        "y": 60
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "damage-up",
+        "x": 520,
+        "y": 40
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "rate-up-exchange",
+        "x": 570,
+        "y": 40
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "range-up-exchange",
+        "x": 620,
+        "y": 40
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "rate-up",
+        "x": 670,
+        "y": 40
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "damage-up-big",
+        "x": 545,
+        "y": 90
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "damage-up-big-exchange",
+        "x": 595,
+        "y": 90
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 8,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 9,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 10
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 11
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "join",
+        "uid": 1,
+        "target": 2
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 182,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 200,
+      "command": {
+        "type": "chooseCombonly",
+        "uid": 7
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 300,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "range"
+      }
+    },
+    {
+      "tick": 362,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 542,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 722,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 902,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 1082,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 1262,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 1442,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 1622,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 1802,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 1982,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 2162,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 2342,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 2522,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 2702,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 2882,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 3062,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 3242,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 3422,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 3600,
+      "command": {
+        "type": "move",
+        "uid": 10,
+        "x": 470,
+        "y": 280
+      }
+    },
+    {
+      "tick": 3602,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 3782,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 3962,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 4142,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 4322,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 4502,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 4682,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 4800,
+      "command": {
+        "type": "sell",
+        "uid": 11
+      }
+    }
+  ]
+}

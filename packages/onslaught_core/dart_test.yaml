@@ -1,0 +1,4 @@
+# Test tags (`dart test -t <tag>`; skipped tags need `--run-skipped`).
+tags:
+  soak:
+    skip: 'long run (minutes): `fvm dart test --run-skipped -t soak` (release gate, nightly)'

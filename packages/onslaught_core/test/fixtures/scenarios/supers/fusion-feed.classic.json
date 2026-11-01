@@ -1,0 +1,104 @@
+{
+  "id": "supers/fusion-feed.classic",
+  "description": "Phase 4: a Fusion cannon 48 px from Lyne's road fed by two Greens and a Yellow placed out of creep range (one feeder per 64 ms update, 1.15x store); it discharges stored energy at the creeps of one wave every 6 s; a Yellow built at tick 900 joins the feeding after a pass with no feeder ready.",
+  "map": "map9",
+  "mode": "sandbox2",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 7,
+  "ticks": 1800,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "fusion",
+        "x": 300,
+        "y": 150
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 420,
+        "y": 40
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 470,
+        "y": 80
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "green",
+        "x": 380,
+        "y": 80
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 900,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 520,
+        "y": 120
+      }
+    }
+  ]
+}

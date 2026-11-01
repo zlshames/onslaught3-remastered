@@ -1,0 +1,191 @@
+{
+  "id": "colours/yellow-charge.classic",
+  "description": "Phase 2: one Yellow (damage 2: poison 2.8) upstream on Lyne and three damage-3 Blues downstream, sandbox cash, waves 1-9 sent 2 s apart so creeps (up to 106 HP) survive sparks. Freezes charge accumulation (10/s to 120), charged shots (poison + 3 x charge/100, 50 charge each), spark hits (slow subtracted before damage, floor 5), fast-mode targeting with lock off, leg re-planning on every slow and the +2 px/s per 1000 ms recovery.",
+  "map": "map9",
+  "mode": "sandbox",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 23,
+  "ticks": 3000,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "yellow",
+        "x": 300,
+        "y": 150
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 400,
+        "y": 230
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 450,
+        "y": 250
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "blue",
+        "x": 500,
+        "y": 300
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 3,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "upgrade",
+        "uid": 4,
+        "stat": "damage"
+      }
+    },
+    {
+      "tick": 2,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 122,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 242,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 362,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 482,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 602,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 722,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 842,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 962,
+      "command": {
+        "type": "sendWave"
+      }
+    }
+  ]
+}

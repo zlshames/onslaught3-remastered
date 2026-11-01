@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "types": [
+    {
+      "id": "creep-0",
+      "legacyId": "Attacker0",
+      "repoint": false,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.0"
+    },
+    {
+      "id": "creep-1",
+      "legacyId": "Attacker1",
+      "repoint": true,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.1"
+    },
+    {
+      "id": "creep-2",
+      "legacyId": "Attacker2",
+      "repoint": false,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.2"
+    },
+    {
+      "id": "creep-3",
+      "legacyId": "Attacker3",
+      "repoint": true,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.3"
+    },
+    {
+      "id": "creep-4",
+      "legacyId": "Attacker4",
+      "repoint": true,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.4"
+    },
+    {
+      "id": "creep-5",
+      "legacyId": "Attacker5",
+      "repoint": true,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.5"
+    },
+    {
+      "id": "creep-6",
+      "legacyId": "Attacker6",
+      "repoint": false,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.6"
+    },
+    {
+      "id": "creep-7",
+      "legacyId": "Attacker7",
+      "repoint": true,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.7"
+    },
+    {
+      "id": "creep-8",
+      "legacyId": "Attacker8",
+      "repoint": true,
+      "hpMult": 1,
+      "speedMult": 1,
+      "sprite": "creep.8"
+    }
+  ],
+  "movement": {
+    "waypointJitter": 19,
+    "fadeInMs": 225,
+    "scaleBumpPercent": 6
+  }
+}

@@ -1,0 +1,53 @@
+name: onslaught3_remastered
+description: "Onslaught 3 Remastered: a cross-platform Flutter remaster of the Flash tower-defence game."
+publish_to: 'none'
+
+version: 1.0.0-beta.1+1
+
+environment:
+  sdk: ^3.13.5
+
+# Dart pub workspace: the app and the pure-Dart core resolve together.
+workspace:
+  - packages/onslaught_core
+
+dependencies:
+  archive: ^4.5.2
+  flame: ^1.38.0
+  flame_audio: ^2.12.2
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.4.3
+  go_router: ^18.1.0
+  hive_ce: ^2.22.0
+  hive_ce_flutter: ^2.5.0
+  onslaught_core:
+    path: packages/onslaught_core
+  package_info_plus: ^10.2.2
+  path_provider: ^2.1.6
+  share_plus: ^13.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flame_test: ^2.3.1
+  alchemist: ^0.14.1
+  image: ^4.12.0
+  args: ^2.7.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/data/maps/
+    - assets/data/strings/
+    - assets/images/classic/
+    - assets/images/enhanced/
+    - assets/audio/classic/
+  shaders:
+    - shaders/ground.frag

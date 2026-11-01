@@ -1,0 +1,137 @@
+# PR gate (docs/REMASTER_PLAN.md §8.2). Flutter is pinned to the fvm version.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # release.yml runs this whole gate before it builds anything.
+  workflow_call:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: 3.47.6
+
+jobs:
+  core:
+    name: Core (${{ matrix.os }})
+    # Linux and macOS: the determinism contract requires identical fixtures on both.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Format
+        run: dart format --set-exit-if-changed .
+      - name: Core tests with coverage
+        working-directory: packages/onslaught_core
+        # The soak suite is skipped by its tag (dart_test.yaml); a skipped
+        # suite still leaves an empty report that format_coverage refuses
+        # ('Unrecognized coverage JSON'), so it is left out of this run.
+        run: |
+          dart test --coverage=coverage --exclude-tags soak
+          dart run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --report-on=lib --check-ignore
+      - name: Core coverage ≥ 85 %
+        run: dart run tool/check_coverage.dart packages/onslaught_core/coverage/lcov.info 85
+
+  core-web:
+    name: Core regression in Chrome
+    # Owner decision 2026-10-20: replays and fixtures are not per-platform. The
+    # web (dart2js and dart2wasm) must replay the VM-recorded fixtures exactly,
+    # event for event and hash for hash; any difference fails this job.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Regression, determinism and det_math tests (dart2js)
+        working-directory: packages/onslaught_core
+        run: dart run tool/web_regression.dart
+      - name: Regression, determinism and det_math tests (dart2wasm)
+        working-directory: packages/onslaught_core
+        run: dart run tool/web_regression.dart -c dart2wasm
+
+  app:
+    name: Analyze, app tests, goldens
+    # Goldens are recorded on macOS; run them on the same platform.
+    runs-on: macos-latest
+    env:
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Analyze (warnings fatal)
+        run: flutter analyze --fatal-infos --fatal-warnings
+      - name: App tests with coverage
+        run: flutter test --coverage --coverage-package='^onslaught3_remastered$'
+      - name: App coverage ≥ 70 %
+        run: dart run tool/check_coverage.dart coverage/lcov.info 70
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: golden-failures
+          path: test/**/failures/
+
+  build-web:
+    name: Web build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter build web --release
+
+  macos-smoke:
+    name: macOS build + integration smoke
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter build macos --debug
+      # The smoke flows only; the device soak (integration_test/soak_test.dart)
+      # runs nightly.
+      - run: flutter test integration_test/smoke_test.dart -d macos
+
+  web-smoke:
+    name: Chrome integration smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Start chromedriver
+        run: chromedriver --port=4444 &
+      - run: flutter drive --driver=test_driver/integration_test.dart --target=integration_test/smoke_test.dart -d web-server --browser-name=chrome --headless

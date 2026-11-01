@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "id": "easy",
+      "name": "Easy",
+      "creepSpeed": 60,
+      "startingCash": 30,
+      "hpSchedule": [
+        {
+          "wave": 1,
+          "rate": 1.3
+        },
+        {
+          "wave": 10,
+          "rate": 1.2
+        },
+        {
+          "wave": 30,
+          "rate": 1.15
+        },
+        {
+          "wave": 40,
+          "rate": 1.1
+        },
+        {
+          "wave": 60,
+          "rate": 1.09
+        },
+        {
+          "wave": 80,
+          "rate": 1.05
+        },
+        {
+          "wave": 100,
+          "rate": 1.04
+        },
+        {
+          "wave": 120,
+          "rate": 1.03
+        },
+        {
+          "wave": 200,
+          "rate": 1.02
+        }
+      ]
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "creepSpeed": 60,
+      "startingCash": 30,
+      "hpSchedule": [
+        {
+          "wave": 1,
+          "rate": 1.3
+        },
+        {
+          "wave": 10,
+          "rate": 1.2
+        },
+        {
+          "wave": 20,
+          "rate": 1.25
+        },
+        {
+          "wave": 30,
+          "rate": 1.15
+        },
+        {
+          "wave": 40,
+          "rate": 1.1
+        },
+        {
+          "wave": 60,
+          "rate": 1.09
+        },
+        {
+          "wave": 80,
+          "rate": 1.05
+        },
+        {
+          "wave": 100,
+          "rate": 1.04
+        },
+        {
+          "wave": 120,
+          "rate": 1.03
+        },
+        {
+          "wave": 200,
+          "rate": 1.02
+        }
+      ]
+    },
+    {
+      "id": "hard",
+      "name": "Hard",
+      "creepSpeed": 80,
+      "startingCash": 30,
+      "hpSchedule": [
+        {
+          "wave": 1,
+          "rate": 1.4
+        },
+        {
+          "wave": 10,
+          "rate": 1.3
+        },
+        {
+          "wave": 30,
+          "rate": 1.2
+        },
+        {
+          "wave": 40,
+          "rate": 1.1
+        },
+        {
+          "wave": 60,
+          "rate": 1.05
+        },
+        {
+          "wave": 100,
+          "rate": 1.04
+        },
+        {
+          "wave": 120,
+          "rate": 1.03
+        },
+        {
+          "wave": 200,
+          "rate": 1.02
+        }
+      ]
+    },
+    {
+      "id": "extreme",
+      "name": "Extreme",
+      "creepSpeed": 80,
+      "startingCash": 30,
+      "hpSchedule": [
+        {
+          "wave": 1,
+          "rate": 1.125
+        }
+      ]
+    }
+  ],
+  "baseHp": 10,
+  "defaultHpRate": 1.3,
+  "modeCash": {
+    "sandbox": 100000,
+    "sandbox2": 1000000
+  },
+  "modeRacks": {
+    "sandbox": [
+      "range-up",
+      "damage-up",
+      "rate-up-exchange",
+      "range-up-exchange",
+      "rate-up",
+      "damage-up-big",
+      "damage-up-big-exchange",
+      "targeter"
+    ],
+    "sandbox2": [
+      "range-up",
+      "damage-up",
+      "rate-up-exchange",
+      "range-up-exchange",
+      "rate-up",
+      "damage-up-big",
+      "damage-up-big-exchange",
+      "targeter",
+      "sniper",
+      "fusion",
+      "railgun",
+      "combonly"
+    ]
+  }
+}

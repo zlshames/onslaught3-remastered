@@ -1,0 +1,1360 @@
+{
+  "schemaVersion": 1,
+  "scenario": {
+    "id": "supers/fusion-feed.classic",
+    "description": "Phase 4: a Fusion cannon 48 px from Lyne's road fed by two Greens and a Yellow placed out of creep range (one feeder per 64 ms update, 1.15x store); it discharges stored energy at the creeps of one wave every 6 s; a Yellow built at tick 900 joins the feeding after a pass with no feeder ready.",
+    "map": "map9",
+    "mode": "sandbox2",
+    "difficulty": "easy",
+    "profile": "classic",
+    "seed": 7,
+    "ticks": 1800,
+    "hashEvery": 300,
+    "commands": [
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "fusion",
+          "x": 300.0,
+          "y": 150.0
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "green",
+          "x": 420.0,
+          "y": 40.0
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "yellow",
+          "x": 470.0,
+          "y": 80.0
+        }
+      },
+      {
+        "tick": 0,
+        "command": {
+          "type": "build",
+          "turret": "green",
+          "x": 380.0,
+          "y": 80.0
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 2,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "upgrade",
+          "uid": 3,
+          "stat": "damage"
+        }
+      },
+      {
+        "tick": 1,
+        "command": {
+          "type": "sendWave"
+        }
+      },
+      {
+        "tick": 900,
+        "command": {
+          "type": "build",
+          "turret": "yellow",
+          "x": 520.0,
+          "y": 120.0
+        }
+      }
+    ]
+  },
+  "eventCount": 151,
+  "events": [
+    {
+      "tick": 0,
+      "type": "sessionStarted",
+      "map": "map9",
+      "mode": "sandbox2",
+      "difficulty": "easy",
+      "profile": "classic",
+      "seed": 7,
+      "cash": 1000000.0,
+      "lives": 10
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 1,
+      "turret": "fusion",
+      "x": 300.0,
+      "y": 150.0,
+      "cost": 12000.0,
+      "cash": 988000.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 2,
+      "turret": "green",
+      "x": 420.0,
+      "y": 40.0,
+      "cost": 15.0,
+      "cash": 987985.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 3,
+      "turret": "yellow",
+      "x": 470.0,
+      "y": 80.0,
+      "cost": 50.0,
+      "cash": 987935.0
+    },
+    {
+      "tick": 0,
+      "type": "turretBuilt",
+      "uid": 4,
+      "turret": "green",
+      "x": 380.0,
+      "y": 80.0,
+      "cost": 15.0,
+      "cash": 987920.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 1,
+      "cost": 20.0,
+      "cash": 987900.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 2,
+      "cost": 50.0,
+      "cash": 987850.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 2,
+      "stat": "damage",
+      "level": 3,
+      "cost": 125.0,
+      "cash": 987725.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 1,
+      "cost": 40.0,
+      "cash": 987685.0
+    },
+    {
+      "tick": 1,
+      "type": "turretUpgraded",
+      "uid": 3,
+      "stat": "damage",
+      "level": 2,
+      "cost": 80.0,
+      "cash": 987605.0
+    },
+    {
+      "tick": 1,
+      "type": "waveStarted",
+      "wave": 1,
+      "size": 10,
+      "creepType": 0,
+      "hp": 13.0,
+      "bounty": 1,
+      "speed": 60.0,
+      "early": true
+    },
+    {
+      "tick": 48,
+      "type": "creepSpawned",
+      "uid": 5,
+      "wave": 1,
+      "x": -9.0,
+      "y": 5.0
+    },
+    {
+      "tick": 61,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 65,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 69,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 96,
+      "type": "creepSpawned",
+      "uid": 9,
+      "wave": 1,
+      "x": -3.0,
+      "y": -1.0
+    },
+    {
+      "tick": 122,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 126,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 130,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 144,
+      "type": "creepSpawned",
+      "uid": 13,
+      "wave": 1,
+      "x": 9.0,
+      "y": -7.0
+    },
+    {
+      "tick": 184,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 188,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 191,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 192,
+      "type": "creepSpawned",
+      "uid": 17,
+      "wave": 1,
+      "x": 5.0,
+      "y": 5.0
+    },
+    {
+      "tick": 240,
+      "type": "creepSpawned",
+      "uid": 18,
+      "wave": 1,
+      "x": 4.0,
+      "y": -8.0
+    },
+    {
+      "tick": 245,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 249,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 253,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 288,
+      "type": "creepSpawned",
+      "uid": 22,
+      "wave": 1,
+      "x": -5.0,
+      "y": 2.0
+    },
+    {
+      "tick": 307,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 311,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 314,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 336,
+      "type": "creepSpawned",
+      "uid": 26,
+      "wave": 1,
+      "x": -6.0,
+      "y": 1.0
+    },
+    {
+      "tick": 360,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "spark",
+      "target": 5
+    },
+    {
+      "tick": 360,
+      "type": "creepKilled",
+      "uid": 5,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 987606.0,
+      "kills": 1,
+      "x": 250.7601323400462,
+      "y": 177.59809457810377
+    },
+    {
+      "tick": 368,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 372,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 376,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 384,
+      "type": "creepSpawned",
+      "uid": 31,
+      "wave": 1,
+      "x": -9.0,
+      "y": 7.0
+    },
+    {
+      "tick": 430,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 432,
+      "type": "creepSpawned",
+      "uid": 33,
+      "wave": 1,
+      "x": -2.0,
+      "y": 5.0
+    },
+    {
+      "tick": 433,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 437,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 480,
+      "type": "creepSpawned",
+      "uid": 36,
+      "wave": 1,
+      "x": 6.0,
+      "y": 0.0
+    },
+    {
+      "tick": 491,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 495,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 499,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 552,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 556,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 560,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 614,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 618,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 622,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 675,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 679,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 683,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 737,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 737,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "spark",
+      "target": 31
+    },
+    {
+      "tick": 737,
+      "type": "creepKilled",
+      "uid": 31,
+      "turret": 1,
+      "bounty": 1,
+      "cash": 987607.0,
+      "kills": 2,
+      "x": 287.7953050852105,
+      "y": 206.9823390112868
+    },
+    {
+      "tick": 741,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 744,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 798,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 802,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 806,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 818,
+      "type": "baseHit",
+      "uid": 9,
+      "lives": 9
+    },
+    {
+      "tick": 860,
+      "type": "baseHit",
+      "uid": 13,
+      "lives": 8
+    },
+    {
+      "tick": 860,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 863,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 867,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 900,
+      "type": "turretBuilt",
+      "uid": 59,
+      "turret": "yellow",
+      "x": 520.0,
+      "y": 120.0,
+      "cost": 50.0,
+      "cash": 987557.0
+    },
+    {
+      "tick": 902,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 904,
+      "type": "baseHit",
+      "uid": 17,
+      "lives": 7
+    },
+    {
+      "tick": 921,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 925,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 929,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 960,
+      "type": "baseHit",
+      "uid": 18,
+      "lives": 6
+    },
+    {
+      "tick": 963,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 983,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 986,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 990,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1010,
+      "type": "baseHit",
+      "uid": 22,
+      "lives": 5
+    },
+    {
+      "tick": 1025,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1044,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1048,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1052,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1059,
+      "type": "baseHit",
+      "uid": 26,
+      "lives": 4
+    },
+    {
+      "tick": 1086,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1105,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1109,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1113,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1148,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1150,
+      "type": "baseHit",
+      "uid": 33,
+      "lives": 3
+    },
+    {
+      "tick": 1167,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1171,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1175,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1194,
+      "type": "baseHit",
+      "uid": 36,
+      "lives": 2
+    },
+    {
+      "tick": 1209,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1211,
+      "type": "waveStarted",
+      "wave": 2,
+      "size": 10,
+      "creepType": 1,
+      "hp": 16.900000000000002,
+      "bounty": 2,
+      "speed": 60.0,
+      "early": false
+    },
+    {
+      "tick": 1223,
+      "type": "creepSpawned",
+      "uid": 81,
+      "wave": 2,
+      "x": -3.0,
+      "y": 0.0
+    },
+    {
+      "tick": 1228,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1232,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1236,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1271,
+      "type": "creepSpawned",
+      "uid": 85,
+      "wave": 2,
+      "x": 3.0,
+      "y": -2.0
+    },
+    {
+      "tick": 1271,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1290,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1290,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "spark",
+      "target": 81
+    },
+    {
+      "tick": 1290,
+      "type": "creepKilled",
+      "uid": 81,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 987559.0,
+      "kills": 3,
+      "x": 52.2032207165549,
+      "y": 38.01029843951339
+    },
+    {
+      "tick": 1294,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1297,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1319,
+      "type": "creepSpawned",
+      "uid": 91,
+      "wave": 2,
+      "x": 5.0,
+      "y": 7.0
+    },
+    {
+      "tick": 1332,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1351,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1355,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1359,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1367,
+      "type": "creepSpawned",
+      "uid": 96,
+      "wave": 2,
+      "x": -4.0,
+      "y": -2.0
+    },
+    {
+      "tick": 1393,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1413,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1415,
+      "type": "creepSpawned",
+      "uid": 99,
+      "wave": 2,
+      "x": -6.0,
+      "y": 6.0
+    },
+    {
+      "tick": 1416,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1420,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1455,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1463,
+      "type": "creepSpawned",
+      "uid": 103,
+      "wave": 2,
+      "x": -9.0,
+      "y": -5.0
+    },
+    {
+      "tick": 1474,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1478,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1482,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1511,
+      "type": "creepSpawned",
+      "uid": 107,
+      "wave": 2,
+      "x": -3.0,
+      "y": -2.0
+    },
+    {
+      "tick": 1516,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1535,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1539,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1543,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1559,
+      "type": "creepSpawned",
+      "uid": 112,
+      "wave": 2,
+      "x": -5.0,
+      "y": 0.0
+    },
+    {
+      "tick": 1578,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1597,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1601,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1605,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1607,
+      "type": "creepSpawned",
+      "uid": 117,
+      "wave": 2,
+      "x": 2.0,
+      "y": 0.0
+    },
+    {
+      "tick": 1639,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1651,
+      "type": "turretFired",
+      "uid": 1,
+      "projectile": "spark",
+      "target": 85
+    },
+    {
+      "tick": 1651,
+      "type": "creepKilled",
+      "uid": 85,
+      "turret": 1,
+      "bounty": 2,
+      "cash": 987561.0,
+      "kills": 4,
+      "x": 313.5041876375094,
+      "y": 216.8365691028863
+    },
+    {
+      "tick": 1655,
+      "type": "creepSpawned",
+      "uid": 120,
+      "wave": 2,
+      "x": 1.0,
+      "y": -3.0
+    },
+    {
+      "tick": 1658,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1662,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1666,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1701,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1720,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1724,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1727,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1762,
+      "type": "turretFired",
+      "uid": 59,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1781,
+      "type": "turretFired",
+      "uid": 4,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1785,
+      "type": "turretFired",
+      "uid": 3,
+      "projectile": "spark",
+      "target": null,
+      "into": 1
+    },
+    {
+      "tick": 1789,
+      "type": "turretFired",
+      "uid": 2,
+      "projectile": "laser-beam",
+      "target": null,
+      "into": 1
+    }
+  ],
+  "hashes": [
+    {
+      "tick": 300,
+      "hash": 4050506378
+    },
+    {
+      "tick": 600,
+      "hash": 3346566961
+    },
+    {
+      "tick": 900,
+      "hash": 2928033675
+    },
+    {
+      "tick": 1200,
+      "hash": 2169141425
+    },
+    {
+      "tick": 1500,
+      "hash": 3160806468
+    },
+    {
+      "tick": 1800,
+      "hash": 411690223
+    }
+  ]
+}

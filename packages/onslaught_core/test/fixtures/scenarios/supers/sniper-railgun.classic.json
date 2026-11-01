@@ -1,0 +1,75 @@
+{
+  "id": "supers/sniper-railgun.classic",
+  "description": "Phase 4: a Railgun and a Sniper beside Lyne's road against two waves: instant sniper hits; the rail beam's one pass 32 real ms after firing hits every creep within 20 px of its 900 px line.",
+  "map": "map9",
+  "mode": "sandbox2",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 7,
+  "ticks": 1500,
+  "hashEvery": 300,
+  "commands": [
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "railgun",
+        "x": 300,
+        "y": 150
+      }
+    },
+    {
+      "tick": 0,
+      "command": {
+        "type": "build",
+        "turret": "sniper",
+        "x": 150,
+        "y": 200
+      }
+    },
+    {
+      "tick": 1,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 400,
+      "command": {
+        "type": "sendWave"
+      }
+    },
+    {
+      "tick": 600,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 600,
+      "command": {
+        "type": "upgrade",
+        "uid": 1,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 600,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "rate"
+      }
+    },
+    {
+      "tick": 600,
+      "command": {
+        "type": "upgrade",
+        "uid": 2,
+        "stat": "rate"
+      }
+    }
+  ]
+}

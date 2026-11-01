@@ -1,0 +1,52 @@
+{
+  "_comment": "Enhanced asset pack (docs/ENHANCED_PLAN.md): only what Enhanced games draw differently, layered over classic by enhancedAssetPackProvider. The nine creeps are vector redraws (tool/art/creeps/, ffdec-asset-export skill §4) placed in the frames FFDec exports for their original symbols (same ids and symbols as tool/asset_map.json). Packed by tool/pack_atlas.dart --map tool/asset_map_enhanced.json.",
+  "schemaVersion": 1,
+  "pack": "enhanced",
+  "sprites": {
+    "creep.0": {
+      "symbol": 708,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.0.svg"
+    },
+    "creep.1": {
+      "symbol": 703,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.1.svg"
+    },
+    "creep.2": {
+      "symbol": 698,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.2.svg"
+    },
+    "creep.3": {
+      "symbol": 693,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.3.svg"
+    },
+    "creep.4": {
+      "symbol": 688,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.4.svg"
+    },
+    "creep.5": {
+      "symbol": 683,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.5.svg"
+    },
+    "creep.6": {
+      "symbol": 678,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.6.svg"
+    },
+    "creep.7": {
+      "symbol": 673,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.7.svg"
+    },
+    "creep.8": {
+      "symbol": 667,
+      "frames": "all",
+      "svg": "tool/art/creeps/creep.8.svg"
+    }
+  }
+}

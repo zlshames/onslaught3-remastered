@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "map9",
+  "name": "Lyne",
+  "order": 8,
+  "builtIn": true,
+  "base": {
+    "x": 585,
+    "y": 380
+  },
+  "road": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 590,
+      "y": 410
+    }
+  ]
+}

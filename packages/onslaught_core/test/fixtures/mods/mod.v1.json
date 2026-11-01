@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "name": "Fixture mod",
+  "files": {
+    "turrets.json": {
+      "turrets": {
+        "blue": {
+          "stats": {"damage": 99},
+          "upgrades": {
+            "damage": [
+              {"cost": 20, "value": 40},
+              {"cost": 50, "value": 60},
+              {"cost": 100, "value": 150}
+            ]
+          }
+        }
+      }
+    },
+    "waves.json": {"waveSize": 12},
+    "difficulty.json": {
+      "levels": {
+        "extreme": {"hpSchedule": [{"wave": 1, "rate": 1.2}]}
+      }
+    },
+    "combos.json": {
+      "combos": {
+        "nuke": {"rechargeMs": 9000}
+      }
+    }
+  }
+}

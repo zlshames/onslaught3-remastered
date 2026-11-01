@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 1,
+  "descriptors": {
+    "weapon_damage": {
+      "title": "Initial Damage",
+      "description": "Initial damage of the turret when it is first built",
+      "min": 1,
+      "unit": "hit points"
+    },
+    "weapon_range": {
+      "title": "Initial Range",
+      "description": "Initial range of the turret when it is first built",
+      "min": 10,
+      "max": 800,
+      "unit": "pixels"
+    },
+    "weapon_rate": {
+      "title": "Initial Rate of Fire",
+      "description": "Initial rate of fire of the turret when it is first built",
+      "min": 1,
+      "max": 300,
+      "unit": "round/minute"
+    },
+    "weapon_poison": {
+      "title": "Initial Poison",
+      "description": "Initial poison of the turret when it is first built",
+      "min": 0,
+      "max": 40,
+      "unit": "movement speed/sec"
+    },
+    "weapon_rotate": {
+      "title": "Weapon Rotation",
+      "description": "Speed that the turret can bear round towards it's target",
+      "min": 1,
+      "max": 720,
+      "unit": "degrees/sec"
+    },
+    "weapon_must_face": {
+      "title": "Fire when facing",
+      "description": "If the weapon has to be facing the target straight on before it can fire"
+    },
+    "modify_possible": {
+      "title": "Can Be Modified",
+      "description": "Wether or not modifier turrets will affect this turret"
+    },
+    "combo_capable": {
+      "title": "Combo",
+      "description": "If the turret is initially combo-capable when it is first built"
+    },
+    "combo_never": {
+      "title": "Never Combo",
+      "description": "If the turret will never be available for combos"
+    },
+    "freak_capable": {
+      "title": "Freakout Capability",
+      "description": "If the turret is capable of Freakout"
+    },
+    "freak_available": {
+      "title": "Freakout Available Now",
+      "description": "If the turret is initially able to Freakout when it is first built"
+    },
+    "freak_length": {
+      "title": "Freakout Length",
+      "description": "Amount of time a Freakout will last",
+      "min": 1000,
+      "max": 60000,
+      "step": 100,
+      "unit": "msecs"
+    },
+    "freak_space": {
+      "title": "Freakout Spacing",
+      "description": "Minimum amount of time between Freakouts",
+      "min": 10000,
+      "step": 1000,
+      "unit": "msecs"
+    },
+    "freak_damage_mult": {
+      "title": "Freak Damage x",
+      "description": "Damage multiplier in effect during a Freakout",
+      "min": 1
+    },
+    "freak_range_mult": {
+      "title": "Freak Range x",
+      "description": "Range multiplier in effect during a Freakout",
+      "min": 1
+    },
+    "freak_rate_mult": {
+      "title": "Freak Rate x",
+      "description": "Rate of fire multiplier in effect during a Freakout",
+      "min": 1
+    },
+    "freak_level_damage": {
+      "title": "Freak Damage Level",
+      "description": "Damage upgrade level required to enable Freakouts",
+      "min": 1
+    },
+    "freak_level_range": {
+      "title": "Freak Range Level",
+      "description": "Range upgrade level required to enable Freakouts",
+      "min": 1
+    },
+    "freak_level_rate": {
+      "title": "Freak Rate Level",
+      "description": "Rate of fire upgrade level required to enable Freakouts",
+      "min": 1
+    },
+    "modify_up_damage": {
+      "title": "Mod Damage +",
+      "description": "Amount of damage this modifier turret adds",
+      "min": -420,
+      "max": 420,
+      "step": 1,
+      "unit": "hit points"
+    },
+    "modify_up_range": {
+      "title": "Mod Range +",
+      "description": "Amount of range this modifier turret adds",
+      "min": -420,
+      "max": 420,
+      "step": 1,
+      "unit": "pixels"
+    },
+    "modify_up_rate": {
+      "title": "Mod Rate +",
+      "description": "Amount of rate of fire this modifier turret adds",
+      "min": -420,
+      "max": 420,
+      "step": 1,
+      "unit": "rounds/min"
+    },
+    "modify_up_damage_mult": {
+      "title": "Mod Damage x",
+      "description": "Damage multiplier this modifier turret adds",
+      "min": -20,
+      "max": 20,
+      "step": 0.1
+    },
+    "modify_up_range_mult": {
+      "title": "Mod Range x",
+      "description": "Range multiplier this modifier turret adds",
+      "min": -20,
+      "max": 20,
+      "step": 0.1
+    },
+    "modify_up_rate_mult": {
+      "title": "Mod Rate x",
+      "description": "Rate of fire multiplier this modifier turret adds",
+      "min": -20,
+      "max": 20,
+      "step": 0.1
+    },
+    "upgrade_damage": {
+      "title": "Damage Upgrade Path",
+      "description": "The amount of damage and cost of each upgrade",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "cost",
+      "valueField": "amount",
+      "key": {
+        "title": "Cost",
+        "description": "How much this upgrade will cost",
+        "min": 1,
+        "step": 1,
+        "unit": "$"
+      },
+      "value": {
+        "title": "Damage",
+        "description": "Upgraded damage",
+        "min": 1,
+        "step": 1,
+        "unit": "hp"
+      }
+    },
+    "upgrade_range": {
+      "title": "Range Upgrade Path",
+      "description": "The amount of range and cost of each upgrade",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "cost",
+      "valueField": "amount",
+      "key": {
+        "title": "Cost",
+        "description": "How much this upgrade will cost",
+        "min": 1,
+        "step": 1,
+        "unit": "$"
+      },
+      "value": {
+        "title": "Range",
+        "description": "New range",
+        "min": 1,
+        "step": 1,
+        "unit": "pixels"
+      }
+    },
+    "upgrade_rate": {
+      "title": "Rate of Fire Upgrade Path",
+      "description": "The rate of fire and cost of each upgrade",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "cost",
+      "valueField": "amount",
+      "key": {
+        "title": "Cost",
+        "description": "How much this upgrade will cost",
+        "min": 1,
+        "step": 1,
+        "unit": "$"
+      },
+      "value": {
+        "title": "Rate",
+        "description": "Rate of fire",
+        "min": 60,
+        "step": 1,
+        "unit": "r/min"
+      }
+    },
+    "turret_unlock": {
+      "title": "Kills to Unlock",
+      "description": "Number of kills required to unlock this turret",
+      "min": 1,
+      "step": 1
+    },
+    "turret_available": {
+      "title": "Initial Availability",
+      "description": "If this turret is initially available to purchase"
+    },
+    "turret_cost": {
+      "title": "Purchase Cost",
+      "description": "Amount of cash required to buy this turret",
+      "min": 1,
+      "step": 1
+    },
+    "recharge": {
+      "title": "Combo Recharge",
+      "description": "Amount of time before the turrets used firing this combo can used to combo again",
+      "min": 1000,
+      "step": 100,
+      "unit": "milliseconds"
+    },
+    "bullet_damage": {
+      "title": "Bullet Damage",
+      "description": "Amount of damage done by the combo projectile on impact with the target",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "bullet_poison": {
+      "title": "Bullet Poison",
+      "description": "Amount of poison inflicted by the combo projectile on impact with the target",
+      "min": 0,
+      "max": 90,
+      "unit": "movement speed/sec"
+    },
+    "cluster_damage": {
+      "title": "Cluster Damage",
+      "description": "Amount of damage done by each cluster rocket for cluster blasts",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "cluster_qty": {
+      "title": "Cluster Quantity",
+      "description": "Amount of cluster rockets released on impact",
+      "min": 0
+    },
+    "cluster_holding": {
+      "title": "Cluster Holding",
+      "description": "Are the cluster rockets allowed to enter holding pattern?"
+    },
+    "cluster_laser": {
+      "title": "Cluster Laser",
+      "description": "Do the cluster rockets also fire lasers?"
+    },
+    "cluster_laser_damage": {
+      "title": "Cluster Laser Damage",
+      "description": "Amount of damage done by the lasers fired by the cluster rockets",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "blast_damage": {
+      "title": "Blast Damage",
+      "description": "Amount of damage done by the main blast",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "blast_poison": {
+      "title": "Blast Poison",
+      "description": "Amount of poison inflicted by the main blast",
+      "min": 0,
+      "max": 90,
+      "unit": "movement speed/sec"
+    },
+    "laser_damage": {
+      "title": "Laser Damage",
+      "description": "Amount of damage done by the lasers fired by cluster blasts",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "laser_range": {
+      "title": "Laser Range",
+      "description": "Firing range of laser rockets fired by cluster blasts",
+      "min": 50,
+      "max": 800,
+      "unit": "pixels"
+    },
+    "laser_rate": {
+      "title": "Laser Rate",
+      "description": "Rate of fire of laser rockets fired by cluster blasts",
+      "min": 1,
+      "max": 240,
+      "unit": "rounds/min"
+    },
+    "rocket_damage": {
+      "title": "Rocket Damage",
+      "description": "Amount of damage done by cluster rockets on impact",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "move_speed": {
+      "title": "Move Speed",
+      "description": "Speed that the projectile travels",
+      "min": 60,
+      "unit": "pixels/sec"
+    },
+    "laserblast_damage": {
+      "title": "Laser-blast Damage",
+      "description": "Damage inflicted by lasers fired by a combo laser-blast",
+      "min": 0,
+      "unit": "hit points"
+    },
+    "laserblast_qty": {
+      "title": "Laser-blast Quantity",
+      "description": "Number of lasers fired by a combo laser-blast",
+      "min": 1
+    },
+    "laserblast_range": {
+      "title": "Laser-blast Range",
+      "description": "Range of lasers fired by a combo laser-blast",
+      "min": 1,
+      "max": 800,
+      "unit": "pixels"
+    },
+    "napalm_quantity": {
+      "title": "Fuel Quantity",
+      "description": "Number of sub-blasts fired by a napalm blast",
+      "min": 1,
+      "max": 40,
+      "step": 1,
+      "unit": "blasts"
+    },
+    "napalm_timing": {
+      "title": "Blast Timing",
+      "description": "Time between individual napalm blasts",
+      "min": 10,
+      "max": 500,
+      "step": 5,
+      "unit": "milliseconds"
+    },
+    "napalm_jit": {
+      "title": "Blast Stagger",
+      "description": "How widely spread the napalm blast is",
+      "min": 5,
+      "max": 100,
+      "step": 1,
+      "unit": "pixels"
+    },
+    "blackhole_radius": {
+      "title": "Event Horizon",
+      "description": "How close something can get to a blackhole before it is sucked in",
+      "min": 1,
+      "max": 720,
+      "step": 10,
+      "unit": "pixels"
+    },
+    "blackhole_duration": {
+      "title": "Duration",
+      "description": "How long a blackhole persists",
+      "min": 100,
+      "max": 20000,
+      "step": 100,
+      "unit": "milliseconds"
+    },
+    "blackhole_eject": {
+      "title": "Wormhole Theory",
+      "description": "Are blackholed items ejected into an alternate universe instead of simply being destroyed?"
+    },
+    "attacker_hp_rate_easy": {
+      "title": "Attacker HP Progression (Easy)",
+      "description": "The rate at which attackers get harder in an easy game",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "wave",
+      "valueField": "rate",
+      "key": {
+        "title": "Wave",
+        "description": "The wave at which this happens",
+        "min": 1,
+        "step": 1
+      },
+      "value": {
+        "title": "Multiplier",
+        "description": "Next wave of creeps HP is mulitplied by this amount",
+        "min": 1,
+        "step": 0.01
+      }
+    },
+    "attacker_hp_rate_medium": {
+      "title": "Attacker HP Progression (Medium)",
+      "description": "The rate at which attackers get harder in a medium game",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "wave",
+      "valueField": "rate",
+      "key": {
+        "title": "Wave",
+        "description": "The wave at which this happens",
+        "min": 1,
+        "step": 1
+      },
+      "value": {
+        "title": "Multiplier",
+        "description": "Next wave of creeps HP is mulitplied by this amount",
+        "min": 1,
+        "step": 0.01
+      }
+    },
+    "attacker_hp_rate_hard": {
+      "title": "Attacker HP Progression (Hard)",
+      "description": "The rate at which attackers get harder in a hard game",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "wave",
+      "valueField": "rate",
+      "key": {
+        "title": "Wave",
+        "description": "The wave at which this happens",
+        "min": 1,
+        "step": 1
+      },
+      "value": {
+        "title": "Multiplier",
+        "description": "Next wave of creeps HP is mulitplied by this amount",
+        "min": 1,
+        "step": 0.01
+      }
+    },
+    "attacker_hp_rate_extreme": {
+      "title": "Attacker HP Progression (Extreme)",
+      "description": "The rate at which attackers get harder in an extreme game",
+      "type": "arrayIndexed",
+      "min": 1,
+      "keyField": "wave",
+      "valueField": "rate",
+      "key": {
+        "title": "Wave",
+        "description": "The wave at which this happens",
+        "min": 1,
+        "step": 1
+      },
+      "value": {
+        "title": "Multiplier",
+        "description": "Next wave of creeps HP is mulitplied by this amount",
+        "min": 1,
+        "step": 0.01
+      }
+    },
+    "attacker_speed_easy": {
+      "title": "Attacker Speed (Easy)",
+      "description": "Speed creeps will move down the road in an easy game",
+      "min": 40,
+      "max": 600,
+      "unit": "pixels/sec"
+    },
+    "attacker_speed_medium": {
+      "title": "Attacker Speed (Medium)",
+      "description": "Speed creeps will move down the road in a medium game",
+      "min": 40,
+      "max": 600,
+      "unit": "pixels/sec"
+    },
+    "attacker_speed_hard": {
+      "title": "Attacker Speed (Hard)",
+      "description": "Speed creeps will move down the road in a hard game",
+      "min": 40,
+      "max": 600,
+      "unit": "pixels/sec"
+    },
+    "attacker_speed_extreme": {
+      "title": "Attacker Speed (Extreme)",
+      "description": "Speed creeps will move down the road in an extreme game",
+      "min": 40,
+      "max": 600,
+      "unit": "pixels/sec"
+    },
+    "wave_spacing": {
+      "title": "Wave Spacing",
+      "description": "Time between each wave of creeps",
+      "min": 5000,
+      "max": 40000,
+      "step": 100,
+      "unit": "milliseconds"
+    },
+    "attacker_spacing": {
+      "title": "Attacker Spacing",
+      "description": "Time between creeps in a wave",
+      "min": 100,
+      "max": 40000,
+      "step": 100,
+      "unit": "milliseconds"
+    },
+    "wave_size": {
+      "title": "Wave Size",
+      "description": "Number of creeps per wave",
+      "min": 1,
+      "max": 30
+    },
+    "attacker_energy": {
+      "title": "Attacker HP",
+      "description": "Initial HP of a creep at the start of the game",
+      "min": 1,
+      "max": 100,
+      "unit": "hit points"
+    },
+    "attacker_upgrade_rate": {
+      "title": "Attacker HP Upgrade Rate",
+      "description": "Initial attacker HP multiplier per wave",
+      "min": 1,
+      "max": 10,
+      "unit": "multiplier per wave"
+    },
+    "starting_cash_easy": {
+      "title": "Cash (easy)",
+      "description": "Amount of cash at the start of an easy game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    },
+    "starting_cash_medium": {
+      "title": "Cash (medium)",
+      "description": "Amount of cash at the start of a medium game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    },
+    "starting_cash_hard": {
+      "title": "Cash (hard)",
+      "description": "Amount of cash at the start of a hard game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    },
+    "starting_cash_extreme": {
+      "title": "Cash (extreme)",
+      "description": "Amount of cash at the start of an extreme game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    },
+    "starting_cash_sandbox": {
+      "title": "Cash (sandbox)",
+      "description": "Amount of cash at the start of a sandbox game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    },
+    "starting_cash_sandbox2": {
+      "title": "Cash (sandbox 2)",
+      "description": "Amount of cash at the start of a second level sandbox game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    },
+    "starting_cash_debug": {
+      "title": "Cash (debug)",
+      "description": "Amount of cash at the start of a debug game",
+      "min": 1,
+      "max": 10000000,
+      "step": 1,
+      "unit": "dollars"
+    }
+  }
+}

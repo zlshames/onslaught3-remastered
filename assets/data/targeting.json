@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "modes": [
+    "near",
+    "far",
+    "weak",
+    "strong",
+    "slow",
+    "fast",
+    "old",
+    "young"
+  ],
+  "cones": [
+    {
+      "id": "off",
+      "spreadDeg": null
+    },
+    {
+      "id": "wide",
+      "spreadDeg": 50
+    },
+    {
+      "id": "medium",
+      "spreadDeg": 30
+    },
+    {
+      "id": "narrow",
+      "spreadDeg": 15
+    }
+  ],
+  "mustFaceToleranceDeg": 1
+}

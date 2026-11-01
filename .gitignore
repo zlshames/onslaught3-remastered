@@ -1,0 +1,59 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+**/build/
+/coverage/
+**/coverage/
+
+# FVM Version Cache
+.fvm/
+
+# Symbolication / obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Golden test failure output
+**/failures/
+
+# Signing material never belongs in the repo (see release-build skill)
+*.jks
+*.keystore
+key.properties
+
+# Codebase audits and measurements stay on developer machines.
+/docs/audits/
+
+# The original game and its exports are local reference material (rule R11). Everything the
+# build and tests need was extracted into docs/legacy/ and assets/.
+.legacy/

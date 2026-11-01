@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "simulation": {
+    "tickHz": 60,
+    "speedFactorMin": 0.5,
+    "speedFactorMax": 2.0
+  },
+  "economy": {
+    "lives": 10,
+    "sellRefund": 0.7
+  },
+  "modifiers": {
+    "multFloor": 0.2
+  },
+  "combos": {
+    "range": 70,
+    "blackHolePointRange": 90
+  },
+  "slow": {
+    "floor": 5,
+    "recoverAmount": 2,
+    "recoverIntervalMs": 1000
+  },
+  "objectives": {
+    "winCheckIntervalMs": 1000
+  }
+}

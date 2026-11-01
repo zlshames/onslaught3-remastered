@@ -1,0 +1,28 @@
+Onslaught 3 Remastered
+Copyright 2026 the Onslaught 3 Remastered contributors
+
+This software is a remaster of Onslaught 2. Original game: code and engine by
+Gaby Vanhegan, sound by Anthony Galante. Slipcor (Chris) preserved the original
+files, released Onslaught 2.2 and gave permission for this remaster.
+
+WHAT THE APACHE LICENSE DOES NOT COVER
+
+The Apache License, Version 2.0 in LICENSE applies to this project's own source
+code only. It does not apply to the original game's material or to anything
+derived from it, which belongs to its creators and is used here with Slipcor's
+permission. You may not reuse that material under the Apache License:
+
+  - assets/images/  the art, including redraws of the original creeps
+  - assets/audio/   the sound
+  - assets/data/    the balance values, maps, tutorial and other game content
+  - l10n/           the game's text and its translations
+  - docs/legacy/ and docs/ONSLAUGHT2_GAME_REFERENCE.md  the original's values
+  - tool/art/ and tool/branding/  art sources
+  - docs/screenshots/ and the golden images under test/  which show the art
+  - the app icons and launch screens in android/, ios/, macos/, windows/, web/,
+    which are made from the original Red turret
+
+The names "Onslaught" and "Onslaught 2" also remain with their owners.
+
+A fork that replaces this material with its own may use the code freely under
+the licence. Please keep the credits above either way.

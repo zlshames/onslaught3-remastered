@@ -1,0 +1,1801 @@
+{
+  "schemaVersion": 1,
+  "turrets": [
+    {
+      "id": "blue",
+      "legacyId": "TurretBlue",
+      "name": "Blue Cannon",
+      "category": "basic",
+      "cost": 10,
+      "unlockKills": 0,
+      "availableInitially": true,
+      "stats": {
+        "damage": 15,
+        "range": 130,
+        "rate": 100,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 20,
+            "value": 30
+          },
+          {
+            "cost": 50,
+            "value": 60
+          },
+          {
+            "cost": 100,
+            "value": 150
+          },
+          {
+            "cost": 250,
+            "value": 400
+          },
+          {
+            "cost": 600,
+            "value": 1200
+          },
+          {
+            "cost": 1000,
+            "value": 3100
+          },
+          {
+            "cost": 1100,
+            "value": 8500
+          },
+          {
+            "cost": 1200,
+            "value": 18400
+          },
+          {
+            "cost": 1500,
+            "value": 46000
+          }
+        ],
+        "range": [
+          {
+            "cost": 30,
+            "value": 140
+          },
+          {
+            "cost": 100,
+            "value": 150
+          },
+          {
+            "cost": 200,
+            "value": 165
+          },
+          {
+            "cost": 500,
+            "value": 180
+          },
+          {
+            "cost": 950,
+            "value": 220
+          }
+        ],
+        "rate": [
+          {
+            "cost": 50,
+            "value": 110
+          },
+          {
+            "cost": 150,
+            "value": 125
+          },
+          {
+            "cost": 300,
+            "value": 140
+          },
+          {
+            "cost": 450,
+            "value": 160
+          },
+          {
+            "cost": 950,
+            "value": 180
+          },
+          {
+            "cost": 1000,
+            "value": 200
+          },
+          {
+            "cost": 1450,
+            "value": 240
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": true,
+        "comboCapable": false,
+        "comboNever": false,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": true,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "combo",
+        "freakout"
+      ],
+      "specialParams": {
+        "freakout": {
+          "firstDelayMs": 60000,
+          "warnMs": 3000,
+          "jitterPx": 4,
+          "buyCostPerSecond": 250
+        },
+        "combo": {
+          "bearToLeader": true
+        }
+      },
+      "projectiles": [
+        "shell-1",
+        "shell-1",
+        "shell-2",
+        "shell-3",
+        "shell-4",
+        "shell-5",
+        "shell-6",
+        "shell-7",
+        "shell-8",
+        "shell-9"
+      ],
+      "weaponRotation": -90,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 26,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.blue.body",
+        "legs": "turret.legs.cannon",
+        "weapon": "turret.blue.weapon",
+        "icon": "turret.blue",
+        "tint": "#0000FF",
+        "badgeShape": "circle"
+      },
+      "sounds": {
+        "fire": "cannon"
+      },
+      "displayNames": [
+        "BangBang",
+        "Cannon",
+        "Shooter",
+        "Shotgun",
+        "Boomer",
+        "Artillery",
+        "MG42-",
+        "Gun",
+        "Kapow"
+      ]
+    },
+    {
+      "id": "green",
+      "legacyId": "TurretGreen",
+      "name": "Green Laser",
+      "category": "basic",
+      "cost": 15,
+      "unlockKills": 0,
+      "availableInitially": true,
+      "stats": {
+        "damage": 25,
+        "range": 100,
+        "rate": 60,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 20,
+            "value": 50
+          },
+          {
+            "cost": 50,
+            "value": 120
+          },
+          {
+            "cost": 125,
+            "value": 400
+          },
+          {
+            "cost": 300,
+            "value": 1500
+          },
+          {
+            "cost": 700,
+            "value": 3900
+          },
+          {
+            "cost": 850,
+            "value": 9300
+          },
+          {
+            "cost": 950,
+            "value": 19500
+          },
+          {
+            "cost": 1000,
+            "value": 35000
+          }
+        ],
+        "range": [
+          {
+            "cost": 15,
+            "value": 110
+          },
+          {
+            "cost": 25,
+            "value": 125
+          },
+          {
+            "cost": 40,
+            "value": 140
+          },
+          {
+            "cost": 65,
+            "value": 160
+          },
+          {
+            "cost": 105,
+            "value": 180
+          },
+          {
+            "cost": 170,
+            "value": 205
+          },
+          {
+            "cost": 275,
+            "value": 230
+          },
+          {
+            "cost": 445,
+            "value": 255
+          },
+          {
+            "cost": 720,
+            "value": 285
+          },
+          {
+            "cost": 1100,
+            "value": 320
+          }
+        ],
+        "rate": [
+          {
+            "cost": 30,
+            "value": 65
+          },
+          {
+            "cost": 75,
+            "value": 70
+          },
+          {
+            "cost": 180,
+            "value": 80
+          },
+          {
+            "cost": 300,
+            "value": 90
+          },
+          {
+            "cost": 450,
+            "value": 105
+          },
+          {
+            "cost": 600,
+            "value": 120
+          },
+          {
+            "cost": 800,
+            "value": 135
+          },
+          {
+            "cost": 900,
+            "value": 160
+          },
+          {
+            "cost": 1000,
+            "value": 190
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": true,
+        "comboCapable": false,
+        "comboNever": false,
+        "joinable": true,
+        "fusionFeeder": true,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "combo",
+        "link"
+      ],
+      "specialParams": {
+        "link": {
+          "mult": 1.25
+        },
+        "combo": {
+          "bearToLeader": true
+        }
+      },
+      "projectiles": [
+        "laser-beam"
+      ],
+      "weaponRotation": -90,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 26.4,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.green.body",
+        "weapon": "turret.green.weapon",
+        "icon": "turret.green",
+        "tint": "#01BA01",
+        "badgeShape": "triangle"
+      },
+      "sounds": {
+        "fire": "laser"
+      },
+      "displayNames": [
+        "Laser",
+        "MeanGreen",
+        "Greeno",
+        "Greeny",
+        "IR Tower",
+        "Beamer",
+        "BeamShot"
+      ]
+    },
+    {
+      "id": "red",
+      "legacyId": "TurretRed",
+      "name": "Red Rocket",
+      "category": "basic",
+      "cost": 20,
+      "unlockKills": 0,
+      "availableInitially": true,
+      "stats": {
+        "damage": 50,
+        "range": 200,
+        "rate": 50,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": false
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 50,
+            "value": 120
+          },
+          {
+            "cost": 100,
+            "value": 350
+          },
+          {
+            "cost": 200,
+            "value": 800
+          },
+          {
+            "cost": 350,
+            "value": 1950
+          },
+          {
+            "cost": 650,
+            "value": 6050
+          },
+          {
+            "cost": 1200,
+            "value": 11500
+          },
+          {
+            "cost": 1300,
+            "value": 27000
+          },
+          {
+            "cost": 1500,
+            "value": 48900
+          },
+          {
+            "cost": 1500,
+            "value": 65000
+          }
+        ],
+        "range": [
+          {
+            "cost": 35,
+            "value": 210
+          },
+          {
+            "cost": 80,
+            "value": 220
+          },
+          {
+            "cost": 160,
+            "value": 230
+          },
+          {
+            "cost": 400,
+            "value": 250
+          },
+          {
+            "cost": 900,
+            "value": 275
+          },
+          {
+            "cost": 1100,
+            "value": 300
+          },
+          {
+            "cost": 1300,
+            "value": 325
+          },
+          {
+            "cost": 1500,
+            "value": 350
+          }
+        ],
+        "rate": [
+          {
+            "cost": 30,
+            "value": 60
+          },
+          {
+            "cost": 60,
+            "value": 70
+          },
+          {
+            "cost": 115,
+            "value": 85
+          },
+          {
+            "cost": 200,
+            "value": 100
+          },
+          {
+            "cost": 340,
+            "value": 115
+          },
+          {
+            "cost": 600,
+            "value": 135
+          },
+          {
+            "cost": 900,
+            "value": 155
+          },
+          {
+            "cost": 1050,
+            "value": 180
+          },
+          {
+            "cost": 1150,
+            "value": 210
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": true,
+        "comboCapable": false,
+        "comboNever": false,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "combo",
+        "holding"
+      ],
+      "specialParams": {
+        "holding": {
+          "maxRockets": 4,
+          "levelDamage": 0,
+          "levelRange": 3,
+          "levelRate": 3,
+          "sellTargetRange": 720
+        },
+        "combo": {
+          "bearToLeader": true
+        }
+      },
+      "projectiles": [
+        "rocket-1",
+        "rocket-1",
+        "rocket-2",
+        "rocket-3",
+        "rocket-4",
+        "rocket-5",
+        "rocket-6",
+        "rocket-7",
+        "rocket-8",
+        "rocket-9"
+      ],
+      "weaponRotation": -90,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 13.3,
+          "y": -9.05
+        },
+        {
+          "x": 13.3,
+          "y": -3.05
+        },
+        {
+          "x": 13.3,
+          "y": 2.95
+        },
+        {
+          "x": 13.3,
+          "y": 9.05
+        }
+      ],
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.red.body",
+        "weapon": "turret.red.weapon",
+        "icon": "turret.red",
+        "tint": "#FF0000",
+        "badgeShape": "square"
+      },
+      "sounds": {
+        "fire": "rocket"
+      },
+      "displayNames": [
+        "Rocket",
+        "SAMTower",
+        "ScudMan",
+        "ICBM",
+        "Silo",
+        "Station",
+        "Bigboy",
+        "Minuteman"
+      ]
+    },
+    {
+      "id": "yellow",
+      "legacyId": "TurretYellow",
+      "name": "Yellow Tazer",
+      "category": "basic",
+      "cost": 50,
+      "unlockKills": 0,
+      "availableInitially": true,
+      "stats": {
+        "damage": 50,
+        "range": 70,
+        "rate": 60,
+        "poison": 1,
+        "rotate": 720,
+        "mustFace": false
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 40,
+            "value": 75
+          },
+          {
+            "cost": 80,
+            "value": 125
+          },
+          {
+            "cost": 190,
+            "value": 200
+          },
+          {
+            "cost": 300,
+            "value": 800
+          },
+          {
+            "cost": 600,
+            "value": 3500
+          },
+          {
+            "cost": 1000,
+            "value": 11000
+          },
+          {
+            "cost": 1100,
+            "value": 30000
+          }
+        ],
+        "range": [
+          {
+            "cost": 50,
+            "value": 75
+          },
+          {
+            "cost": 100,
+            "value": 85
+          },
+          {
+            "cost": 300,
+            "value": 105
+          },
+          {
+            "cost": 600,
+            "value": 130
+          },
+          {
+            "cost": 1000,
+            "value": 155
+          }
+        ],
+        "rate": [
+          {
+            "cost": 50,
+            "value": 70
+          },
+          {
+            "cost": 100,
+            "value": 80
+          },
+          {
+            "cost": 225,
+            "value": 90
+          },
+          {
+            "cost": 390,
+            "value": 100
+          },
+          {
+            "cost": 650,
+            "value": 120
+          },
+          {
+            "cost": 1100,
+            "value": 150
+          },
+          {
+            "cost": 1450,
+            "value": 180
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": true,
+        "comboCapable": false,
+        "comboNever": false,
+        "joinable": true,
+        "fusionFeeder": true,
+        "directional": true
+      },
+      "freakout": {
+        "capable": true,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "combo",
+        "freakout",
+        "charge"
+      ],
+      "specialParams": {
+        "freakout": {
+          "firstDelayMs": 60000,
+          "warnMs": 3000,
+          "jitterPx": 4,
+          "buyCostPerSecond": 250
+        },
+        "charge": {
+          "base": 100,
+          "rateBase": 10,
+          "cost": 50,
+          "poisonMax": 10,
+          "maxPerDamageLevel": 10,
+          "ratePerRateLevel": 2,
+          "poisonBoost": 3
+        },
+        "combo": {
+          "bearToLeader": false
+        }
+      },
+      "projectiles": [
+        "spark"
+      ],
+      "weaponRotation": 0,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "fast",
+        "lockOff": true
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.yellow.body",
+        "legs": "turret.legs.electric",
+        "weapon": "turret.yellow.weapon",
+        "icon": "turret.yellow",
+        "tint": "#FFCC00",
+        "badgeShape": "diamond"
+      },
+      "sounds": {
+        "fire": "tazer"
+      },
+      "displayNames": [
+        "Shocker",
+        "Tazer",
+        "Zap",
+        "Joules",
+        "Lightning",
+        "Bzzt",
+        "StunGun",
+        "Jaundice"
+      ]
+    },
+    {
+      "id": "range-up",
+      "legacyId": "TurretRangeUp",
+      "name": "Range Enhancer",
+      "category": "modifier",
+      "cost": 2000,
+      "unlockKills": 300,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 100,
+        "addRate": 0,
+        "multDamage": 0,
+        "multRange": 0,
+        "multRate": 0
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.range-up",
+        "icon": "turret.range-up"
+      },
+      "displayNames": [
+        "Ranger"
+      ]
+    },
+    {
+      "id": "damage-up",
+      "legacyId": "TurretDamageUp",
+      "name": "Damage Enhancer",
+      "category": "modifier",
+      "cost": 5000,
+      "unlockKills": 450,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 0,
+        "addRate": 0,
+        "multDamage": 0.4,
+        "multRange": 0,
+        "multRate": 0
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.damage-up",
+        "icon": "turret.damage-up"
+      },
+      "displayNames": [
+        "Boom"
+      ]
+    },
+    {
+      "id": "rate-up-exchange",
+      "legacyId": "TurretRateUpExchange",
+      "name": "Rate Exchanger",
+      "category": "modifier",
+      "cost": 1200,
+      "unlockKills": 550,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 0,
+        "addRate": 0,
+        "multDamage": -0.4,
+        "multRange": -0.1,
+        "multRate": 0.6
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.rate-up-exchange",
+        "icon": "turret.rate-up-exchange"
+      },
+      "displayNames": [
+        "SpeedEx"
+      ]
+    },
+    {
+      "id": "range-up-exchange",
+      "legacyId": "TurretRangeUpExchange",
+      "name": "Range Exchanger",
+      "category": "modifier",
+      "cost": 1000,
+      "unlockKills": 700,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 100,
+        "addRate": 0,
+        "multDamage": 0,
+        "multRange": 0,
+        "multRate": -0.25
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.range-up-exchange",
+        "icon": "turret.range-up-exchange"
+      },
+      "displayNames": [
+        "RangerEx"
+      ]
+    },
+    {
+      "id": "rate-up",
+      "legacyId": "TurretRateUp",
+      "name": "Rate Enhancer",
+      "category": "modifier",
+      "cost": 3000,
+      "unlockKills": 850,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 0,
+        "addRate": 0,
+        "multDamage": 0,
+        "multRange": 0,
+        "multRate": 1.2
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.rate-up",
+        "icon": "turret.rate-up"
+      },
+      "displayNames": [
+        "Speed"
+      ]
+    },
+    {
+      "id": "damage-up-big",
+      "legacyId": "TurretDamageUpBig",
+      "name": "Big Damage Enhancer",
+      "category": "modifier",
+      "cost": 8500,
+      "unlockKills": 1000,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 0,
+        "addRate": 0,
+        "multDamage": 1,
+        "multRange": 0,
+        "multRate": 0
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.damage-up-big",
+        "icon": "turret.damage-up-big"
+      },
+      "displayNames": [
+        "BigBang"
+      ]
+    },
+    {
+      "id": "damage-up-big-exchange",
+      "legacyId": "TurretDamageUpBigExchange",
+      "name": "Big Damage Exchanger",
+      "category": "modifier",
+      "cost": 3500,
+      "unlockKills": 1100,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 80,
+        "rate": 0,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 1500,
+            "value": 130
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": false,
+        "fusionFeeder": false,
+        "directional": false
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "modifierAura": {
+        "addDamage": 0,
+        "addRange": 0,
+        "addRate": 0,
+        "multDamage": 1,
+        "multRange": -0.3,
+        "multRate": -0.3
+      },
+      "specials": [
+        "modifier"
+      ],
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.damage-up-big-exchange",
+        "icon": "turret.damage-up-big-exchange"
+      },
+      "displayNames": [
+        "BigBangEx"
+      ]
+    },
+    {
+      "id": "targeter",
+      "legacyId": "TurretTargeter",
+      "name": "Targeter",
+      "category": "utility",
+      "cost": 1400,
+      "unlockKills": 1200,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 120,
+        "rate": 240,
+        "poison": 0,
+        "rotate": 360,
+        "mustFace": true
+      },
+      "upgrades": {
+        "range": [
+          {
+            "cost": 250,
+            "value": 140
+          },
+          {
+            "cost": 350,
+            "value": 170
+          },
+          {
+            "cost": 500,
+            "value": 200
+          },
+          {
+            "cost": 700,
+            "value": 230
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": true,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "targeter"
+      ],
+      "specialParams": {
+        "targeter": {
+          "joinSnap": 17,
+          "joinSearchBox": 30,
+          "joinMax": 3,
+          "idleRotate": 90
+        }
+      },
+      "projectiles": [],
+      "weaponRotation": -90,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 11.5,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "fast",
+        "lockOff": true
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.targeter.body",
+        "legs": "turret.legs.cannon",
+        "weapon": "turret.targeter.weapon",
+        "icon": "turret.targeter"
+      },
+      "displayNames": [
+        "TargetPainter",
+        "Frontline",
+        "Caller",
+        "HeadsUp",
+        "Longrange"
+      ]
+    },
+    {
+      "id": "sniper",
+      "legacyId": "TurretSniper",
+      "name": "Sniper",
+      "category": "super",
+      "cost": 12000,
+      "unlockKills": 1300,
+      "availableInitially": false,
+      "stats": {
+        "damage": 3000000,
+        "range": 300,
+        "rate": 30,
+        "poison": 0,
+        "rotate": 90,
+        "mustFace": true
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 5000,
+            "value": 7000000
+          },
+          {
+            "cost": 7500,
+            "value": 15000000
+          },
+          {
+            "cost": 10000,
+            "value": 55000000
+          }
+        ],
+        "range": [
+          {
+            "cost": 4000,
+            "value": 400
+          },
+          {
+            "cost": 4000,
+            "value": 500
+          }
+        ],
+        "rate": [
+          {
+            "cost": 5000,
+            "value": 45
+          },
+          {
+            "cost": 8000,
+            "value": 60
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "sniper"
+      ],
+      "specialParams": {
+        "sniper": {
+          "brassMax": 15,
+          "brassFadeAfterMs": 8000,
+          "brassFadeMs": 1000,
+          "brassMs": 400,
+          "brassJitter": 10,
+          "brassSpin": 2160,
+          "brassPoint": [
+            -2,
+            3
+          ],
+          "brassPointTo": [
+            -2,
+            30
+          ]
+        }
+      },
+      "projectiles": [
+        "sniper-shot"
+      ],
+      "weaponRotation": -90,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 34,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.sniper.body",
+        "legs": "turret.legs.cannon",
+        "weapon": "turret.sniper.weapon",
+        "icon": "turret.sniper"
+      },
+      "sounds": {
+        "fire": "sniper"
+      },
+      "displayNames": [
+        "Snipes",
+        "Wesley",
+        "Precision",
+        "Kar98k",
+        "Moisin-Nagent",
+        "Shootah"
+      ]
+    },
+    {
+      "id": "fusion",
+      "legacyId": "TurretFusion",
+      "name": "Fusion Cannon",
+      "category": "super",
+      "cost": 12000,
+      "unlockKills": 1400,
+      "availableInitially": false,
+      "stats": {
+        "damage": 1000000,
+        "range": 300,
+        "rate": 30,
+        "poison": 0,
+        "rotate": 90,
+        "mustFace": true
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 5000,
+            "value": 3000000
+          },
+          {
+            "cost": 7500,
+            "value": 10000000
+          },
+          {
+            "cost": 10000,
+            "value": 35000000
+          }
+        ],
+        "range": [
+          {
+            "cost": 4000,
+            "value": 400
+          },
+          {
+            "cost": 4000,
+            "value": 500
+          }
+        ],
+        "rate": [
+          {
+            "cost": 5000,
+            "value": 60
+          },
+          {
+            "cost": 8000,
+            "value": 90
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "fusion"
+      ],
+      "specialParams": {
+        "fusion": {
+          "glowUnit": 500000,
+          "glowTierSize": 80,
+          "glowPulse": 1.1,
+          "dischargePoisonMax": 100,
+          "soundLow": "fusion-low",
+          "soundMed": "fusion-med",
+          "soundHigh": "fusion-high",
+          "soundMax": "fusion-max",
+          "storeTimeMs": 6000,
+          "absorbDamage": 1.15,
+          "absorbPoison": 1.15,
+          "tickMs": 64
+        }
+      },
+      "projectiles": [
+        "spark"
+      ],
+      "weaponRotation": -90,
+      "tickMs": 64,
+      "firePoints": [
+        {
+          "x": 26,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.fusion.body",
+        "legs": "turret.legs.electric",
+        "weapon": "turret.fusion.weapon",
+        "icon": "turret.fusion"
+      },
+      "sounds": {
+        "fire": "fusion-low"
+      },
+      "displayNames": [
+        "Charger",
+        "SinkHole",
+        "BlackHole",
+        "Quasar",
+        "BuildUp",
+        "Compile"
+      ]
+    },
+    {
+      "id": "railgun",
+      "legacyId": "TurretRailgun",
+      "name": "Railgun",
+      "category": "super",
+      "cost": 12000,
+      "unlockKills": 1500,
+      "availableInitially": false,
+      "stats": {
+        "damage": 4000000,
+        "range": 300,
+        "rate": 30,
+        "poison": 0,
+        "rotate": 90,
+        "mustFace": true
+      },
+      "upgrades": {
+        "damage": [
+          {
+            "cost": 5000,
+            "value": 9000000
+          },
+          {
+            "cost": 7500,
+            "value": 15000000
+          },
+          {
+            "cost": 10000,
+            "value": 25000000
+          }
+        ],
+        "range": [
+          {
+            "cost": 4000,
+            "value": 400
+          },
+          {
+            "cost": 4000,
+            "value": 500
+          }
+        ],
+        "rate": [
+          {
+            "cost": 5000,
+            "value": 60
+          },
+          {
+            "cost": 6000,
+            "value": 90
+          }
+        ]
+      },
+      "flags": {
+        "modifiable": false,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "railgun"
+      ],
+      "projectiles": [
+        "rail-laser"
+      ],
+      "weaponRotation": -90,
+      "tickMs": 70,
+      "firePoints": [
+        {
+          "x": 27.5,
+          "y": 0
+        }
+      ],
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.base",
+        "body": "turret.railgun.body",
+        "weapon": "turret.railgun.weapon",
+        "icon": "turret.railgun"
+      },
+      "sounds": {
+        "fire": "tazer"
+      },
+      "displayNames": [
+        "Dith",
+        "CERN",
+        "ParticleCannon",
+        "HALO",
+        "PPSX-761",
+        "ZAP"
+      ]
+    },
+    {
+      "id": "combonly",
+      "legacyId": "TurretCombonly",
+      "name": "Combonly",
+      "category": "utility",
+      "cost": 5000,
+      "unlockKills": 1600,
+      "availableInitially": false,
+      "stats": {
+        "damage": 0,
+        "range": 300,
+        "rate": 250,
+        "poison": 0,
+        "rotate": 270,
+        "mustFace": true
+      },
+      "upgrades": {},
+      "flags": {
+        "modifiable": true,
+        "comboCapable": false,
+        "comboNever": true,
+        "joinable": true,
+        "fusionFeeder": false,
+        "directional": true
+      },
+      "freakout": {
+        "capable": false,
+        "availableInitially": false,
+        "lengthMs": 5000,
+        "spacingMs": 80000,
+        "damageMult": 3,
+        "rangeMult": 0,
+        "rateMult": 4,
+        "levelDamage": 4,
+        "levelRange": 0,
+        "levelRate": 4
+      },
+      "specials": [
+        "combonly"
+      ],
+      "specialParams": {
+        "combonly": {
+          "cycleMs": 1000,
+          "consumeMs": 2000,
+          "activateMs": 1500,
+          "scanRange": 70
+        }
+      },
+      "projectiles": [],
+      "tickMs": 70,
+      "targeting": {
+        "defaultMode": "near",
+        "lockOff": false
+      },
+      "art": {
+        "base": "turret.combonly",
+        "icon": "turret.combonly",
+        "fx": {
+          "glowAlpha": 75,
+          "glowInMs": 500,
+          "glowOutMs": 250,
+          "glowRadius": 14,
+          "glowBlur": 6
+        }
+      },
+      "displayNames": [
+        "Combonly"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "challenges/warmup.classic",
+  "description": "Phase 5: the Warmup challenge preset (easy, $30, 60 s, no objective) on Classic with three Blues. Freezes the challenge set-up (cash, difficulty, wave sizes and speeds), the time limit (up at 59.6 s on the wave manager's 200 ms check, rounded seconds), the end of the waves and the once-a-second real-time win check that passes it when the field is clear.",
+  "map": "map1",
+  "mode": "challenge",
+  "difficulty": "easy",
+  "profile": "classic",
+  "seed": 5,
+  "ticks": 4200,
+  "hashEvery": 300,
+  "challenge": "warmup",
+  "commands": [
+    {"tick": 0, "command": {"type": "build", "turret": "blue", "x": 534.0, "y": 300.0}},
+    {"tick": 1, "command": {"type": "build", "turret": "blue", "x": 366.0, "y": 228.0}},
+    {"tick": 2, "command": {"type": "build", "turret": "blue", "x": 402.0, "y": 216.0}}
+  ]
+}
