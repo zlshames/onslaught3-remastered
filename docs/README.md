@@ -13,7 +13,7 @@ the rest are background.
 | `RELEASING.md` | current (2026-10-31) | how a release is cut on GitHub: one-time setup, tagging, what each download is |
 | `LOGGING.md` | current (2026-10-21) | the local log: levels, masking of personal data, rotation, export, failure handling |
 | `REPLAY_PLAN.md` | resume in part (2026-10-21); replays not started | replays and resume; its status line says what is built |
-| `screenshots/` | current (2026-10-31) | full-resolution game screenshots for the README, from the Android emulator |
+| `screenshots/` | current (2026-10-31) | full-resolution game screenshots for the README, from the Android emulator, and the GitHub social preview card (uploaded by hand in the repo's settings) |
 | `history/PORTRAIT_PLAN.md` | implemented 2026-10-19 | the portrait-mode build plan; the shipped design is in `REMASTER_PLAN.md` |
 | `history/SCREEN_FIT_PLAN.md` | implemented 2026-10-19 | the screen-fit design that `PORTRAIT_PLAN.md` carried out; superseded sections are marked inside |
 
