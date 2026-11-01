@@ -403,6 +403,11 @@ void main() {
     await tester.tap(find.text('Quick Tutorial'));
     await _pumpUntil(tester, find.text('Welcome to Onslaught'));
     final s = _viewModel(tester).session;
+    // The tutorial's pause is a queued command: it applies on the next step.
+    final pauseBy = DateTime.now().add(const Duration(seconds: 30));
+    while (!s.clock.paused && DateTime.now().isBefore(pauseBy)) {
+      await tester.pump(const Duration(milliseconds: 100));
+    }
     expect([s.map.id, s.config.mode, s.clock.paused], ['tutorial', 'tutorial', isTrue]);
     // On to "Your First Combo" (page 15): Show me gives $14 500, once.
     for (var i = 0; i < 14; i++) {
